@@ -84,6 +84,6 @@ export const services: ServicesContent = {
     },
   ],
   description:
-    "At Golden Pyramid Auto Maintenance, we provide complete solutions for all your car needs under one roof, using modern equipment and specialized technicians to deliver high quality and performance.",
+    "Complete mechanical, electrical, body, AC, tire, and additional care under one roof, delivered with modern equipment and specialized technicians.",
   title: "Our Services",
 };

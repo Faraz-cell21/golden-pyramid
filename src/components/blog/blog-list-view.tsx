@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import type { Locale } from "@/i18n/config";
@@ -30,22 +31,33 @@ export function BlogListView({
   return (
     <section className="bg-white">
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-12">
-        <ul className="space-y-4">
+        <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6">
           {content.posts.map((post) => (
             <li key={post.slug}>
               <Link
-                className="block rounded-xl border border-navy/10 p-5 transition-colors hover:border-navy/25 active:bg-navy/5 sm:p-6"
+                className="group flex h-full flex-col overflow-hidden rounded-xl border border-navy/10 bg-white transition-colors hover:border-gold/50 hover:shadow-md"
                 href={localizedPath(locale, `/blog/${post.slug}`)}
               >
-                <h2 className="font-semibold text-base text-navy sm:text-lg">
-                  {post.title}
-                </h2>
-                <p className="mt-2 line-clamp-3 text-navy/70 text-sm leading-relaxed">
-                  {post.body}
-                </p>
-                <span className="mt-4 inline-flex font-medium text-navy text-sm underline-offset-4">
-                  {readMoreLabel}
-                </span>
+                <div className="relative aspect-[16/10] overflow-hidden bg-navy/5">
+                  <Image
+                    alt={post.imageAlt}
+                    className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                    fill
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    src={post.image}
+                  />
+                </div>
+                <div className="flex flex-1 flex-col p-5 sm:p-6">
+                  <h2 className="font-semibold text-base text-navy sm:text-lg">
+                    {post.title}
+                  </h2>
+                  <p className="mt-2 line-clamp-3 flex-1 text-navy/70 text-sm leading-relaxed">
+                    {post.excerpt}
+                  </p>
+                  <span className="mt-4 inline-flex font-medium text-gold text-sm underline-offset-4 group-hover:underline">
+                    {readMoreLabel}
+                  </span>
+                </div>
               </Link>
             </li>
           ))}

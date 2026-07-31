@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { PageHeader } from "@/components/shared/page-header";
-import { Section } from "@/components/shared/section";
+import { LegalDocumentView } from "@/components/shared/legal-document-view";
+import { PageHero } from "@/components/shared/page-hero";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 
@@ -39,11 +39,12 @@ export default async function TermsAndConditionsPage({
   const { termsAndConditions } = getDictionary(locale);
 
   return (
-    <Section>
-      <PageHeader
+    <>
+      <PageHero
         description={termsAndConditions.description}
         title={termsAndConditions.title}
       />
-    </Section>
+      <LegalDocumentView content={termsAndConditions} />
+    </>
   );
 }

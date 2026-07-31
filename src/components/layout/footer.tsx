@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { AccentLine } from "@/components/shared/accent-line";
 import { SocialLinks } from "@/components/shared/social-links";
+import { getContactLocation } from "@/config/contact";
 import { footerNav } from "@/config/navigation";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
@@ -24,6 +25,15 @@ export function Footer({ dictionary, locale }: FooterProps) {
             <AccentLine className="mt-3" />
             <p className="mt-3 text-sm text-white/65 leading-relaxed">
               {dictionary.home.description}
+            </p>
+            <p className="mt-3 flex items-start gap-2 text-sm text-white/80">
+              <LocationPinIcon />
+              <span>
+                <span className="font-medium text-white/70">
+                  {dictionary.ui.locationLabel}:{" "}
+                </span>
+                {getContactLocation(locale)}
+              </span>
             </p>
           </div>
 
@@ -60,5 +70,24 @@ export function Footer({ dictionary, locale }: FooterProps) {
         </div>
       </div>
     </footer>
+  );
+}
+
+function LocationPinIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      className="mt-0.5 size-4 shrink-0 text-gold"
+      fill="none"
+      focusable="false"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+    >
+      <path d="M12 21s7-4.5 7-11a7 7 0 10-14 0c0 6.5 7 11 7 11z" />
+      <circle cx="12" cy="10" r="2.5" />
+    </svg>
   );
 }

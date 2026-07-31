@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -36,7 +37,7 @@ export async function generateMetadata({
   }
 
   return {
-    description: post.body,
+    description: post.excerpt,
     title: post.title,
   };
 }
@@ -57,9 +58,19 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <>
-      <PageHero title={post.title} />
+      <PageHero description={post.excerpt} title={post.title} />
       <article className="bg-white">
         <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6 sm:py-12">
+          <div className="relative mb-8 aspect-[16/9] overflow-hidden rounded-xl bg-navy/5">
+            <Image
+              alt={post.imageAlt}
+              className="object-cover"
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 768px"
+              src={post.image}
+            />
+          </div>
           <p className="text-navy/80 text-sm leading-7 sm:text-base sm:leading-8">
             {post.body}
           </p>

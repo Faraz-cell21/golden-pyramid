@@ -3,8 +3,22 @@ export interface PageContent {
   title: string;
 }
 
+export interface LegalSection {
+  items?: string[];
+  paragraphs: string[];
+  title: string;
+}
+
+export interface LegalPageContent extends PageContent {
+  lastUpdatedLabel: string;
+  sections: LegalSection[];
+}
+
 export interface BlogPost {
   body: string;
+  excerpt: string;
+  image: string;
+  imageAlt: string;
   slug: string;
   title: string;
 }
@@ -70,6 +84,10 @@ export interface HomeContent extends PageContent {
     socialIntro: string;
     title: string;
   };
+  latestBlog: {
+    title: string;
+    viewAllLabel: string;
+  };
   serviceCategories: {
     description: string;
     items: ServiceCategory[];
@@ -82,17 +100,11 @@ export interface HomeContent extends PageContent {
   };
 }
 
-export interface AboutValue {
-  body: string;
-  title: string;
-}
-
 export interface AboutContent extends PageContent {
-  highlights: string[];
-  story: string[];
-  storyTitle: string;
-  values: AboutValue[];
-  valuesTitle: string;
+  intro: string[];
+  introTitle: string;
+  whyUs: string[];
+  whyUsTitle: string;
 }
 
 export interface ServicesContent extends PageContent {
@@ -101,6 +113,7 @@ export interface ServicesContent extends PageContent {
 
 export interface ReviewItem {
   body: string;
+  location: string;
   name: string;
   rating: number;
 }
