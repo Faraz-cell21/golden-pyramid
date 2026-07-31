@@ -15,14 +15,36 @@ export const home: HomeContent = {
   description:
     "Professional automotive care from Golden Pyramid. Clear estimates, skilled technicians, and trusted garage service.",
   hero: {
-    body: "Independent garage care with skilled technicians, clear estimates, and modern diagnostics. Follow us for updates and offers.",
+    body: "From routine maintenance to complex repairs, Golden Pyramid keeps your car running with skilled technicians, clear estimates, and modern diagnostics.",
     features: [
       "Maintenance and care for all major car brands",
       "Experienced, trained technicians",
       "Modern diagnostic equipment",
       "Friendly customer support",
     ],
-    ratingLabel: "Customer rating placeholder: 4.8 / 5",
+    reviewPlatforms: [
+      {
+        countLabel: "See what our customers say",
+        platform: "google",
+        platformLabel: "Google",
+        rating: "5.0",
+        summary: "Excellent reviews from drivers who trust our garage",
+      },
+      {
+        countLabel: "Loved by our community",
+        platform: "facebook",
+        platformLabel: "Facebook",
+        rating: "5.0",
+        summary: "Five-star feedback from happy customers",
+      },
+      {
+        countLabel: "Trusted service rating",
+        platform: "trustpilot",
+        platformLabel: "Trustpilot",
+        rating: "5.0",
+        summary: "Outstanding Trustpilot score for garage care",
+      },
+    ],
     socialIntro: "Find us on social:",
     title: "Your trusted garage for professional auto care",
   },

@@ -60,7 +60,13 @@ export interface HomeContent extends PageContent {
   hero: {
     body: string;
     features: string[];
-    ratingLabel: string;
+    reviewPlatforms: Array<{
+      countLabel: string;
+      platform: "google" | "facebook" | "trustpilot";
+      platformLabel: string;
+      rating: string;
+      summary: string;
+    }>;
     socialIntro: string;
     title: string;
   };

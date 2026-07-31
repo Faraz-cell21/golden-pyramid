@@ -4,13 +4,20 @@ import type { SocialPlatform } from "@/types/navigation";
 
 interface SocialLinksProps {
   className?: string;
+  exclude?: SocialPlatform[];
   labels: Record<SocialPlatform, string>;
 }
 
-export function SocialLinks({ className, labels }: SocialLinksProps) {
+export function SocialLinks({
+  className,
+  exclude = [],
+  labels,
+}: SocialLinksProps) {
+  const links = socialLinks.filter((link) => !exclude.includes(link.platform));
+
   return (
     <ul className={cn("flex flex-wrap items-center gap-2.5", className)}>
-      {socialLinks.map((link) => (
+      {links.map((link) => (
         <li key={link.platform}>
           <a
             aria-label={labels[link.platform]}

@@ -1,5 +1,8 @@
+import Image from "next/image";
+import { ReviewPlatformBadge } from "@/components/shared/review-platform-badge";
+import { SocialLinks } from "@/components/shared/social-links";
 import { contactConfig } from "@/config/contact";
-import { socialLinks, whatsappLink } from "@/content/shared/socials";
+import { whatsappLink } from "@/content/shared/socials";
 import type { Dictionary } from "@/i18n/dictionaries";
 import type { HomeContent } from "@/types/content";
 
@@ -10,38 +13,35 @@ interface HomeHeroProps {
 }
 
 export function HomeHero({ content, socialLabels, ui }: HomeHeroProps) {
-  const bioSocials = socialLinks.filter((link) => link.platform !== "whatsapp");
-
   return (
-    <section className="relative overflow-hidden bg-navy text-white">
-      <div
+    <section className="relative overflow-hidden text-white">
+      <Image
+        alt=""
         aria-hidden
-        className="absolute inset-0 bg-[linear-gradient(160deg,var(--color-navy)_0%,var(--color-navy-soft)_55%,#071525_100%)]"
+        className="object-cover object-center"
+        fill
+        priority
+        quality={90}
+        sizes="100vw"
+        src="/images/Home page/home-hero-bg.jpg"
       />
       <div
         aria-hidden
-        className="absolute inset-0 opacity-40 [background-image:radial-gradient(circle_at_20%_20%,#c5a35a33,transparent_35%),radial-gradient(circle_at_80%_0%,#ffffff14,transparent_25%)]"
+        className="absolute inset-0 bg-gradient-to-r from-navy/92 via-navy/80 to-navy/55"
       />
+      <div aria-hidden className="absolute inset-0 bg-black/25" />
 
-      <div className="relative mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:px-6 sm:py-14 lg:grid-cols-2 lg:items-center lg:gap-10 lg:py-16">
-        <div className="order-1 space-y-5 lg:order-2">
-          <div className="aspect-[4/3] rounded-xl border border-white/15 bg-white/5 sm:aspect-[16/10] lg:aspect-[4/3]">
-            <div className="flex h-full items-center justify-center p-4 text-center text-sm text-white/50">
-              Image placeholder
-            </div>
-          </div>
-        </div>
-
-        <div className="order-2 space-y-5 lg:order-1">
-          <h1 className="font-semibold text-2xl leading-tight tracking-tight sm:text-3xl md:text-4xl">
+      <div className="relative mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16 lg:py-20">
+        <div className="max-w-xl space-y-5 lg:max-w-3xl">
+          <h1 className="font-bold text-2xl leading-tight tracking-tight sm:text-3xl md:text-4xl lg:text-5xl">
             {content.title}
           </h1>
           <div className="h-1 w-14 rounded-full bg-gold" />
-          <p className="max-w-xl text-sm text-white/80 leading-relaxed sm:text-base">
+          <p className="text-sm text-white/85 leading-relaxed sm:text-base md:text-lg">
             {content.body}
           </p>
 
-          <ul className="space-y-2 text-sm text-white/85 sm:text-base">
+          <ul className="space-y-2 text-sm text-white/90 sm:text-base">
             {content.features.map((feature) => (
               <li className="flex gap-2" key={feature}>
                 <span
@@ -53,37 +53,28 @@ export function HomeHero({ content, socialLabels, ui }: HomeHeroProps) {
             ))}
           </ul>
 
-          <p className="text-sm text-white/70">{content.ratingLabel}</p>
-
-          <div className="space-y-2">
-            <p className="font-medium text-sm text-white/75">
-              {content.socialIntro}
-            </p>
-            <ul className="flex flex-wrap gap-x-4 gap-y-2">
-              {bioSocials.map((link) => (
-                <li key={link.platform}>
-                  <a
-                    className="inline-flex min-h-10 items-center text-sm text-white underline-offset-4 hover:underline"
-                    href={link.href}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    {socialLabels[link.platform]}
-                  </a>
-                </li>
-              ))}
-            </ul>
+          <div className="flex flex-col gap-2.5 sm:flex-row sm:flex-wrap">
+            {content.reviewPlatforms.map((item) => (
+              <ReviewPlatformBadge item={item} key={item.platform} />
+            ))}
           </div>
 
-          <div className="flex flex-col gap-3 pt-1 sm:flex-row">
+          <div className="space-y-2">
+            <p className="font-medium text-sm text-white/80">
+              {content.socialIntro}
+            </p>
+            <SocialLinks exclude={["whatsapp"]} labels={socialLabels} />
+          </div>
+
+          <div className="flex max-w-xl flex-col gap-3 pt-1 sm:flex-row">
             <a
-              className="inline-flex min-h-12 flex-1 items-center justify-center rounded-md bg-white px-4 font-medium text-navy text-sm"
+              className="inline-flex min-h-12 flex-1 items-center justify-center rounded-md bg-white px-4 font-semibold text-navy text-sm"
               href={contactConfig.phoneHref}
             >
               {ui.callNow}: {contactConfig.phoneDisplay}
             </a>
             <a
-              className="inline-flex min-h-12 flex-1 items-center justify-center rounded-md border border-white px-4 font-medium text-sm text-white"
+              className="inline-flex min-h-12 flex-1 items-center justify-center rounded-md border border-white px-4 font-semibold text-sm text-white transition-colors hover:border-gold hover:text-gold"
               href={whatsappLink}
               rel="noopener noreferrer"
               target="_blank"
