@@ -3,6 +3,9 @@
   --color-foreground: #0b1f3a;
   --color-navy: #0b1f3a;
   --color-navy-soft: #16325a;
+  --color-gold: #c5a35a;
+  --color-gold-soft: #e4d0a0;
+  --color-gold-deep: #9a7c3a;
   --font-sans: "Segoe UI", "Tahoma", sans-serif;
 }
 
@@ -11,5 +14,8 @@
   --color-foreground: var(--color-foreground);
   --color-navy: var(--color-navy);
   --color-navy-soft: var(--color-navy-soft);
+  --color-gold: var(--color-gold);
+  --color-gold-soft: var(--color-gold-soft);
+  --color-gold-deep: var(--color-gold-deep);
   --font-sans: var(--font-sans);
 }

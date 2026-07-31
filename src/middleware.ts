@@ -6,19 +6,11 @@ import { defaultLocale, locales } from "@/i18n/config";
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  if (
-    pathname.startsWith("/_next") ||
-    pathname.startsWith("/api") ||
-    pathname.includes(".")
-  ) {
-    return NextResponse.next();
-  }
-
-  const pathnameLocale = locales.find(
+  const hasLocale = locales.some(
     (locale) => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)
   );
 
-  if (pathnameLocale) {
+  if (hasLocale) {
     return NextResponse.next();
   }
 
@@ -29,5 +21,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
+  matcher: ["/((?!_next|api|.*\\..*).*)"],
 };

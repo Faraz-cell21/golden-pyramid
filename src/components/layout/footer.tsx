@@ -7,7 +7,7 @@ import type { Dictionary } from "@/i18n/dictionaries";
 import { localizedPath } from "@/lib/utils";
 
 interface FooterProps {
-  dictionary: Dictionary;
+  dictionary: Pick<Dictionary, "home" | "navigation" | "ui">;
   locale: Locale;
 }
 
@@ -34,6 +34,7 @@ export function Footer({ dictionary, locale }: FooterProps) {
                   <Link
                     className="inline-flex min-h-10 items-center text-sm text-white/65 transition-colors hover:text-white"
                     href={localizedPath(locale, item.href)}
+                    prefetch
                   >
                     {
                       dictionary.navigation[
