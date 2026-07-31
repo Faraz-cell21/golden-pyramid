@@ -50,17 +50,12 @@ export interface ServiceCategory {
   title: string;
 }
 
-export interface HomeModelGroup {
-  items: string[];
-  title: string;
-}
-
 export interface HomeContent extends PageContent {
   ctaBand: {
     body: string;
-    modelGroups: HomeModelGroup[];
-    modelsLabel: string;
     title: string;
+    trustPoints: string[];
+    vehiclesLine: string;
   };
   hero: {
     body: string;

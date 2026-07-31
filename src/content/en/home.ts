@@ -3,23 +3,14 @@ import type { HomeContent } from "@/types/content";
 
 export const home: HomeContent = {
   ctaBand: {
-    body: "Get fast, reliable garage service with Golden Pyramid. Prototype copy. Replace with your real message and locations.",
-    modelGroups: [
-      {
-        items: ["Sedans", "Coupes", "Hatchbacks"],
-        title: "Everyday cars",
-      },
-      {
-        items: ["SUVs", "Crossovers", "4x4"],
-        title: "SUVs & utility",
-      },
-      {
-        items: ["Performance", "Luxury", "Classic"],
-        title: "Specialty",
-      },
+    body: "Call or WhatsApp Golden Pyramid for a clear estimate and trusted garage care.",
+    title: "Book service with Golden Pyramid today",
+    trustPoints: [
+      "All major car brands",
+      "Clear estimates",
+      "Fast WhatsApp support",
     ],
-    modelsLabel: "Vehicles we service",
-    title: "Get trusted auto service with Golden Pyramid",
+    vehiclesLine: "We service everyday cars, SUVs, and specialty vehicles.",
   },
   description:
     "Professional automotive care from Golden Pyramid. Mobile-first garage website prototype.",
