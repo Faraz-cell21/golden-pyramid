@@ -18,6 +18,7 @@ export function MainNav({ locale, navigation }: MainNavProps) {
           className="inline-flex min-h-11 items-center rounded-md px-3 font-medium text-navy/80 text-sm transition-colors hover:bg-navy/5 hover:text-navy"
           href={localizedPath(locale, item.href)}
           key={item.href}
+          prefetch
         >
           {navigation[item.labelKey as keyof typeof navigation]}
         </Link>

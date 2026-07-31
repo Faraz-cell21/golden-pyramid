@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import type { Locale } from "@/i18n/config";
@@ -24,7 +24,6 @@ export function LanguagePrompt({
   locale,
   title,
 }: LanguagePromptProps) {
-  const pathname = usePathname();
   const router = useRouter();
   const [open, setOpen] = useState(false);
 
@@ -48,7 +47,7 @@ export function LanguagePrompt({
   function switchToArabic() {
     window.localStorage.setItem(STORAGE_KEY, "1");
     const pathWithoutLocale =
-      pathname.replace(LOCALE_PREFIX_PATTERN, "") || "/";
+      window.location.pathname.replace(LOCALE_PREFIX_PATTERN, "") || "/";
     router.push(localizedPath("ar", pathWithoutLocale));
     setOpen(false);
   }

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { PageHeader } from "@/components/shared/page-header";
-import { Section } from "@/components/shared/section";
+import { ServicesView } from "@/components/services/services-view";
+import { PageContactCta } from "@/components/shared/page-contact-cta";
+import { PageHero } from "@/components/shared/page-hero";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 
@@ -34,11 +35,15 @@ export default async function ServicesPage({ params }: ServicesPageProps) {
     notFound();
   }
 
-  const { services } = getDictionary(locale);
+  const { services, ui } = getDictionary(locale);
 
   return (
-    <Section>
-      <PageHeader description={services.description} title={services.title} />
-    </Section>
+    <>
+      <PageHero description={services.description} title={services.title} />
+      <ServicesView content={services} />
+      <PageContactCta
+        ui={{ callNow: ui.callNow, messageWhatsapp: ui.messageWhatsapp }}
+      />
+    </>
   );
 }

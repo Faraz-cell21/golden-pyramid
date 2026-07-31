@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { PageHeader } from "@/components/shared/page-header";
-import { Section } from "@/components/shared/section";
+import { ReviewsView } from "@/components/reviews/reviews-view";
+import { PageContactCta } from "@/components/shared/page-contact-cta";
+import { PageHero } from "@/components/shared/page-hero";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 
@@ -34,11 +35,15 @@ export default async function ReviewsPage({ params }: ReviewsPageProps) {
     notFound();
   }
 
-  const { reviews } = getDictionary(locale);
+  const { reviews, ui } = getDictionary(locale);
 
   return (
-    <Section>
-      <PageHeader description={reviews.description} title={reviews.title} />
-    </Section>
+    <>
+      <PageHero description={reviews.description} title={reviews.title} />
+      <ReviewsView content={reviews} />
+      <PageContactCta
+        ui={{ callNow: ui.callNow, messageWhatsapp: ui.messageWhatsapp }}
+      />
+    </>
   );
 }

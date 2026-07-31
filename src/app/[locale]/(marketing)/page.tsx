@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { PageHeader } from "@/components/shared/page-header";
-import { Section } from "@/components/shared/section";
-import { WhatsappButton } from "@/components/shared/whatsapp-button";
+import { HomeCtaBand } from "@/components/home/home-cta-band";
+import { HomeHero } from "@/components/home/home-hero";
+import { HomeServiceCategories } from "@/components/home/home-service-categories";
+import { HomeWhyUs } from "@/components/home/home-why-us";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 
@@ -36,17 +37,18 @@ export default async function HomePage({ params }: HomePageProps) {
   }
 
   const dictionary = getDictionary(locale);
+  const { home, ui } = dictionary;
+  const ctaUi = {
+    callNow: ui.callNow,
+    messageWhatsapp: ui.messageWhatsapp,
+  };
 
   return (
-    <Section>
-      <PageHeader
-        description={dictionary.home.description}
-        title={dictionary.home.title}
-      />
-      <WhatsappButton
-        className="w-full sm:w-auto"
-        label={dictionary.ui.contactWhatsapp}
-      />
-    </Section>
+    <>
+      <HomeHero content={home.hero} socialLabels={ui.social} ui={ctaUi} />
+      <HomeServiceCategories content={home.serviceCategories} />
+      <HomeWhyUs content={home.whyUs} />
+      <HomeCtaBand content={home.ctaBand} ui={ctaUi} />
+    </>
   );
 }

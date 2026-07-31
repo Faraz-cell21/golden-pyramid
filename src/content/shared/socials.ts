@@ -1,6 +1,6 @@
 import type { SocialLink } from "@/types/navigation";
 
-/** Placeholder links — replace with real URLs when available. */
+/** Placeholder links. Replace with real URLs when available. */
 export const socialLinks: SocialLink[] = [
   {
     href: "https://wa.me/0000000000",

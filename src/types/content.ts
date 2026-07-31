@@ -35,3 +35,75 @@ export interface NavigationContent {
   services: string;
   terms: string;
 }
+
+export type ServiceCategoryIconId =
+  | "mechanical"
+  | "electrical"
+  | "body"
+  | "ac"
+  | "tires"
+  | "extra";
+
+export interface ServiceCategory {
+  icon: ServiceCategoryIconId;
+  items: string[];
+  title: string;
+}
+
+export interface HomeModelGroup {
+  items: string[];
+  title: string;
+}
+
+export interface HomeContent extends PageContent {
+  ctaBand: {
+    body: string;
+    modelGroups: HomeModelGroup[];
+    modelsLabel: string;
+    title: string;
+  };
+  hero: {
+    body: string;
+    features: string[];
+    ratingLabel: string;
+    socialIntro: string;
+    title: string;
+  };
+  serviceCategories: {
+    description: string;
+    items: ServiceCategory[];
+    title: string;
+  };
+  whyUs: {
+    expectLabel: string;
+    items: string[];
+    title: string;
+  };
+}
+
+export interface AboutValue {
+  body: string;
+  title: string;
+}
+
+export interface AboutContent extends PageContent {
+  highlights: string[];
+  story: string[];
+  storyTitle: string;
+  values: AboutValue[];
+  valuesTitle: string;
+}
+
+export interface ServicesContent extends PageContent {
+  categories: ServiceCategory[];
+}
+
+export interface ReviewItem {
+  body: string;
+  name: string;
+  rating: number;
+}
+
+export interface ReviewsContent extends PageContent {
+  items: ReviewItem[];
+}

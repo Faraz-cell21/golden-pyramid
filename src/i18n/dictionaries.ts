@@ -33,6 +33,8 @@ const dictionaries = {
     termsAndConditions: termsAndConditionsAr,
     thankYou: thankYouAr,
     ui: {
+      backToBlog: "العودة إلى المدونة",
+      callNow: "اتصل الآن",
       close: "إغلاق",
       contactWhatsapp: "تواصل عبر واتساب",
       languagePromptBody: "هل تفضل متابعة التصفح باللغة العربية؟",
@@ -40,6 +42,8 @@ const dictionaries = {
       languagePromptDismiss: "الاستمرار بالإنجليزية",
       languagePromptTitle: "اختر اللغة",
       menu: "القائمة",
+      messageWhatsapp: "راسلنا عبر واتساب الآن",
+      readMore: "اقرأ المزيد",
       rightsReserved: "جميع الحقوق محفوظة",
       social: {
         facebook: "فيسبوك",
@@ -62,6 +66,8 @@ const dictionaries = {
     termsAndConditions: termsAndConditionsEn,
     thankYou: thankYouEn,
     ui: {
+      backToBlog: "Back to blog",
+      callNow: "Call now",
       close: "Close",
       contactWhatsapp: "Contact on WhatsApp",
       languagePromptBody: "Would you like to continue in Arabic?",
@@ -69,6 +75,8 @@ const dictionaries = {
       languagePromptDismiss: "Continue in English",
       languagePromptTitle: "Choose language",
       menu: "Menu",
+      messageWhatsapp: "Message us on WhatsApp now",
+      readMore: "Read more",
       rightsReserved: "All rights reserved",
       social: {
         facebook: "Facebook",

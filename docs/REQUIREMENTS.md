@@ -165,8 +165,8 @@ Runtime admin CRUD on Vercel needs a durable store. Options discussed:
 | Item | Detail |
 |------|--------|
 | **Name** | Golden Pyramid |
-| **Colors** | Navy blue (dark) + white background |
-| **Approach** | **Mobile-first** — design and build for small screens first, then enhance for tablet/desktop |
+| **Colors** | Navy blue (`#0B1F3A`), gold (`#C5A35A`), white background |
+| **Approach** | **Mobile-first** - design and build for small screens first, then enhance for tablet/desktop |
 | **Logos / brand assets** | To be provided later |
 | **Tone** | Professional garage / automotive service |
 
@@ -257,3 +257,4 @@ Layout, navigation, typography, and interactions must work well on phones first.
 | 2026-07-31 | Initial requirements; Car Brands removed; no forms; WhatsApp + social; EN default + AR popup/RTL; blog = title + body only |
 | 2026-07-31 | Phased delivery: Phase 1 public site only (static content, no DB); Phase 2 admin deferred; MongoDB Atlas free tier noted as Phase 2 candidate |
 | 2026-07-31 | Added mobile-first design requirement |
+| 2026-07-31 | Color scheme updated to navy + gold + white; tokens in `src/styles/tokens.css` |

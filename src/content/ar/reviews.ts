@@ -1,6 +1,29 @@
-import type { PageContent } from "@/types/content";
+import type { ReviewsContent } from "@/types/content";
 
-export const reviews: PageContent = {
-  description: "ماذا يقول عملاؤنا. المحتوى قريباً.",
+export const reviews: ReviewsContent = {
+  description:
+    "آراء حقيقية من سائقين يثقون بجولدن بيراميد لسياراتهم. مراجعات تجريبية لهذا النموذج الأولي.",
+  items: [
+    {
+      body: "شرح واضح قبل بدء أي عمل، وتسعير عادل، وشعرت بتحسن السيارة على الطريق مباشرة.",
+      name: "عمر ح.",
+      rating: 5,
+    },
+    {
+      body: "اكتشفوا المشكلة بسرعة وأبقوني على اطلاع. بلا ضغط لشراء إضافات لا أحتاجها.",
+      name: "سارة م.",
+      rating: 5,
+    },
+    {
+      body: "فريق محترف وورشة نظيفة. الحجز كان سهلاً والتسليم سلساً.",
+      name: "خالد أ.",
+      rating: 4,
+    },
+    {
+      body: "تواصل جيد بالعربية والإنجليزية. قدرت النصيحة الصادقة حول ما يمكن تأجيله.",
+      name: "ليلى ر.",
+      rating: 5,
+    },
+  ],
   title: "آراء العملاء",
 };

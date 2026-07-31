@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import { LanguageSwitcher } from "@/components/shared/language-switcher";
 import { WhatsappButton } from "@/components/shared/whatsapp-button";
 import { mainNav } from "@/config/navigation";
 import type { Locale } from "@/i18n/config";
@@ -25,14 +25,13 @@ export function MobileNav({
   navigation,
   whatsappLabel,
 }: MobileNavProps) {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [menuPath, setMenuPath] = useState(pathname);
 
-  function closeMenu() {
+  if (menuPath !== pathname) {
+    setMenuPath(pathname);
     setOpen(false);
-  }
-
-  function toggleMenu() {
-    setOpen((value) => !value);
   }
 
   useEffect(() => {
@@ -47,6 +46,14 @@ export function MobileNav({
       document.body.style.overflow = previous;
     };
   }, [open]);
+
+  function closeMenu() {
+    setOpen(false);
+  }
+
+  function toggleMenu() {
+    setOpen((value) => !value);
+  }
 
   const buttonLabel = open ? closeLabel : menuLabel;
 
@@ -82,14 +89,14 @@ export function MobileNav({
                     className="flex min-h-12 items-center rounded-md px-3 font-medium text-base text-navy hover:bg-navy/5"
                     href={localizedPath(locale, item.href)}
                     onClick={closeMenu}
+                    prefetch
                   >
                     {navigation[item.labelKey as keyof typeof navigation]}
                   </Link>
                 </li>
               ))}
             </ul>
-            <div className="mt-4 space-y-4 border-navy/10 border-t pt-4">
-              <LanguageSwitcher locale={locale} />
+            <div className="mt-4 border-navy/10 border-t pt-4">
               <WhatsappButton fullWidth label={whatsappLabel} />
             </div>
           </nav>

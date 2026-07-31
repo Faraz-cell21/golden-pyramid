@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { PageHeader } from "@/components/shared/page-header";
-import { Section } from "@/components/shared/section";
+import { AboutView } from "@/components/about/about-view";
+import { PageContactCta } from "@/components/shared/page-contact-cta";
+import { PageHero } from "@/components/shared/page-hero";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 
@@ -34,11 +35,15 @@ export default async function AboutPage({ params }: AboutPageProps) {
     notFound();
   }
 
-  const { about } = getDictionary(locale);
+  const { about, ui } = getDictionary(locale);
 
   return (
-    <Section>
-      <PageHeader description={about.description} title={about.title} />
-    </Section>
+    <>
+      <PageHero description={about.description} title={about.title} />
+      <AboutView content={about} />
+      <PageContactCta
+        ui={{ callNow: ui.callNow, messageWhatsapp: ui.messageWhatsapp }}
+      />
+    </>
   );
 }

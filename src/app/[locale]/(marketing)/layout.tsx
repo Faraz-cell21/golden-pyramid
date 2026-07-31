@@ -23,7 +23,14 @@ export default async function MarketingLayout({
   const dictionary = getDictionary(locale);
 
   return (
-    <SiteShell dictionary={dictionary} locale={locale}>
+    <SiteShell
+      dictionary={{
+        home: dictionary.home,
+        navigation: dictionary.navigation,
+        ui: dictionary.ui,
+      }}
+      locale={locale}
+    >
       {children}
     </SiteShell>
   );
