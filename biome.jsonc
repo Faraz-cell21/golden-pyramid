@@ -8,6 +8,9 @@
   "linter": {
     "includes": ["src/**"],
     "rules": {
+      "performance": {
+        "noJsxPropsBind": "off"
+      },
       "suspicious": {
         "noConsole": {
           "level": "warn",

@@ -44,7 +44,7 @@ Living product brief for the Golden Pyramid garage website.
 - Present the garage professionally (home, about, services, reviews, blog).
 - Support English (default) and Arabic (full RTL).
 - Provide contact via WhatsApp and social links (no contact form).
-- Ship a polished public site on Vercel with no database.
+- Ship a polished **mobile-first** public site on Vercel with no database.
 
 ### Phase 2 goals (later)
 
@@ -166,10 +166,13 @@ Runtime admin CRUD on Vercel needs a durable store. Options discussed:
 |------|--------|
 | **Name** | Golden Pyramid |
 | **Colors** | Navy blue (dark) + white background |
+| **Approach** | **Mobile-first** — design and build for small screens first, then enhance for tablet/desktop |
 | **Logos / brand assets** | To be provided later |
 | **Tone** | Professional garage / automotive service |
 
 Do not invent a final logo until assets arrive; use placeholder text/wordmark if needed during build.
+
+Layout, navigation, typography, and interactions must work well on phones first. Desktop layouts are progressive enhancements, not the starting point.
 
 ---
 
@@ -177,11 +180,11 @@ Do not invent a final logo until assets arrive; use placeholder text/wordmark if
 
 - **Framework:** Next.js (App Router) — already scaffolded
 - **Package manager:** Bun
-- **Styling:** Tailwind CSS
+- **Styling:** Tailwind CSS (**mobile-first** breakpoints)
 - **Lint/format:** Biome + Ultracite (`bun run check`)
 - **CI:** GitHub Actions on PRs to `main` (`check` + `build`)
 - **Deploy:** Vercel
-- **Phase 1:** No database, no admin panel
+- **Phase 1:** No database, no admin panel; mobile-first public UI
 - **Phase 2:** Admin + chosen store (Atlas candidate); still no image uploads
 
 ---
@@ -253,3 +256,4 @@ Do not invent a final logo until assets arrive; use placeholder text/wordmark if
 |------|--------|
 | 2026-07-31 | Initial requirements; Car Brands removed; no forms; WhatsApp + social; EN default + AR popup/RTL; blog = title + body only |
 | 2026-07-31 | Phased delivery: Phase 1 public site only (static content, no DB); Phase 2 admin deferred; MongoDB Atlas free tier noted as Phase 2 candidate |
+| 2026-07-31 | Added mobile-first design requirement |
