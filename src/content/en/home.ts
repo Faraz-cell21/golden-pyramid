@@ -13,7 +13,7 @@ export const home: HomeContent = {
     vehiclesLine: "We service everyday cars, SUVs, and specialty vehicles.",
   },
   description:
-    "Professional automotive care from Golden Pyramid. Mobile-first garage website prototype.",
+    "Professional automotive care from Golden Pyramid. Clear estimates, skilled technicians, and trusted garage service.",
   hero: {
     body: "Independent garage care with skilled technicians, clear estimates, and modern diagnostics. Follow us for updates and offers.",
     features: [
