@@ -2,33 +2,22 @@ import type { AboutContent } from "@/types/content";
 
 export const about: AboutContent = {
   description:
-    "Golden Pyramid is a professional garage focused on honest work, clear communication, and careful service for every vehicle.",
-  highlights: [
-    "Skilled technicians with hands-on workshop experience",
-    "Clear estimates before work begins",
-    "Modern diagnostic tools and quality parts",
-    "Customer-first support from drop-off to handover",
+    "A specialized auto maintenance and repair center in Sharjah Industrial Area 4, offering complete care for all car types.",
+  intro: [
+    "Golden Pyramid Auto Maintenance is a specialized center for maintaining and repairing all types of cars, located in Sharjah, Industrial Area 4. We provide complete solutions including mechanical, electrical, bodywork, and paint, using the latest inspection and diagnostic equipment and highly experienced technicians.",
+    "We are committed to professional service based on quality, transparency, and meeting deadlines, with care that your car leaves our workshop with the best performance and the highest safety standards.",
   ],
-  story: [
-    "Golden Pyramid started with a simple goal: deliver dependable auto care without the confusion many drivers face at the workshop.",
-    "We combine practical expertise with a clean process so you always know what your car needs, why it needs it, and what it will cost.",
-    "Whether you need routine maintenance or a deeper repair, our team treats every car with the same care and attention.",
-  ],
-  storyTitle: "Our story",
+  introTitle: "Who we are",
   title: "About Us",
-  values: [
-    {
-      body: "We explain findings in plain language and only recommend work that matters.",
-      title: "Honesty",
-    },
-    {
-      body: "We use proven methods and careful checks so repairs last and drive well.",
-      title: "Quality",
-    },
-    {
-      body: "We respect your time with clear updates and practical turnaround planning.",
-      title: "Reliability",
-    },
+  whyUs: [
+    "Experience and skill in maintaining all types of cars, especially luxury European vehicles",
+    "Latest inspection and diagnostic equipment",
+    "Complete services under one roof",
+    "Genuine and high-quality spare parts",
+    "Competitive prices and transparent dealings",
+    "Fast turnaround with guaranteed work quality",
+    "Prime location in Sharjah, Industrial Area 4",
+    "Customer satisfaction is our priority in every service we provide",
   ],
-  valuesTitle: "What we stand for",
+  whyUsTitle: "Why us?",
 };

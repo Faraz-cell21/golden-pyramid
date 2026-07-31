@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 
 import { HomeCtaBand } from "@/components/home/home-cta-band";
 import { HomeHero } from "@/components/home/home-hero";
+import { HomeLatestBlogs } from "@/components/home/home-latest-blogs";
 import { HomeServiceCategories } from "@/components/home/home-service-categories";
 import { HomeWhyUs } from "@/components/home/home-why-us";
 import { isLocale } from "@/i18n/config";
@@ -37,18 +38,30 @@ export default async function HomePage({ params }: HomePageProps) {
   }
 
   const dictionary = getDictionary(locale);
-  const { home, ui } = dictionary;
+  const { blog, home, ui } = dictionary;
   const ctaUi = {
     callNow: ui.callNow,
+    locationLabel: ui.locationLabel,
     messageWhatsapp: ui.messageWhatsapp,
   };
 
   return (
     <>
-      <HomeHero content={home.hero} socialLabels={ui.social} ui={ctaUi} />
+      <HomeHero
+        content={home.hero}
+        locale={locale}
+        socialLabels={ui.social}
+        ui={ctaUi}
+      />
+      <HomeLatestBlogs
+        content={home.latestBlog}
+        locale={locale}
+        posts={blog.posts}
+        readMoreLabel={ui.readMore}
+      />
       <HomeServiceCategories content={home.serviceCategories} />
       <HomeWhyUs content={home.whyUs} />
-      <HomeCtaBand content={home.ctaBand} ui={ctaUi} />
+      <HomeCtaBand content={home.ctaBand} locale={locale} ui={ctaUi} />
     </>
   );
 }

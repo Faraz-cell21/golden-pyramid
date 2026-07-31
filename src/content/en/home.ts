@@ -48,6 +48,10 @@ export const home: HomeContent = {
     socialIntro: "Find us on social:",
     title: "Your trusted garage for professional auto care",
   },
+  latestBlog: {
+    title: "Latest from the blog",
+    viewAllLabel: "View all posts",
+  },
   serviceCategories: {
     description: services.description,
     items: services.categories,

@@ -40,7 +40,7 @@ export default async function ReviewsPage({ params }: ReviewsPageProps) {
   return (
     <>
       <PageHero description={reviews.description} title={reviews.title} />
-      <ReviewsView content={reviews} />
+      <ReviewsView content={reviews} loadMoreLabel={ui.loadMore} />
       <PageContactCta
         ui={{ callNow: ui.callNow, messageWhatsapp: ui.messageWhatsapp }}
       />

@@ -48,6 +48,10 @@ export const home: HomeContent = {
     socialIntro: "تواصل معنا عبر:",
     title: "مرآبك الموثوق لرعاية السيارات باحترافية",
   },
+  latestBlog: {
+    title: "أحدث مقالات المدونة",
+    viewAllLabel: "عرض كل المقالات",
+  },
   serviceCategories: {
     description: services.description,
     items: services.categories,

@@ -1,16 +1,18 @@
 import Image from "next/image";
 import { AccentLine } from "@/components/shared/accent-line";
-import { contactConfig } from "@/config/contact";
+import { contactConfig, getContactLocation } from "@/config/contact";
 import { whatsappLink } from "@/content/shared/socials";
+import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
 import type { HomeContent } from "@/types/content";
 
 interface HomeCtaBandProps {
   content: HomeContent["ctaBand"];
-  ui: Pick<Dictionary["ui"], "callNow" | "messageWhatsapp">;
+  locale: Locale;
+  ui: Pick<Dictionary["ui"], "callNow" | "locationLabel" | "messageWhatsapp">;
 }
 
-export function HomeCtaBand({ content, ui }: HomeCtaBandProps) {
+export function HomeCtaBand({ content, locale, ui }: HomeCtaBandProps) {
   return (
     <section className="relative overflow-hidden text-white">
       <Image
@@ -54,6 +56,15 @@ export function HomeCtaBand({ content, ui }: HomeCtaBandProps) {
         <p className="mt-6 text-sm text-white/70 sm:text-base">
           {content.vehiclesLine}
         </p>
+        <p className="mt-3 flex items-center justify-center gap-2 text-sm text-white/85 sm:text-base">
+          <LocationPinIcon />
+          <span>
+            <span className="font-medium text-white/70">
+              {ui.locationLabel}:{" "}
+            </span>
+            {getContactLocation(locale)}
+          </span>
+        </p>
 
         <div className="mt-8 flex w-full max-w-xl flex-col gap-3 sm:flex-row">
           <a
@@ -73,5 +84,24 @@ export function HomeCtaBand({ content, ui }: HomeCtaBandProps) {
         </div>
       </div>
     </section>
+  );
+}
+
+function LocationPinIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      className="size-4 shrink-0 text-gold"
+      fill="none"
+      focusable="false"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+    >
+      <path d="M12 21s7-4.5 7-11a7 7 0 10-14 0c0 6.5 7 11 7 11z" />
+      <circle cx="12" cy="10" r="2.5" />
+    </svg>
   );
 }
