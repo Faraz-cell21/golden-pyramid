@@ -1,1 +1,20 @@
 @import "tailwindcss";
+@import "../styles/tokens.css";
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  color: var(--color-foreground);
+  background: var(--color-background);
+}
+
+/* Comfortable default tap targets on interactive text links in content areas */
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
