@@ -30,6 +30,11 @@ export async function generateMetadata({
 
   return {
     description: siteConfig.description[locale],
+    icons: {
+      apple: siteConfig.logoSrc,
+      icon: siteConfig.logoSrc,
+      shortcut: siteConfig.logoSrc,
+    },
     title: {
       default: siteConfig.name,
       template: `%s | ${siteConfig.name}`,

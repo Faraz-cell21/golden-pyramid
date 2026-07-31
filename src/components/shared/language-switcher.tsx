@@ -17,14 +17,17 @@ export function LanguageSwitcher({ locale }: LanguageSwitcherProps) {
   const pathWithoutLocale = pathname.replace(LOCALE_PREFIX_PATTERN, "") || "/";
 
   return (
-    <nav aria-label="Language" className="flex items-center gap-1">
+    <nav
+      aria-label="Language"
+      className="inline-flex items-center rounded-full border border-navy/15 bg-navy/[0.03] p-0.5"
+    >
       {locales.map((item) => (
         <Link
           className={cn(
-            "inline-flex min-h-9 min-w-9 items-center justify-center rounded-md px-2 font-medium text-xs transition-colors sm:min-h-11 sm:min-w-11 sm:text-sm",
+            "inline-flex min-h-8 min-w-8 items-center justify-center rounded-full px-2.5 font-medium text-xs transition-colors sm:min-h-9 sm:px-3 sm:text-sm",
             item === locale
-              ? "bg-navy text-white"
-              : "text-navy/70 hover:bg-navy/10 hover:text-navy"
+              ? "bg-navy text-white shadow-sm"
+              : "text-navy/60 hover:text-navy"
           )}
           href={localizedPath(item, pathWithoutLocale)}
           hrefLang={item}

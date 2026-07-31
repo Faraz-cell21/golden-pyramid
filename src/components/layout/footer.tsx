@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { AccentLine } from "@/components/shared/accent-line";
+import { BrandLogo } from "@/components/shared/brand-logo";
 import { SocialLinks } from "@/components/shared/social-links";
 import { getContactLocation } from "@/config/contact";
 import { footerNav } from "@/config/navigation";
@@ -19,9 +20,17 @@ export function Footer({ dictionary, locale }: FooterProps) {
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-12">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between sm:gap-10">
           <div className="max-w-md">
-            <p className="font-bold text-lg tracking-tight sm:text-xl">
-              {dictionary.navigation.brand}
-            </p>
+            <div className="flex items-center gap-3">
+              <BrandLogo
+                className="ring-white/15"
+                href={localizedPath(locale)}
+                label={dictionary.navigation.brand}
+                size="lg"
+              />
+              <p className="font-bold text-lg tracking-tight sm:text-xl">
+                {dictionary.navigation.brand}
+              </p>
+            </div>
             <AccentLine className="mt-3" />
             <p className="mt-3 text-sm text-white/65 leading-relaxed">
               {dictionary.home.description}
