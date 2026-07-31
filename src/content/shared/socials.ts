@@ -1,25 +1,24 @@
 import type { SocialLink } from "@/types/navigation";
 
-/** Placeholder links. Replace with real URLs when available. */
 export const socialLinks: SocialLink[] = [
   {
-    href: "https://wa.me/0000000000",
+    href: "https://wa.me/971552407409",
     platform: "whatsapp",
   },
   {
-    href: "https://facebook.com/",
+    href: "https://www.facebook.com/share/195eZkwkYi/?mibextid=wwXIfr",
     platform: "facebook",
   },
   {
-    href: "https://tiktok.com/",
+    href: "https://www.tiktok.com/@neveenelshreif",
     platform: "tiktok",
   },
   {
-    href: "https://instagram.com/",
+    href: "https://www.instagram.com/alharam.althahabi",
     platform: "instagram",
   },
 ];
 
 export const whatsappLink =
   socialLinks.find((link) => link.platform === "whatsapp")?.href ??
-  "https://wa.me/0000000000";
+  "https://wa.me/971552407409";
