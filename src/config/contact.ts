@@ -5,9 +5,8 @@ export const contactConfig = {
     ar: "الشارقة – المنطقة الصناعية 4",
     en: "Sharjah, Industrial Area 4",
   },
-  /** Placeholder. Replace with real number */
-  phoneDisplay: "600000000",
-  phoneHref: "tel:600000000",
+  phoneDisplay: "+971 55 240 7409",
+  phoneHref: "tel:+971552407409",
 } as const;
 
 export function getContactLocation(locale: Locale) {
