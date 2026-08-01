@@ -3,7 +3,7 @@
 
 html {
   -webkit-text-size-adjust: 100%;
-  font-size: 18px;
+  font-size: 20px;
   scroll-behavior: smooth;
   text-size-adjust: 100%;
 }
@@ -11,8 +11,16 @@ html {
 body {
   overflow-x: hidden;
   font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 500;
   color: var(--color-foreground);
   background: var(--color-background);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 800;
 }
 
 /* Comfortable default tap targets on interactive text links in content areas */
@@ -32,7 +40,7 @@ button {
 }
 
 @theme inline {
-  --animate-hero-drift: hero-drift 14s ease-in-out infinite alternate;
+  --animate-hero-drift: hero-drift 9s ease-in-out infinite alternate;
 }
 
 @media (prefers-reduced-motion: reduce) {

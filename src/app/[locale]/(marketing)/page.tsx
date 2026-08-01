@@ -49,7 +49,6 @@ export default async function HomePage({ params }: HomePageProps) {
   return (
     <>
       <HomeHero
-        brandLabel={dictionary.navigation.brand}
         content={home.hero}
         locale={locale}
         socialLabels={ui.social}

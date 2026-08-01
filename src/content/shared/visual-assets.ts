@@ -1,7 +1,8 @@
 export const heroCrossfadeImages = [
   "/images/generated/hero-workshop-lift.webp",
+  "/images/generated/detail-white-sedan.webp",
+  "/images/generated/detail-sports-lift.webp",
   "/images/generated/hero-open-hood.webp",
-  "/images/generated/hero-evening-bays.webp",
 ] as const;
 
 export const whyUsCollageSlots = [
@@ -41,6 +42,7 @@ export const aboutWorkshopImages = [
 ] as const;
 
 export const ctaBandImages = [
-  "/images/generated/hero-evening-bays.webp",
+  "/images/generated/detail-sports-lift.webp",
   "/images/generated/hero-workshop-lift.webp",
+  "/images/generated/detail-white-sedan.webp",
 ] as const;

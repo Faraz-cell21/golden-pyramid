@@ -1,7 +1,8 @@
 import { AccentLine } from "@/components/shared/accent-line";
 import { CrossfadeImages } from "@/components/shared/crossfade-images";
+import { LocationLink } from "@/components/shared/location-link";
 import { Reveal } from "@/components/shared/reveal";
-import { contactConfig, getContactLocation } from "@/config/contact";
+import { contactConfig } from "@/config/contact";
 import { whatsappLink } from "@/content/shared/socials";
 import { ctaBandImages } from "@/content/shared/visual-assets";
 import type { Locale } from "@/i18n/config";
@@ -18,14 +19,14 @@ export function HomeCtaBand({ content, locale, ui }: HomeCtaBandProps) {
   return (
     <section className="relative overflow-hidden text-white">
       <CrossfadeImages
-        className="scale-105 object-cover blur-[1px]"
+        className="scale-105 object-cover brightness-105 saturate-115"
         images={ctaBandImages}
-        intervalMs={7000}
+        intervalMs={4500}
         quality={80}
       />
       <div
         aria-hidden
-        className="absolute inset-0 bg-gradient-to-b from-navy/80 via-navy/88 to-black/90"
+        className="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/78 to-navy/88"
       />
 
       <Reveal className="relative mx-auto flex max-w-3xl flex-col items-center px-4 py-12 text-center sm:px-6 sm:py-16">
@@ -62,7 +63,7 @@ export function HomeCtaBand({ content, locale, ui }: HomeCtaBandProps) {
             <span className="font-medium text-white/70">
               {ui.locationLabel}:{" "}
             </span>
-            {getContactLocation(locale)}
+            <LocationLink locale={locale} />
           </span>
         </p>
 

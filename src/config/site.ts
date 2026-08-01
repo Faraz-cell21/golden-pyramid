@@ -1,9 +1,16 @@
 export const siteConfig = {
+  brandMark: {
+    arabicPrimary: "الهرم الذهبي",
+    arabicSecondary: "لصيانة السيارات",
+    english: "Al Haram Al Thahabi Auto Service",
+  },
   description: {
-    ar: "مرآب جولدن بيراميد لخدمات السيارات",
-    en: "Golden Pyramid garage for automotive services",
+    ar: "مرآب الهرم الذهبي لخدمات السيارات",
+    en: "Al Haram Al Thahabi Auto Service garage for automotive care",
   },
   logoSrc: "/icons/golden-pyramid-mark.webp",
-  name: "Golden Pyramid",
+  /** Always Arabic — locale must not change the displayed website name. */
+  name: "الهرم الذهبي",
+  nameFull: "الهرم الذهبي لصيانة السيارات",
   url: "https://golden-pyramid.vercel.app",
 } as const;

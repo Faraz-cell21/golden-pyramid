@@ -90,7 +90,7 @@ function buildItems(): ReviewItem[] {
 
 export const reviews: ReviewsContent = {
   description:
-    "See why drivers trust Golden Pyramid for clear estimates, careful workmanship, and reliable garage care.",
+    "See why drivers trust الهرم الذهبي for clear estimates, careful workmanship, and reliable garage care.",
   items: buildItems(),
   title: "Customer Reviews",
 };

@@ -2,11 +2,11 @@ import type { BlogContent } from "@/types/content";
 
 export const blog: BlogContent = {
   description:
-    "Practical car-care tips, seasonal reminders, and workshop updates from the Golden Pyramid team.",
+    "Practical car-care tips, seasonal reminders, and workshop updates from the الهرم الذهبي team.",
   emptyMessage: "No blog posts yet.",
   posts: [
     {
-      body: "Fresh oil keeps your engine cool, clean, and protected. Over time oil breaks down and picks up metal particles that increase wear. Stick to your service schedule, choose the grade recommended for your vehicle, and watch for warning lights, dark oil, or new engine noise. At Golden Pyramid we use quality oils and filters, then check for leaks so your next drive stays reliable.",
+      body: "Fresh oil keeps your engine cool, clean, and protected. Over time oil breaks down and picks up metal particles that increase wear. Stick to your service schedule, choose the grade recommended for your vehicle, and watch for warning lights, dark oil, or new engine noise. At الهرم الذهبي we use quality oils and filters, then check for leaks so your next drive stays reliable.",
       excerpt:
         "Regular oil changes protect the engine, improve efficiency, and help you avoid expensive repairs.",
       image: "/images/blog/oil-change.webp",

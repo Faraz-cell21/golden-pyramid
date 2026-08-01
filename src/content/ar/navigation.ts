@@ -3,7 +3,7 @@ import type { NavigationContent } from "@/types/content";
 export const navigation: NavigationContent = {
   about: "من نحن",
   blog: "المدونة",
-  brand: "جولدن بيراميد",
+  brand: "الهرم الذهبي",
   home: "الرئيسية",
   privacy: "سياسة الخصوصية",
   reviews: "آراء العملاء",

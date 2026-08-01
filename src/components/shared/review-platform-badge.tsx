@@ -18,7 +18,7 @@ export function ReviewPlatformBadge({ item }: ReviewPlatformBadgeProps) {
       <PlatformLogo platform={item.platform} />
       <div className="min-w-0 text-start">
         <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
-          <span className="font-semibold text-sm text-white sm:text-base">
+          <span className="font-bold text-base text-white sm:text-lg">
             {item.rating}
           </span>
           <span aria-hidden className="flex items-center gap-0.5 text-gold">
@@ -26,14 +26,16 @@ export function ReviewPlatformBadge({ item }: ReviewPlatformBadgeProps) {
               <StarIcon key={starId} />
             ))}
           </span>
-          <span className="font-medium text-sm text-white/90">
+          <span className="font-semibold text-sm text-white sm:text-base">
             {item.platformLabel}
           </span>
         </div>
-        <p className="mt-0.5 text-white/75 text-xs sm:text-sm">
+        <p className="mt-0.5 font-medium text-sm text-white/90">
           {item.summary}
         </p>
-        <p className="text-white/60 text-xs">{item.countLabel}</p>
+        <p className="font-medium text-white/75 text-xs sm:text-sm">
+          {item.countLabel}
+        </p>
       </div>
     </div>
   );

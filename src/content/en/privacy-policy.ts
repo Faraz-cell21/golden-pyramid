@@ -2,13 +2,13 @@ import type { LegalPageContent } from "@/types/content";
 
 export const privacyPolicy: LegalPageContent = {
   description:
-    "How Golden Pyramid collects, uses, and protects your information when you visit our website or contact us.",
+    "How الهرم الذهبي collects, uses, and protects your information when you visit our website or contact us.",
   lastUpdatedLabel: "Last updated: July 2026",
   sections: [
     {
       paragraphs: [
-        "Golden Pyramid Auto Maintenance (Golden Pyramid) respects your privacy. This Privacy Policy explains what information we may collect when you use our website, how we use it, and the choices you have.",
-        "Our workshop is located in Sharjah, Industrial Area 4, United Arab Emirates. By using this website or contacting us through the channels shown on the site, you agree to this policy.",
+        "الهرم الذهبي لصيانة السيارات respects your privacy. This Privacy Policy explains what information we may collect when you use our website, how we use it, and the choices you have.",
+        "Our workshop is located in الشارقة، المنطقة الصناعية 4, United Arab Emirates. By using this website or contacting us through the channels shown on the site, you agree to this policy.",
       ],
       title: "1. Who we are",
     },
@@ -81,7 +81,7 @@ export const privacyPolicy: LegalPageContent = {
     },
     {
       paragraphs: [
-        "If you have questions about this Privacy Policy, contact Golden Pyramid using the Call or WhatsApp options on the website, or visit us in Sharjah, Industrial Area 4.",
+        "If you have questions about this Privacy Policy, contact الهرم الذهبي using the Call or WhatsApp options on the website, or visit us in الشارقة، المنطقة الصناعية 4.",
       ],
       title: "11. Contact",
     },

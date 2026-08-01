@@ -10,51 +10,56 @@ import type { Dictionary } from "@/i18n/dictionaries";
 import type { HomeContent } from "@/types/content";
 
 interface HomeHeroProps {
-  brandLabel: string;
   content: HomeContent["hero"];
   locale: Locale;
   socialLabels: Dictionary["ui"]["social"];
   ui: Pick<Dictionary["ui"], "callNow" | "locationLabel" | "messageWhatsapp">;
 }
 
-export function HomeHero({
-  brandLabel,
-  content,
-  locale,
-  socialLabels,
-  ui,
-}: HomeHeroProps) {
+export function HomeHero({ content, locale, socialLabels, ui }: HomeHeroProps) {
   return (
     <section className="relative overflow-hidden text-white">
-      <CrossfadeImages images={heroCrossfadeImages} priority />
+      <CrossfadeImages
+        className="object-cover object-center brightness-110 contrast-105 saturate-125"
+        images={heroCrossfadeImages}
+        intervalMs={3800}
+        priority
+      />
       <div
         aria-hidden
-        className="absolute inset-0 bg-gradient-to-r from-navy/92 via-navy/78 to-navy/45 rtl:bg-gradient-to-l"
+        className="absolute inset-0 bg-gradient-to-r from-navy/72 via-navy/48 to-navy/22 rtl:bg-gradient-to-l"
       />
-      <div aria-hidden className="absolute inset-0 bg-black/20" />
+      <div aria-hidden className="absolute inset-0 bg-black/5" />
 
       <div className="relative mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14 lg:py-20">
         <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12 xl:gap-16">
           <div className="order-2 space-y-5 lg:order-1">
-            <p className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-sm text-white/90 backdrop-blur-sm">
+            <a
+              className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-sm text-white/90 backdrop-blur-sm transition-colors hover:border-gold/50 hover:bg-white/15 hover:text-gold"
+              href={contactConfig.mapsUrl}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <LocationPinIcon />
               <span>
-                <span className="font-medium text-white/75">
+                <span className="font-semibold text-white/85">
                   {ui.locationLabel}:{" "}
                 </span>
-                {getContactLocation(locale)}
+                <span className="font-bold font-brand" dir="rtl" lang="ar">
+                  {getContactLocation(locale)}
+                </span>
               </span>
-            </p>
+            </a>
 
-            <h1 className="font-bold text-2xl leading-tight tracking-tight sm:text-3xl md:text-4xl lg:text-5xl">
+            <h1 className="font-extrabold text-3xl leading-tight tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
               {content.title}
             </h1>
             <div className="h-1 w-14 rounded-full bg-gold" />
-            <p className="text-sm text-white/85 leading-relaxed sm:text-base md:text-lg">
+            <p className="font-semibold text-base text-white/95 leading-relaxed sm:text-lg md:text-xl">
               {content.body}
             </p>
 
-            <ul className="space-y-2 text-sm text-white/90 sm:text-base">
+            <ul className="space-y-2 font-semibold text-base text-white sm:text-lg">
               {content.features.map((feature) => (
                 <li className="flex gap-2" key={feature}>
                   <span
@@ -73,7 +78,7 @@ export function HomeHero({
             </div>
 
             <div className="space-y-2">
-              <p className="font-medium text-sm text-white/80">
+              <p className="font-semibold text-base text-white/90">
                 {content.socialIntro}
               </p>
               <SocialLinks exclude={["whatsapp"]} labels={socialLabels} />
@@ -97,13 +102,8 @@ export function HomeHero({
             </div>
           </div>
 
-          <div className="order-1 w-full lg:order-2 lg:flex lg:justify-end">
-            <BrandLogo
-              className="block w-full max-w-none rounded-xl shadow-black/35 shadow-xl ring-white/25 lg:max-w-md xl:max-w-lg"
-              label={brandLabel}
-              priority
-              size="hero"
-            />
+          <div className="order-1 flex w-full justify-center lg:order-2 lg:justify-end">
+            <BrandLogo size="hero" />
           </div>
         </div>
       </div>
