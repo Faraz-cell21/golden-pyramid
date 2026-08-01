@@ -17,7 +17,7 @@ export function CrossfadeImages({
   alt = "",
   className = "object-cover object-center",
   images,
-  intervalMs = 5500,
+  intervalMs = 4000,
   priority = false,
   quality = 80,
   sizes = "100vw",
@@ -58,7 +58,7 @@ export function CrossfadeImages({
         return (
           <Image
             alt={alt}
-            className={`${className} absolute inset-0 transition-opacity duration-[1400ms] ease-in-out ${
+            className={`${className} absolute inset-0 transition-opacity duration-[900ms] ease-in-out ${
               isActive ? "opacity-100" : "opacity-0"
             } ${isActive ? "motion-safe:animate-hero-drift" : ""}`}
             fill

@@ -1,6 +1,6 @@
-# Golden Pyramid
+# الهرم الذهبي
 
-Next.js frontend for Golden Pyramid.
+Next.js frontend for الهرم الذهبي.
 
 ## Tech Stack
 

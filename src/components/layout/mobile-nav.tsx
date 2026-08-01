@@ -52,17 +52,19 @@ export function MobileNav({
     setOpen((value) => !value);
   }
 
+  const toggleLabel = open ? closeLabel : menuLabel;
+
   return (
     <div className="lg:hidden">
       <button
         aria-controls="mobile-navigation"
         aria-expanded={open}
-        aria-label={open ? closeLabel : menuLabel}
-        className="inline-flex size-10 items-center justify-center rounded-full border border-white/25 text-white transition-colors hover:border-gold/50 hover:bg-white/10 hover:text-gold"
+        aria-label={toggleLabel}
+        className="inline-flex min-h-10 items-center justify-center rounded-full border border-white/25 px-3.5 font-semibold text-sm text-white uppercase tracking-wide transition-colors hover:border-gold/50 hover:bg-white/10 hover:text-gold"
         onClick={toggleMenu}
         type="button"
       >
-        {open ? <CloseIcon /> : <MenuIcon />}
+        {toggleLabel}
       </button>
 
       {open ? (
@@ -114,39 +116,5 @@ export function MobileNav({
         </div>
       ) : null}
     </div>
-  );
-}
-
-function MenuIcon() {
-  return (
-    <svg
-      aria-hidden="true"
-      className="size-5"
-      fill="none"
-      focusable="false"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeWidth="1.8"
-      viewBox="0 0 24 24"
-    >
-      <path d="M4 7h16M4 12h16M4 17h16" />
-    </svg>
-  );
-}
-
-function CloseIcon() {
-  return (
-    <svg
-      aria-hidden="true"
-      className="size-5"
-      fill="none"
-      focusable="false"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeWidth="1.8"
-      viewBox="0 0 24 24"
-    >
-      <path d="M6 6l12 12M18 6L6 18" />
-    </svg>
   );
 }

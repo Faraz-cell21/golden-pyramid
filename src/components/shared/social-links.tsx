@@ -1,3 +1,7 @@
+"use client";
+
+import { useId } from "react";
+
 import { socialLinks } from "@/content/shared/socials";
 import { cn } from "@/lib/utils";
 import type { SocialPlatform } from "@/types/navigation";
@@ -14,6 +18,7 @@ export function SocialLinks({
   labels,
 }: SocialLinksProps) {
   const links = socialLinks.filter((link) => !exclude.includes(link.platform));
+  const gradientId = `ig${useId().replace(/:/g, "")}`;
 
   return (
     <ul className={cn("flex flex-wrap items-center gap-2.5", className)}>
@@ -21,12 +26,15 @@ export function SocialLinks({
         <li key={link.platform}>
           <a
             aria-label={labels[link.platform]}
-            className="inline-flex size-10 items-center justify-center rounded-full border border-white/20 text-white/85 transition-colors hover:border-gold hover:text-gold"
+            className={cn(
+              "inline-flex size-10 items-center justify-center overflow-hidden border border-white transition-transform hover:scale-105",
+              link.platform === "instagram" ? "rounded-[22%]" : "rounded-full"
+            )}
             href={link.href}
             rel="noopener noreferrer"
             target="_blank"
           >
-            <SocialIcon platform={link.platform} />
+            <SocialIcon gradientId={gradientId} platform={link.platform} />
           </a>
         </li>
       ))}
@@ -34,14 +42,20 @@ export function SocialLinks({
   );
 }
 
-function SocialIcon({ platform }: { platform: SocialPlatform }) {
+function SocialIcon({
+  gradientId,
+  platform,
+}: {
+  gradientId: string;
+  platform: SocialPlatform;
+}) {
   switch (platform) {
     case "whatsapp":
       return (
         <svg
           aria-hidden="true"
-          className="size-5"
-          fill="currentColor"
+          className="size-full"
+          fill="#25D366"
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -52,8 +66,8 @@ function SocialIcon({ platform }: { platform: SocialPlatform }) {
       return (
         <svg
           aria-hidden="true"
-          className="size-5"
-          fill="currentColor"
+          className="size-full"
+          fill="#1877F2"
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -64,24 +78,53 @@ function SocialIcon({ platform }: { platform: SocialPlatform }) {
       return (
         <svg
           aria-hidden="true"
-          className="size-5"
-          fill="currentColor"
+          className="size-full"
           focusable="false"
           viewBox="0 0 24 24"
         >
-          <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .56.04.83.1v-3.5a6.37 6.37 0 00-.83-.05A6.34 6.34 0 003.15 15.3a6.34 6.34 0 0010.86 4.43V13.2a8.27 8.27 0 004.83 1.55V11.3a4.84 4.84 0 01-.75-.11 4.83 4.83 0 01-.5-4.5z" />
+          <path
+            d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .56.04.83.1v-3.5a6.37 6.37 0 00-.83-.05A6.34 6.34 0 003.15 15.3a6.34 6.34 0 0010.86 4.43v-3.72a8.27 8.27 0 004.83 1.55V11.3a4.84 4.84 0 01-.75-.11 4.83 4.83 0 01-.5-4.5z"
+            fill="#25F4EE"
+            transform="translate(1.1 0.6)"
+          />
+          <path
+            d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .56.04.83.1v-3.5a6.37 6.37 0 00-.83-.05A6.34 6.34 0 003.15 15.3a6.34 6.34 0 0010.86 4.43v-3.72a8.27 8.27 0 004.83 1.55V11.3a4.84 4.84 0 01-.75-.11 4.83 4.83 0 01-.5-4.5z"
+            fill="#FE2C55"
+            transform="translate(-1.1 -0.6)"
+          />
+          <path
+            d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .56.04.83.1v-3.5a6.37 6.37 0 00-.83-.05A6.34 6.34 0 003.15 15.3a6.34 6.34 0 0010.86 4.43v-3.72a8.27 8.27 0 004.83 1.55V11.3a4.84 4.84 0 01-.75-.11 4.83 4.83 0 01-.5-4.5z"
+            fill="#FFFFFF"
+          />
         </svg>
       );
     case "instagram":
       return (
         <svg
           aria-hidden="true"
-          className="size-5"
-          fill="currentColor"
+          className="size-full"
           focusable="false"
           viewBox="0 0 24 24"
         >
-          <path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.64-.07-4.85s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95C23.73 2.69 21.31.27 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32zM12 16a4 4 0 110-8 4 4 0 010 8zm6.41-11.85a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" />
+          <defs>
+            <linearGradient id={gradientId} x1="0%" x2="100%" y1="100%" y2="0%">
+              <stop offset="0%" stopColor="#f09433" />
+              <stop offset="25%" stopColor="#e6683c" />
+              <stop offset="50%" stopColor="#dc2743" />
+              <stop offset="75%" stopColor="#cc2366" />
+              <stop offset="100%" stopColor="#bc1888" />
+            </linearGradient>
+          </defs>
+          <rect fill={`url(#${gradientId})`} height="24" rx="5.4" width="24" />
+          <circle
+            cx="12"
+            cy="12"
+            fill="none"
+            r="5"
+            stroke="#fff"
+            strokeWidth="1.8"
+          />
+          <circle cx="17.2" cy="6.8" fill="#fff" r="1.2" />
         </svg>
       );
     default:

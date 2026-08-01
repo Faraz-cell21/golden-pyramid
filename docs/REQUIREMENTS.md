@@ -1,6 +1,6 @@
-# Golden Pyramid — Project Requirements
+# الهرم الذهبي — Project Requirements
 
-Living product brief for the Golden Pyramid garage website.  
+Living product brief for the الهرم الذهبي garage website.  
 **Code work should follow this document.** Update it when decisions change.
 
 ---
@@ -9,8 +9,8 @@ Living product brief for the Golden Pyramid garage website.
 
 | Item | Detail |
 |------|--------|
-| **Product** | Public marketing website for Golden Pyramid garage (+ admin panel in a later phase) |
-| **Brand** | Golden Pyramid |
+| **Product** | Public marketing website for الهرم الذهبي garage (+ admin panel in a later phase) |
+| **Brand** | الهرم الذهبي |
 | **Type** | Bilingual marketing site (English + Arabic) |
 | **Hosting** | Vercel (free tier) |
 | **Current phase** | **Phase 1 — Public website only** |
@@ -164,7 +164,7 @@ Runtime admin CRUD on Vercel needs a durable store. Options discussed:
 
 | Item | Detail |
 |------|--------|
-| **Name** | Golden Pyramid |
+| **Name** | الهرم الذهبي |
 | **Colors** | Navy blue (`#0B1F3A`), gold (`#C5A35A`), white background |
 | **Approach** | **Mobile-first** - design and build for small screens first, then enhance for tablet/desktop |
 | **Logos / brand assets** | To be provided later |

@@ -31,7 +31,7 @@ export function AboutView({ content }: AboutViewProps) {
           <Reveal delayMs={120}>
             <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-navy/5">
               <CyclingImage
-                alt="Workshop bay at Golden Pyramid"
+                alt="Workshop bay at الهرم الذهبي"
                 images={aboutWorkshopImages}
                 intervalMs={5000}
                 sizes="(max-width: 1024px) 100vw, 560px"

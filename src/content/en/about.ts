@@ -2,9 +2,9 @@ import type { AboutContent } from "@/types/content";
 
 export const about: AboutContent = {
   description:
-    "A specialized auto maintenance and repair center in Sharjah Industrial Area 4, offering complete care for all car types.",
+    "A specialized auto maintenance and repair center in الشارقة، المنطقة الصناعية 4, offering complete care for all car types.",
   intro: [
-    "Golden Pyramid Auto Maintenance is a specialized center for maintaining and repairing all types of cars, located in Sharjah, Industrial Area 4. We provide complete solutions including mechanical, electrical, bodywork, and paint, using the latest inspection and diagnostic equipment and highly experienced technicians.",
+    "الهرم الذهبي لصيانة السيارات is a specialized center for maintaining and repairing all types of cars, located in الشارقة، المنطقة الصناعية 4. We provide complete solutions including mechanical, electrical, bodywork, and paint, using the latest inspection and diagnostic equipment and highly experienced technicians.",
     "We are committed to professional service based on quality, transparency, and meeting deadlines, with care that your car leaves our workshop with the best performance and the highest safety standards.",
   ],
   introTitle: "Who we are",
@@ -16,7 +16,7 @@ export const about: AboutContent = {
     "Genuine and high-quality spare parts",
     "Competitive prices and transparent dealings",
     "Fast turnaround with guaranteed work quality",
-    "Prime location in Sharjah, Industrial Area 4",
+    "Prime location in الشارقة، المنطقة الصناعية 4",
     "Customer satisfaction is our priority in every service we provide",
   ],
   whyUsTitle: "Why us?",

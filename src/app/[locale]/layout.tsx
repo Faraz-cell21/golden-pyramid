@@ -62,18 +62,15 @@ export default async function LocaleLayout({
 
   const locale = localeParam;
   const direction = getDirection(locale);
-  const isArabic = locale === "ar";
 
   return (
     <html
-      className={isArabic ? cairo.variable : undefined}
+      className={cairo.variable}
       data-scroll-behavior="smooth"
       dir={direction}
       lang={locale}
     >
-      <body
-        className={`min-h-dvh antialiased ${isArabic ? cairo.className : ""}`}
-      >
+      <body className={`min-h-dvh antialiased ${cairo.className}`}>
         {children}
       </body>
     </html>

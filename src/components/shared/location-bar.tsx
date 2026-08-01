@@ -1,4 +1,4 @@
-import { getContactLocation } from "@/config/contact";
+import { LocationLink } from "@/components/shared/location-link";
 import type { Locale } from "@/i18n/config";
 
 interface LocationBarProps {
@@ -7,8 +7,6 @@ interface LocationBarProps {
 }
 
 export function LocationBar({ label, locale }: LocationBarProps) {
-  const location = getContactLocation(locale);
-
   return (
     <div className="border-navy/20 border-b bg-navy-soft">
       <div className="mx-auto flex max-w-6xl items-center justify-center gap-2 px-4 py-1.5 text-[13px] text-white sm:justify-start sm:px-6 sm:text-sm">
@@ -17,7 +15,7 @@ export function LocationBar({ label, locale }: LocationBarProps) {
         <span aria-hidden className="text-gold/80">
           ·
         </span>
-        <span className="text-white/95">{location}</span>
+        <LocationLink className="text-white/95" locale={locale} />
       </div>
     </div>
   );

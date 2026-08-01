@@ -7,6 +7,7 @@
   --color-gold-soft: #e4d0a0;
   --color-gold-deep: #9a7c3a;
   --font-sans: "Segoe UI", "Tahoma", sans-serif;
+  --font-brand: var(--font-arabic), "Segoe UI", "Tahoma", sans-serif;
 }
 
 html[lang="ar"] {
@@ -22,4 +23,5 @@ html[lang="ar"] {
   --color-gold-soft: var(--color-gold-soft);
   --color-gold-deep: var(--color-gold-deep);
   --font-sans: var(--font-sans);
+  --font-brand: var(--font-brand);
 }

@@ -3,8 +3,8 @@ import type { HomeContent } from "@/types/content";
 
 export const home: HomeContent = {
   ctaBand: {
-    body: "Call or WhatsApp Golden Pyramid for a clear estimate and trusted garage care.",
-    title: "Book service with Golden Pyramid today",
+    body: "Call or WhatsApp الهرم الذهبي for a clear estimate and trusted garage care.",
+    title: "Book service with الهرم الذهبي today",
     trustPoints: [
       "All major car brands",
       "Clear estimates",
@@ -13,9 +13,9 @@ export const home: HomeContent = {
     vehiclesLine: "We service everyday cars, SUVs, and specialty vehicles.",
   },
   description:
-    "Professional automotive care from Golden Pyramid. Clear estimates, skilled technicians, and trusted garage service.",
+    "Professional automotive care from الهرم الذهبي. Clear estimates, skilled technicians, and trusted garage service.",
   hero: {
-    body: "From routine maintenance to complex repairs, Golden Pyramid keeps your car running with skilled technicians, clear estimates, and modern diagnostics.",
+    body: "From routine maintenance to complex repairs, الهرم الذهبي keeps your car running with skilled technicians, clear estimates, and modern diagnostics.",
     features: [
       "Maintenance and care for all major car brands",
       "Experienced, trained technicians",
@@ -27,21 +27,21 @@ export const home: HomeContent = {
         countLabel: "See what our customers say",
         platform: "google",
         platformLabel: "Google",
-        rating: "5.0",
+        rating: "4.3",
         summary: "Excellent reviews from drivers who trust our garage",
       },
       {
         countLabel: "Loved by our community",
         platform: "facebook",
         platformLabel: "Facebook",
-        rating: "5.0",
+        rating: "4.7",
         summary: "Five-star feedback from happy customers",
       },
       {
         countLabel: "Trusted service rating",
         platform: "trustpilot",
         platformLabel: "Trustpilot",
-        rating: "5.0",
+        rating: "4.2",
         summary: "Outstanding Trustpilot score for garage care",
       },
     ],
@@ -72,7 +72,7 @@ export const home: HomeContent = {
     },
     sideStart: {
       paragraphs: [
-        "Golden Pyramid is built as a complete workshop, not a temporary service corner. From the moment a car enters the bay, the space is prepared for serious automotive care.",
+        "الهرم الذهبي is built as a complete workshop, not a temporary service corner. From the moment a car enters the bay, the space is prepared for serious automotive care.",
         "Hydraulic lifts, specialist tools, and clean workstations let our technicians reach every area safely: mechanical, electrical, body, paint, AC, and wheels.",
         "The facility stays organized so each job can move with focus. That order is what turns complex repairs into calm, controlled progress you can rely on.",
         "Our technicians work on real vehicles every day, combining experience with modern diagnostic equipment to find issues accurately and fix them with care.",
@@ -91,6 +91,6 @@ export const home: HomeContent = {
       "A modern facility with up-to-date tools",
       "Clear communication from start to finish",
     ],
-    title: "Why choose Golden Pyramid for your car?",
+    title: "Why choose الهرم الذهبي for your car?",
   },
 };

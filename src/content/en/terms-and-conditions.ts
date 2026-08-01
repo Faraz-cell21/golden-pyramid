@@ -2,19 +2,19 @@ import type { LegalPageContent } from "@/types/content";
 
 export const termsAndConditions: LegalPageContent = {
   description:
-    "The terms that guide use of the Golden Pyramid website and our garage services.",
+    "The terms that guide use of the الهرم الذهبي website and our garage services.",
   lastUpdatedLabel: "Last updated: July 2026",
   sections: [
     {
       paragraphs: [
-        "These Terms and Conditions govern your use of the Golden Pyramid website and the automotive services offered by Golden Pyramid Auto Maintenance in Sharjah, Industrial Area 4, United Arab Emirates.",
+        "These Terms and Conditions govern your use of the الهرم الذهبي website and the automotive services offered by الهرم الذهبي لصيانة السيارات in الشارقة، المنطقة الصناعية 4, United Arab Emirates.",
         "By browsing this website or requesting our services, you agree to these terms. If you do not agree, please do not use the website or book work with us.",
       ],
       title: "1. About these terms",
     },
     {
       paragraphs: [
-        "This website provides information about Golden Pyramid, our services, reviews, blog content, and ways to contact us by phone, WhatsApp, or social links. Website content is for general information and may be updated without prior notice.",
+        "This website provides information about الهرم الذهبي, our services, reviews, blog content, and ways to contact us by phone, WhatsApp, or social links. Website content is for general information and may be updated without prior notice.",
         "Service availability, pricing, and timelines depend on vehicle condition, parts availability, and workshop schedule. A final estimate is confirmed after inspection when needed.",
       ],
       title: "2. Website use",
@@ -54,14 +54,14 @@ export const termsAndConditions: LegalPageContent = {
     },
     {
       paragraphs: [
-        "While your vehicle is in our care we take reasonable precautions. To the fullest extent allowed by UAE law, Golden Pyramid is not liable for indirect or consequential loss, including loss of use or income, except where liability cannot be limited by law.",
+        "While your vehicle is in our care we take reasonable precautions. To the fullest extent allowed by UAE law, الهرم الذهبي is not liable for indirect or consequential loss, including loss of use or income, except where liability cannot be limited by law.",
         "Our liability for any claim related to workshop services is limited to the amount paid for the specific service that gave rise to the claim, except in cases of proven gross negligence or where the law requires otherwise.",
       ],
       title: "7. Liability",
     },
     {
       paragraphs: [
-        "All website text, branding, layout, and media on this site belong to Golden Pyramid or its licensors. You may not copy, republish, or commercially reuse site content without written permission.",
+        "All website text, branding, layout, and media on this site belong to الهرم الذهبي or its licensors. You may not copy, republish, or commercially reuse site content without written permission.",
       ],
       title: "8. Intellectual property",
     },
@@ -85,7 +85,7 @@ export const termsAndConditions: LegalPageContent = {
     },
     {
       paragraphs: [
-        "For questions about these terms, contact Golden Pyramid using the Call or WhatsApp options on the website, or visit our workshop in Sharjah, Industrial Area 4.",
+        "For questions about these terms, contact الهرم الذهبي using the Call or WhatsApp options on the website, or visit our workshop in الشارقة، المنطقة الصناعية 4.",
       ],
       title: "12. Contact",
     },
