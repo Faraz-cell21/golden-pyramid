@@ -1,9 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-
-import type { HomeContent } from "@/types/content";
 import { cn } from "@/lib/utils";
+import type { HomeContent } from "@/types/content";
 
 const VIDEO_SRC = "/videos/garage-things.mp4";
 
@@ -54,7 +53,7 @@ export function HomeWorkshopVideo({ content }: HomeWorkshopVideoProps) {
         return;
       }
 
-      void video.play().catch(() => {
+      video.play().catch(() => {
         // Autoplay can be blocked by the browser.
       });
     };

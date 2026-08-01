@@ -99,7 +99,7 @@ export function HomeHero({
 
           <div className="order-1 w-full lg:order-2 lg:flex lg:justify-end">
             <BrandLogo
-              className="block w-full max-w-none rounded-xl ring-white/25 shadow-xl shadow-black/35 lg:max-w-md xl:max-w-lg"
+              className="block w-full max-w-none rounded-xl shadow-black/35 shadow-xl ring-white/25 lg:max-w-md xl:max-w-lg"
               label={brandLabel}
               priority
               size="hero"

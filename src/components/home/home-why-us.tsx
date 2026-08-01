@@ -30,7 +30,7 @@ export function HomeWhyUs({ content }: HomeWhyUsProps) {
           <div className="relative mx-auto aspect-[5/6] w-full max-w-lg lg:max-w-none">
             {whyUsCollageSlots.map((slot, index) => (
               <Reveal
-                className={`absolute overflow-hidden bg-navy/5 shadow-lg shadow-black/20 ring-1 ring-white/10 ${slot.className}`}
+                className={`absolute overflow-hidden bg-navy/5 shadow-black/20 shadow-lg ring-1 ring-white/10 ${slot.className}`}
                 delayMs={index * 140}
                 key={slot.className}
               >
