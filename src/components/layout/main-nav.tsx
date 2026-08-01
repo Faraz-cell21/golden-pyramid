@@ -19,7 +19,7 @@ export function MainNav({ locale, navigation }: MainNavProps) {
   return (
     <nav
       aria-label="Primary"
-      className="hidden items-center justify-center gap-1 lg:flex"
+      className="hidden items-center justify-start gap-1 lg:flex"
     >
       {mainNav.map((item) => {
         const href = localizedPath(locale, item.href);
@@ -33,7 +33,7 @@ export function MainNav({ locale, navigation }: MainNavProps) {
             aria-current={active ? "page" : undefined}
             className={cn(
               "relative inline-flex min-h-11 items-center px-3.5 font-medium text-sm transition-colors",
-              active ? "text-navy" : "text-navy/65 hover:text-navy"
+              active ? "text-white" : "text-white/70 hover:text-white"
             )}
             href={href}
             key={item.href}

@@ -1,98 +1,109 @@
-import Image from "next/image";
+import { BrandLogo } from "@/components/shared/brand-logo";
+import { CrossfadeImages } from "@/components/shared/crossfade-images";
 import { ReviewPlatformBadge } from "@/components/shared/review-platform-badge";
 import { SocialLinks } from "@/components/shared/social-links";
 import { contactConfig, getContactLocation } from "@/config/contact";
 import { whatsappLink } from "@/content/shared/socials";
+import { heroCrossfadeImages } from "@/content/shared/visual-assets";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
 import type { HomeContent } from "@/types/content";
 
 interface HomeHeroProps {
+  brandLabel: string;
   content: HomeContent["hero"];
   locale: Locale;
   socialLabels: Dictionary["ui"]["social"];
   ui: Pick<Dictionary["ui"], "callNow" | "locationLabel" | "messageWhatsapp">;
 }
 
-export function HomeHero({ content, locale, socialLabels, ui }: HomeHeroProps) {
+export function HomeHero({
+  brandLabel,
+  content,
+  locale,
+  socialLabels,
+  ui,
+}: HomeHeroProps) {
   return (
     <section className="relative overflow-hidden text-white">
-      <Image
-        alt=""
-        aria-hidden
-        className="object-cover object-center"
-        fill
-        priority
-        quality={90}
-        sizes="100vw"
-        src="/images/Home page/home-hero-bg.jpg"
-      />
+      <CrossfadeImages images={heroCrossfadeImages} priority />
       <div
         aria-hidden
-        className="absolute inset-0 bg-gradient-to-r from-navy/92 via-navy/80 to-navy/55"
+        className="absolute inset-0 bg-gradient-to-r from-navy/92 via-navy/78 to-navy/45 rtl:bg-gradient-to-l"
       />
-      <div aria-hidden className="absolute inset-0 bg-black/25" />
+      <div aria-hidden className="absolute inset-0 bg-black/20" />
 
-      <div className="relative mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16 lg:py-20">
-        <div className="max-w-xl space-y-5 lg:max-w-3xl">
-          <p className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-sm text-white/90 backdrop-blur-sm">
-            <LocationPinIcon />
-            <span>
-              <span className="font-medium text-white/75">
-                {ui.locationLabel}:{" "}
+      <div className="relative mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14 lg:py-20">
+        <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12 xl:gap-16">
+          <div className="order-2 space-y-5 lg:order-1">
+            <p className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-sm text-white/90 backdrop-blur-sm">
+              <LocationPinIcon />
+              <span>
+                <span className="font-medium text-white/75">
+                  {ui.locationLabel}:{" "}
+                </span>
+                {getContactLocation(locale)}
               </span>
-              {getContactLocation(locale)}
-            </span>
-          </p>
-
-          <h1 className="font-bold text-2xl leading-tight tracking-tight sm:text-3xl md:text-4xl lg:text-5xl">
-            {content.title}
-          </h1>
-          <div className="h-1 w-14 rounded-full bg-gold" />
-          <p className="text-sm text-white/85 leading-relaxed sm:text-base md:text-lg">
-            {content.body}
-          </p>
-
-          <ul className="space-y-2 text-sm text-white/90 sm:text-base">
-            {content.features.map((feature) => (
-              <li className="flex gap-2" key={feature}>
-                <span
-                  aria-hidden
-                  className="mt-2 size-1.5 shrink-0 rounded-full bg-gold"
-                />
-                <span>{feature}</span>
-              </li>
-            ))}
-          </ul>
-
-          <div className="flex flex-col gap-2.5 sm:flex-row sm:flex-wrap">
-            {content.reviewPlatforms.map((item) => (
-              <ReviewPlatformBadge item={item} key={item.platform} />
-            ))}
-          </div>
-
-          <div className="space-y-2">
-            <p className="font-medium text-sm text-white/80">
-              {content.socialIntro}
             </p>
-            <SocialLinks exclude={["whatsapp"]} labels={socialLabels} />
+
+            <h1 className="font-bold text-2xl leading-tight tracking-tight sm:text-3xl md:text-4xl lg:text-5xl">
+              {content.title}
+            </h1>
+            <div className="h-1 w-14 rounded-full bg-gold" />
+            <p className="text-sm text-white/85 leading-relaxed sm:text-base md:text-lg">
+              {content.body}
+            </p>
+
+            <ul className="space-y-2 text-sm text-white/90 sm:text-base">
+              {content.features.map((feature) => (
+                <li className="flex gap-2" key={feature}>
+                  <span
+                    aria-hidden
+                    className="mt-2 size-1.5 shrink-0 rounded-full bg-gold"
+                  />
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
+
+            <div className="flex flex-col gap-2.5 sm:flex-row sm:flex-wrap">
+              {content.reviewPlatforms.map((item) => (
+                <ReviewPlatformBadge item={item} key={item.platform} />
+              ))}
+            </div>
+
+            <div className="space-y-2">
+              <p className="font-medium text-sm text-white/80">
+                {content.socialIntro}
+              </p>
+              <SocialLinks exclude={["whatsapp"]} labels={socialLabels} />
+            </div>
+
+            <div className="flex max-w-xl flex-col gap-3 pt-1 sm:flex-row">
+              <a
+                className="inline-flex min-h-12 flex-1 items-center justify-center rounded-md bg-white px-4 font-semibold text-navy text-sm"
+                href={contactConfig.phoneHref}
+              >
+                {ui.callNow}: {contactConfig.phoneDisplay}
+              </a>
+              <a
+                className="inline-flex min-h-12 flex-1 items-center justify-center rounded-md border border-white px-4 font-semibold text-sm text-white transition-colors hover:border-gold hover:text-gold"
+                href={whatsappLink}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                {ui.messageWhatsapp}
+              </a>
+            </div>
           </div>
 
-          <div className="flex max-w-xl flex-col gap-3 pt-1 sm:flex-row">
-            <a
-              className="inline-flex min-h-12 flex-1 items-center justify-center rounded-md bg-white px-4 font-semibold text-navy text-sm"
-              href={contactConfig.phoneHref}
-            >
-              {ui.callNow}: {contactConfig.phoneDisplay}
-            </a>
-            <a
-              className="inline-flex min-h-12 flex-1 items-center justify-center rounded-md border border-white px-4 font-semibold text-sm text-white transition-colors hover:border-gold hover:text-gold"
-              href={whatsappLink}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              {ui.messageWhatsapp}
-            </a>
+          <div className="order-1 w-full lg:order-2 lg:flex lg:justify-end">
+            <BrandLogo
+              className="block w-full max-w-none rounded-xl ring-white/25 shadow-xl shadow-black/35 lg:max-w-md xl:max-w-lg"
+              label={brandLabel}
+              priority
+              size="hero"
+            />
           </div>
         </div>
       </div>

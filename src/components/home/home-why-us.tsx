@@ -1,38 +1,24 @@
-import Image from "next/image";
+import { CyclingImage } from "@/components/shared/cycling-image";
+import { Reveal } from "@/components/shared/reveal";
+import { whyUsCollageSlots } from "@/content/shared/visual-assets";
 import type { HomeContent } from "@/types/content";
 
 interface HomeWhyUsProps {
   content: HomeContent["whyUs"];
 }
 
-const whyUsImages = [
-  {
-    alt: "Technician inspecting a Mercedes G-Class on a lift",
-    className: "start-0 top-0 z-10 h-[62%] w-[64%]",
-    src: "/images/Home page/g500-exhaust-leak-1.png",
-  },
-  {
-    alt: "Vehicles on lifts in the workshop",
-    className: "end-0 top-[14%] z-20 h-[58%] w-[60%]",
-    src: "/images/Home page/impact-cars.jpg",
-  },
-  {
-    alt: "Mercedes sedan with open hood in the workshop",
-    className: "bottom-0 start-[16%] z-30 h-[52%] w-[66%]",
-    src: "/images/Home page/auto-mechanic-fort-collins-360.webp",
-  },
-] as const;
-
 export function HomeWhyUs({ content }: HomeWhyUsProps) {
   return (
     <section className="relative overflow-hidden">
-      <Image
+      <CyclingImage
         alt=""
-        aria-hidden
         className="scale-105 object-cover blur-[2px]"
-        fill
+        images={[
+          "/images/generated/hero-evening-bays.webp",
+          "/images/generated/hero-workshop-lift.webp",
+        ]}
+        intervalMs={7000}
         sizes="100vw"
-        src="/images/Home page/final-bg.jpeg"
       />
       <div
         aria-hidden
@@ -42,24 +28,26 @@ export function HomeWhyUs({ content }: HomeWhyUsProps) {
       <div className="relative z-10 mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:px-6 sm:py-12 lg:grid-cols-2 lg:items-center lg:gap-12">
         <div className="order-2 lg:order-1">
           <div className="relative mx-auto aspect-[5/6] w-full max-w-lg lg:max-w-none">
-            {whyUsImages.map((image) => (
-              <div
-                className={`absolute overflow-hidden bg-navy/5 ${image.className}`}
-                key={image.src}
+            {whyUsCollageSlots.map((slot, index) => (
+              <Reveal
+                className={`absolute overflow-hidden bg-navy/5 shadow-lg shadow-black/20 ring-1 ring-white/10 ${slot.className}`}
+                delayMs={index * 140}
+                key={slot.className}
               >
-                <Image
-                  alt={image.alt}
-                  className="object-cover"
-                  fill
-                  sizes="(max-width: 1024px) 70vw, 420px"
-                  src={image.src}
-                />
-              </div>
+                <div className="absolute inset-0">
+                  <CyclingImage
+                    alt={slot.alt}
+                    images={slot.images}
+                    intervalMs={slot.intervalMs}
+                    sizes="(max-width: 1024px) 70vw, 420px"
+                  />
+                </div>
+              </Reveal>
             ))}
           </div>
         </div>
 
-        <div className="order-1 lg:order-2">
+        <Reveal className="order-1 lg:order-2" delayMs={80}>
           <h2 className="font-bold text-2xl text-white leading-snug sm:text-3xl md:text-4xl">
             {content.title}
           </h2>
@@ -80,7 +68,7 @@ export function HomeWhyUs({ content }: HomeWhyUsProps) {
               </li>
             ))}
           </ul>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

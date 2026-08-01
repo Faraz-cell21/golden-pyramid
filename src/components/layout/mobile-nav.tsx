@@ -58,7 +58,7 @@ export function MobileNav({
         aria-controls="mobile-navigation"
         aria-expanded={open}
         aria-label={open ? closeLabel : menuLabel}
-        className="inline-flex size-10 items-center justify-center rounded-full border border-navy/15 text-navy transition-colors hover:border-navy/30 hover:bg-navy/5"
+        className="inline-flex size-10 items-center justify-center rounded-full border border-white/25 text-white transition-colors hover:border-gold/50 hover:bg-white/10 hover:text-gold"
         onClick={toggleMenu}
         type="button"
       >

@@ -6,7 +6,6 @@ export const routes = {
   reviews: "/reviews",
   services: "/services",
   termsAndConditions: "/terms-and-conditions",
-  thankYou: "/thank-you",
 } as const;
 
 export type AppRoute = (typeof routes)[keyof typeof routes];

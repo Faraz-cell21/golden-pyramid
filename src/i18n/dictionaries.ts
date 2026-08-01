@@ -7,7 +7,6 @@ import { privacyPolicy as privacyPolicyAr } from "@/content/ar/privacy-policy";
 import { reviews as reviewsAr } from "@/content/ar/reviews";
 import { services as servicesAr } from "@/content/ar/services";
 import { termsAndConditions as termsAndConditionsAr } from "@/content/ar/terms-and-conditions";
-import { thankYou as thankYouAr } from "@/content/ar/thank-you";
 import { about as aboutEn } from "@/content/en/about";
 import { blog as blogEn } from "@/content/en/blog";
 import { home as homeEn } from "@/content/en/home";
@@ -17,7 +16,6 @@ import { privacyPolicy as privacyPolicyEn } from "@/content/en/privacy-policy";
 import { reviews as reviewsEn } from "@/content/en/reviews";
 import { services as servicesEn } from "@/content/en/services";
 import { termsAndConditions as termsAndConditionsEn } from "@/content/en/terms-and-conditions";
-import { thankYou as thankYouEn } from "@/content/en/thank-you";
 import type { Locale } from "@/i18n/config";
 
 const dictionaries = {
@@ -31,7 +29,6 @@ const dictionaries = {
     reviews: reviewsAr,
     services: servicesAr,
     termsAndConditions: termsAndConditionsAr,
-    thankYou: thankYouAr,
     ui: {
       backToBlog: "العودة إلى المدونة",
       callNow: "اتصل الآن",
@@ -66,7 +63,6 @@ const dictionaries = {
     reviews: reviewsEn,
     services: servicesEn,
     termsAndConditions: termsAndConditionsEn,
-    thankYou: thankYouEn,
     ui: {
       backToBlog: "Back to blog",
       callNow: "Call now",

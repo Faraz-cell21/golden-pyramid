@@ -58,6 +58,30 @@ export const home: HomeContent = {
     title: services.title,
   },
   title: "Home",
+  videoShowcase: {
+    body: "A look inside our workshop: modern equipment, careful workmanship, and real cars in progress.",
+    sideEnd: {
+      paragraphs: [
+        "Every visit starts with a careful inspection. We listen to what you noticed on the road, then confirm the issue with proper diagnostics before recommending any work.",
+        "You receive a clear estimate first, so there are no surprises later. We explain what is essential now and what can wait, helping you choose with confidence.",
+        "During the job, our team uses quality parts suited to your vehicle and keeps the bay organized, clean, and focused. Details matter, even on jobs that look simple from the outside.",
+        "Before handover, we complete finishing checks so your car feels right again: smooth, safe, and ready for daily driving in Sharjah and beyond.",
+        "After service, we remain available if you have questions. Precision is not only in the repair; it is also in honest communication from arrival to pickup.",
+      ],
+      title: "Precision you can trust",
+    },
+    sideStart: {
+      paragraphs: [
+        "Golden Pyramid is built as a complete workshop, not a temporary service corner. From the moment a car enters the bay, the space is prepared for serious automotive care.",
+        "Hydraulic lifts, specialist tools, and clean workstations let our technicians reach every area safely: mechanical, electrical, body, paint, AC, and wheels.",
+        "The facility stays organized so each job can move with focus. That order is what turns complex repairs into calm, controlled progress you can rely on.",
+        "Our technicians work on real vehicles every day, combining experience with modern diagnostic equipment to find issues accurately and fix them with care.",
+        "This is the environment behind the video: bright, practical, and dedicated to quality craftsmanship that protects your car and your time.",
+      ],
+      title: "A workshop built for quality",
+    },
+    title: "Inside our garage",
+  },
   whyUs: {
     expectLabel: "You can expect:",
     items: [

@@ -9,6 +9,10 @@
   --font-sans: "Segoe UI", "Tahoma", sans-serif;
 }
 
+html[lang="ar"] {
+  --font-sans: var(--font-arabic), "Segoe UI", "Tahoma", sans-serif;
+}
+
 @theme inline {
   --color-background: var(--color-background);
   --color-foreground: var(--color-foreground);

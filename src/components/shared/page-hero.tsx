@@ -1,5 +1,6 @@
-import Image from "next/image";
 import { AccentLine } from "@/components/shared/accent-line";
+import { CrossfadeImages } from "@/components/shared/crossfade-images";
+import { heroCrossfadeImages } from "@/content/shared/visual-assets";
 
 interface PageHeroProps {
   description?: string;
@@ -9,15 +10,10 @@ interface PageHeroProps {
 export function PageHero({ description, title }: PageHeroProps) {
   return (
     <section className="relative overflow-hidden text-white">
-      <Image
-        alt=""
-        aria-hidden
-        className="object-cover object-center"
-        fill
+      <CrossfadeImages
+        images={heroCrossfadeImages}
+        intervalMs={6500}
         priority
-        quality={90}
-        sizes="100vw"
-        src="/images/Home page/home-hero-bg.jpg"
       />
       <div
         aria-hidden

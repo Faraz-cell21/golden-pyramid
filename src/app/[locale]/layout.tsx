@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Cairo } from "next/font/google";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 
@@ -10,6 +11,13 @@ import {
   type Locale,
   locales,
 } from "@/i18n/config";
+
+const cairo = Cairo({
+  display: "swap",
+  subsets: ["arabic", "latin"],
+  variable: "--font-arabic",
+  weight: ["300", "400", "500", "600", "700", "800"],
+});
 
 interface LocaleLayoutProps {
   children: ReactNode;
@@ -54,10 +62,20 @@ export default async function LocaleLayout({
 
   const locale = localeParam;
   const direction = getDirection(locale);
+  const isArabic = locale === "ar";
 
   return (
-    <html dir={direction} lang={locale}>
-      <body className="min-h-dvh antialiased">{children}</body>
+    <html
+      className={isArabic ? cairo.variable : undefined}
+      data-scroll-behavior="smooth"
+      dir={direction}
+      lang={locale}
+    >
+      <body
+        className={`min-h-dvh antialiased ${isArabic ? cairo.className : ""}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

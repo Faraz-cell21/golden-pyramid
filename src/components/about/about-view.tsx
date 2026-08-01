@@ -1,4 +1,6 @@
-import Image from "next/image";
+import { CyclingImage } from "@/components/shared/cycling-image";
+import { Reveal } from "@/components/shared/reveal";
+import { aboutWorkshopImages } from "@/content/shared/visual-assets";
 import type { AboutContent } from "@/types/content";
 
 interface AboutViewProps {
@@ -10,7 +12,7 @@ export function AboutView({ content }: AboutViewProps) {
     <div>
       <section className="bg-white">
         <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:px-6 sm:py-12 lg:grid-cols-2 lg:items-center lg:gap-12">
-          <div>
+          <Reveal>
             <h2 className="font-semibold text-navy text-xl sm:text-2xl">
               {content.introTitle}
             </h2>
@@ -25,29 +27,34 @@ export function AboutView({ content }: AboutViewProps) {
                 </p>
               ))}
             </div>
-          </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-navy/5">
-            <Image
-              alt="Workshop bay at Golden Pyramid"
-              className="object-cover"
-              fill
-              sizes="(max-width: 1024px) 100vw, 560px"
-              src="/images/Home page/auto-mechanic-fort-collins-360.webp"
-            />
-          </div>
+          </Reveal>
+          <Reveal delayMs={120}>
+            <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-navy/5">
+              <CyclingImage
+                alt="Workshop bay at Golden Pyramid"
+                images={aboutWorkshopImages}
+                intervalMs={5000}
+                sizes="(max-width: 1024px) 100vw, 560px"
+              />
+            </div>
+          </Reveal>
         </div>
       </section>
 
       <section className="bg-navy/5">
         <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-12">
-          <h2 className="font-semibold text-navy text-xl sm:text-2xl">
-            {content.whyUsTitle}
-          </h2>
-          <div className="mt-3 h-1 w-12 rounded-full bg-gold" />
+          <Reveal>
+            <h2 className="font-semibold text-navy text-xl sm:text-2xl">
+              {content.whyUsTitle}
+            </h2>
+            <div className="mt-3 h-1 w-12 rounded-full bg-gold" />
+          </Reveal>
           <ul className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4">
-            {content.whyUs.map((item) => (
-              <li
+            {content.whyUs.map((item, index) => (
+              <Reveal
+                as="li"
                 className="flex gap-3 rounded-xl border border-navy/10 bg-white p-4 text-navy/85 text-sm leading-relaxed sm:p-5 sm:text-base"
+                delayMs={index * 70}
                 key={item}
               >
                 <span
@@ -57,7 +64,7 @@ export function AboutView({ content }: AboutViewProps) {
                   <CheckIcon />
                 </span>
                 <span>{item}</span>
-              </li>
+              </Reveal>
             ))}
           </ul>
         </div>

@@ -1,7 +1,9 @@
-import Image from "next/image";
 import { AccentLine } from "@/components/shared/accent-line";
+import { CrossfadeImages } from "@/components/shared/crossfade-images";
+import { Reveal } from "@/components/shared/reveal";
 import { contactConfig, getContactLocation } from "@/config/contact";
 import { whatsappLink } from "@/content/shared/socials";
+import { ctaBandImages } from "@/content/shared/visual-assets";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
 import type { HomeContent } from "@/types/content";
@@ -15,20 +17,18 @@ interface HomeCtaBandProps {
 export function HomeCtaBand({ content, locale, ui }: HomeCtaBandProps) {
   return (
     <section className="relative overflow-hidden text-white">
-      <Image
-        alt=""
-        aria-hidden
-        className="scale-105 object-cover blur-[2px]"
-        fill
-        sizes="100vw"
-        src="/images/Home page/cta-band-bg.png"
+      <CrossfadeImages
+        className="scale-105 object-cover blur-[1px]"
+        images={ctaBandImages}
+        intervalMs={7000}
+        quality={80}
       />
       <div
         aria-hidden
         className="absolute inset-0 bg-gradient-to-b from-navy/80 via-navy/88 to-black/90"
       />
 
-      <div className="relative mx-auto flex max-w-3xl flex-col items-center px-4 py-12 text-center sm:px-6 sm:py-16">
+      <Reveal className="relative mx-auto flex max-w-3xl flex-col items-center px-4 py-12 text-center sm:px-6 sm:py-16">
         <AccentLine />
 
         <h2 className="mt-5 font-bold text-2xl leading-snug sm:text-3xl md:text-4xl">
@@ -82,7 +82,7 @@ export function HomeCtaBand({ content, locale, ui }: HomeCtaBandProps) {
             {ui.callNow}: {contactConfig.phoneDisplay}
           </a>
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }

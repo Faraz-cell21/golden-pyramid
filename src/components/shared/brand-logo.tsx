@@ -8,22 +8,24 @@ export const brandLogoSrc = siteConfig.logoSrc;
 
 interface BrandLogoProps {
   className?: string;
-  href: string;
+  href?: string;
   label: string;
   priority?: boolean;
-  size?: "sm" | "md" | "lg";
+  size?: "sm" | "md" | "lg" | "hero";
 }
 
 const sizeClasses = {
-  lg: "size-16 sm:size-20",
-  md: "size-11 sm:size-12",
-  sm: "size-9 sm:size-10",
+  hero: "aspect-[4/3] w-full",
+  lg: "h-[4.5rem] w-[6rem] sm:h-20 sm:w-[6.75rem]",
+  md: "h-12 w-16 sm:h-14 sm:w-[4.75rem]",
+  sm: "h-10 w-[3.35rem] sm:h-11 sm:w-[3.75rem]",
 } as const;
 
 const sizePixels = {
-  lg: "80px",
-  md: "48px",
-  sm: "40px",
+  hero: "(max-width: 1024px) 100vw, 480px",
+  lg: "(max-width: 640px) 96px, 108px",
+  md: "(max-width: 640px) 64px, 76px",
+  sm: "(max-width: 640px) 54px, 60px",
 } as const;
 
 export function BrandLogo({
@@ -33,25 +35,35 @@ export function BrandLogo({
   priority = false,
   size = "md",
 }: BrandLogoProps) {
+  const frameClassName = cn(
+    "relative inline-flex shrink-0 overflow-hidden rounded-lg ring-1 ring-navy/10",
+    sizeClasses[size],
+    className
+  );
+
+  const image = (
+    <Image
+      alt={label}
+      className="object-cover object-center"
+      fill
+      priority={priority}
+      sizes={sizePixels[size]}
+      src={brandLogoSrc}
+    />
+  );
+
+  if (!href) {
+    return <div className={frameClassName}>{image}</div>;
+  }
+
   return (
     <Link
       aria-label={label}
-      className={cn(
-        "relative inline-flex shrink-0 overflow-hidden rounded-md bg-black ring-1 ring-navy/10 transition-opacity hover:opacity-90",
-        sizeClasses[size],
-        className
-      )}
+      className={cn(frameClassName, "transition-opacity hover:opacity-90")}
       href={href}
       prefetch
     >
-      <Image
-        alt={label}
-        className="object-cover"
-        fill
-        priority={priority}
-        sizes={sizePixels[size]}
-        src={brandLogoSrc}
-      />
+      {image}
     </Link>
   );
 }

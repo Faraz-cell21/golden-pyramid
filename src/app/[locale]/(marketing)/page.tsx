@@ -6,6 +6,7 @@ import { HomeHero } from "@/components/home/home-hero";
 import { HomeLatestBlogs } from "@/components/home/home-latest-blogs";
 import { HomeServiceCategories } from "@/components/home/home-service-categories";
 import { HomeWhyUs } from "@/components/home/home-why-us";
+import { HomeWorkshopVideo } from "@/components/home/home-workshop-video";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 
@@ -48,6 +49,7 @@ export default async function HomePage({ params }: HomePageProps) {
   return (
     <>
       <HomeHero
+        brandLabel={dictionary.navigation.brand}
         content={home.hero}
         locale={locale}
         socialLabels={ui.social}
@@ -59,6 +61,7 @@ export default async function HomePage({ params }: HomePageProps) {
         posts={blog.posts}
         readMoreLabel={ui.readMore}
       />
+      <HomeWorkshopVideo content={home.videoShowcase} />
       <HomeServiceCategories content={home.serviceCategories} />
       <HomeWhyUs content={home.whyUs} />
       <HomeCtaBand content={home.ctaBand} locale={locale} ui={ctaUi} />

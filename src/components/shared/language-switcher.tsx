@@ -19,15 +19,15 @@ export function LanguageSwitcher({ locale }: LanguageSwitcherProps) {
   return (
     <nav
       aria-label="Language"
-      className="inline-flex items-center rounded-full border border-navy/15 bg-navy/[0.03] p-0.5"
+      className="inline-flex items-center rounded-full border border-white/20 bg-white/10 p-0.5 backdrop-blur-sm"
     >
       {locales.map((item) => (
         <Link
           className={cn(
             "inline-flex min-h-8 min-w-8 items-center justify-center rounded-full px-2.5 font-medium text-xs transition-colors sm:min-h-9 sm:px-3 sm:text-sm",
             item === locale
-              ? "bg-navy text-white shadow-sm"
-              : "text-navy/60 hover:text-navy"
+              ? "bg-gold text-navy shadow-sm"
+              : "text-white/75 hover:text-white"
           )}
           href={localizedPath(item, pathWithoutLocale)}
           hrefLang={item}

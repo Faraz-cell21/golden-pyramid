@@ -15,7 +15,7 @@ export function ServiceCategoryCard({
   return (
     <li className="flex flex-col items-center rounded-xl border border-navy/10 bg-white px-5 py-6 text-center sm:px-6 sm:py-8">
       <ServiceCategoryIcon name={category.icon} />
-      <Heading className="mt-5 font-semibold text-base text-navy sm:mt-6 sm:text-lg">
+      <Heading className="mt-4 font-semibold text-base text-navy sm:mt-5 sm:text-lg">
         {category.title}
       </Heading>
       <ul className="mt-4 w-full space-y-2">

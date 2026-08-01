@@ -3,6 +3,8 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  font-size: 18px;
+  scroll-behavior: smooth;
   text-size-adjust: 100%;
 }
 
@@ -17,4 +19,28 @@ body {
 a,
 button {
   -webkit-tap-highlight-color: transparent;
+}
+
+@keyframes hero-drift {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.06);
+  }
+}
+
+@theme inline {
+  --animate-hero-drift: hero-drift 14s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .motion-safe\:animate-hero-drift {
+    animation: none !important;
+  }
 }

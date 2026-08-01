@@ -10,8 +10,8 @@ export function LocationBar({ label, locale }: LocationBarProps) {
   const location = getContactLocation(locale);
 
   return (
-    <div className="border-navy/10 border-b bg-navy">
-      <div className="mx-auto flex max-w-6xl items-center justify-center gap-2 px-4 py-1.5 text-[11px] text-white sm:justify-start sm:px-6 sm:text-xs">
+    <div className="border-navy/20 border-b bg-navy-soft">
+      <div className="mx-auto flex max-w-6xl items-center justify-center gap-2 px-4 py-1.5 text-[13px] text-white sm:justify-start sm:px-6 sm:text-sm">
         <LocationPinIcon />
         <span className="font-medium text-white/70">{label}</span>
         <span aria-hidden className="text-gold/80">

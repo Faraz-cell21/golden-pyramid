@@ -28,11 +28,6 @@ export type BlogContent = PageContent & {
   posts: BlogPost[];
 };
 
-export type ThankYouContent = PageContent & {
-  body: string;
-  ctaLabel: string;
-};
-
 export interface NotFoundContent {
   body: string;
   ctaLabel: string;
@@ -91,6 +86,18 @@ export interface HomeContent extends PageContent {
   serviceCategories: {
     description: string;
     items: ServiceCategory[];
+    title: string;
+  };
+  videoShowcase: {
+    body: string;
+    sideEnd: {
+      paragraphs: string[];
+      title: string;
+    };
+    sideStart: {
+      paragraphs: string[];
+      title: string;
+    };
     title: string;
   };
   whyUs: {
