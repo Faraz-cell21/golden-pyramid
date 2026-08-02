@@ -1,4 +1,5 @@
 import { services } from "@/content/ar/services";
+import { specialtyServices } from "@/content/ar/specialty-services";
 import type { HomeContent } from "@/types/content";
 
 export const home: HomeContent = {
@@ -62,6 +63,11 @@ export const home: HomeContent = {
     items: services.categories,
     title: services.title,
     viewAllLabel: "عرض كل الخدمات",
+  },
+  specialtyServices: {
+    cards: specialtyServices.cards,
+    description: specialtyServices.description,
+    title: specialtyServices.title,
   },
   title: "الرئيسية",
   videoShowcase: {

@@ -86,6 +86,7 @@ export interface HomeContent extends PageContent {
     title: string;
     viewAllLabel: string;
   };
+  specialtyServices: HomeSpecialtyServicesContent;
   videoShowcase: {
     body: string;
     sideEnd: {
@@ -115,6 +116,47 @@ export interface AboutContent extends PageContent {
 
 export interface ServicesContent extends PageContent {
   categories: ServiceCategory[];
+}
+
+export type SpecialtyServiceSlug =
+  | "mobile-garage-recovery"
+  | "spare-parts"
+  | "car-care";
+
+export interface SpecialtyServiceCard {
+  ctaLabel: string;
+  description: string;
+  image: string;
+  imageAlt: string;
+  slug: SpecialtyServiceSlug;
+  title: string;
+}
+
+export interface SpecialtyServiceSection {
+  body: string[];
+  image: string;
+  imageAlt: string;
+  items: string[];
+  title: string;
+}
+
+export interface SpecialtyServicePageContent extends PageContent {
+  intro: string[];
+  sections: SpecialtyServiceSection[];
+  slug: SpecialtyServiceSlug;
+}
+
+export interface SpecialtyServicesContent {
+  cards: SpecialtyServiceCard[];
+  description: string;
+  pages: SpecialtyServicePageContent[];
+  title: string;
+}
+
+export interface HomeSpecialtyServicesContent {
+  cards: SpecialtyServiceCard[];
+  description: string;
+  title: string;
 }
 
 export interface ReviewItem {

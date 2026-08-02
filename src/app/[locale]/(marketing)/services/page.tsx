@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { ServicesView } from "@/components/services/services-view";
+import { SpecialtyServicesSection } from "@/components/services/specialty-services-section";
 import { PageContactCta } from "@/components/shared/page-contact-cta";
 import { PageHero } from "@/components/shared/page-hero";
 import { isLocale } from "@/i18n/config";
@@ -35,12 +36,13 @@ export default async function ServicesPage({ params }: ServicesPageProps) {
     notFound();
   }
 
-  const { services, ui } = getDictionary(locale);
+  const { services, specialtyServices, ui } = getDictionary(locale);
 
   return (
     <>
       <PageHero description={services.description} title={services.title} />
       <ServicesView content={services} />
+      <SpecialtyServicesSection content={specialtyServices} locale={locale} />
       <PageContactCta
         ui={{ callNow: ui.callNow, messageWhatsapp: ui.messageWhatsapp }}
       />

@@ -6,6 +6,7 @@ import { notFound as notFoundAr } from "@/content/ar/not-found";
 import { privacyPolicy as privacyPolicyAr } from "@/content/ar/privacy-policy";
 import { reviews as reviewsAr } from "@/content/ar/reviews";
 import { services as servicesAr } from "@/content/ar/services";
+import { specialtyServices as specialtyServicesAr } from "@/content/ar/specialty-services";
 import { termsAndConditions as termsAndConditionsAr } from "@/content/ar/terms-and-conditions";
 import { about as aboutEn } from "@/content/en/about";
 import { blog as blogEn } from "@/content/en/blog";
@@ -15,6 +16,7 @@ import { notFound as notFoundEn } from "@/content/en/not-found";
 import { privacyPolicy as privacyPolicyEn } from "@/content/en/privacy-policy";
 import { reviews as reviewsEn } from "@/content/en/reviews";
 import { services as servicesEn } from "@/content/en/services";
+import { specialtyServices as specialtyServicesEn } from "@/content/en/specialty-services";
 import { termsAndConditions as termsAndConditionsEn } from "@/content/en/terms-and-conditions";
 import type { Locale } from "@/i18n/config";
 
@@ -28,9 +30,11 @@ const dictionaries = {
     privacyPolicy: privacyPolicyAr,
     reviews: reviewsAr,
     services: servicesAr,
+    specialtyServices: specialtyServicesAr,
     termsAndConditions: termsAndConditionsAr,
     ui: {
       backToBlog: "العودة إلى المدونة",
+      backToServices: "العودة إلى الخدمات",
       callNow: "اتصل الآن",
       close: "إغلاق",
       contactWhatsapp: "تواصل عبر واتساب",
@@ -62,9 +66,11 @@ const dictionaries = {
     privacyPolicy: privacyPolicyEn,
     reviews: reviewsEn,
     services: servicesEn,
+    specialtyServices: specialtyServicesEn,
     termsAndConditions: termsAndConditionsEn,
     ui: {
       backToBlog: "Back to blog",
+      backToServices: "Back to services",
       callNow: "Call now",
       close: "Close",
       contactWhatsapp: "Contact on WhatsApp",
@@ -97,4 +103,10 @@ export function getDictionary(locale: Locale): Dictionary {
 
 export function getBlogPost(locale: Locale, slug: string) {
   return getDictionary(locale).blog.posts.find((post) => post.slug === slug);
+}
+
+export function getSpecialtyService(locale: Locale, slug: string) {
+  return getDictionary(locale).specialtyServices.pages.find(
+    (page) => page.slug === slug
+  );
 }
