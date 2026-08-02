@@ -35,18 +35,22 @@ export function HomeHero({ content, locale, socialLabels, ui }: HomeHeroProps) {
         <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12 xl:gap-16">
           <div className="order-2 space-y-5 lg:order-1">
             <a
-              className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-sm text-white/90 backdrop-blur-sm transition-colors hover:border-gold/50 hover:bg-white/15 hover:text-gold"
+              className="location-pill relative inline-flex max-w-full overflow-hidden rounded-full p-[2px]"
               href={contactConfig.mapsUrl}
               rel="noopener noreferrer"
               target="_blank"
             >
-              <LocationPinIcon />
-              <span>
-                <span className="font-semibold text-white/85">
-                  {ui.locationLabel}:{" "}
-                </span>
-                <span className="font-bold font-brand" dir="rtl" lang="ar">
-                  {getContactLocation(locale)}
+              <span
+                aria-hidden
+                className="location-pill-border pointer-events-none absolute inset-[-120%]"
+              />
+              <span className="location-pill-shine relative z-10 inline-flex items-center gap-1.5 whitespace-nowrap rounded-full bg-gold-soft px-2.5 py-1.5 text-navy text-xs sm:gap-2 sm:px-3 sm:text-sm">
+                <LocationPinIcon />
+                <span>
+                  <span className="font-semibold">{ui.locationLabel}: </span>
+                  <span className="font-bold font-brand" dir="rtl" lang="ar">
+                    {getContactLocation(locale)}
+                  </span>
                 </span>
               </span>
             </a>
@@ -100,7 +104,7 @@ function LocationPinIcon() {
   return (
     <svg
       aria-hidden="true"
-      className="size-4 shrink-0 text-gold"
+      className="size-4 shrink-0 text-navy"
       fill="none"
       focusable="false"
       stroke="currentColor"

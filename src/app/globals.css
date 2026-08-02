@@ -39,8 +39,66 @@ button {
   }
 }
 
+@keyframes location-border-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes location-shine {
+  0%,
+  58% {
+    opacity: 0;
+    transform: translateX(-140%) skewX(-16deg);
+  }
+
+  64% {
+    opacity: 0.85;
+  }
+
+  78%,
+  100% {
+    opacity: 0;
+    transform: translateX(220%) skewX(-16deg);
+  }
+}
+
 @theme inline {
   --animate-hero-drift: hero-drift 9s ease-in-out infinite alternate;
+}
+
+.location-pill {
+  box-shadow:
+    0 0 0 1px rgb(197 163 90 / 35%),
+    0 0 18px rgb(228 208 160 / 35%);
+}
+
+.location-pill-border {
+  background: conic-gradient(
+    from 0deg,
+    transparent 0%,
+    transparent 52%,
+    var(--color-gold-deep) 62%,
+    var(--color-gold-soft) 72%,
+    var(--color-gold) 82%,
+    transparent 92%,
+    transparent 100%
+  );
+  animation: location-border-spin 2.6s linear infinite;
+}
+
+.location-pill-shine::after {
+  position: absolute;
+  inset: 0;
+  width: 42%;
+  content: "";
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgb(255 255 255 / 55%),
+    transparent
+  );
+  animation: location-shine 3.4s ease-in-out infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -49,6 +107,11 @@ button {
   }
 
   .motion-safe\:animate-hero-drift {
+    animation: none !important;
+  }
+
+  .location-pill-border,
+  .location-pill-shine::after {
     animation: none !important;
   }
 }
