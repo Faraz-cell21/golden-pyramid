@@ -8,7 +8,7 @@ interface StickyContactProps {
 
 export function StickyContact({ ui }: StickyContactProps) {
   return (
-    <div className="pointer-events-none fixed end-3 top-1/2 z-40 flex -translate-y-1/2 flex-col gap-2 sm:end-4">
+    <div className="pointer-events-none fixed start-3 top-1/2 z-40 flex -translate-y-1/2 flex-col gap-2 sm:start-4">
       <a
         aria-label={ui.messageWhatsapp}
         className="pointer-events-auto inline-flex size-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-105"
