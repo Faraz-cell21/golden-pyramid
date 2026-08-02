@@ -92,7 +92,7 @@ export const home: HomeContent = {
       ],
       title: "ورشة بُنيت للجودة",
     },
-    title: "داخل مرآبنا",
+    title: "داخل مركزنا",
   },
   whyUs: {
     expectLabel: "يمكنك توقع:",

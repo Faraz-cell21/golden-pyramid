@@ -18,7 +18,7 @@ export const whatsappCtaClassName = cn(
 
 export const callCtaClassName = cn(
   baseButtonClass,
-  "border border-gold bg-transparent text-gold hover:bg-gold/10"
+  "border border-gold-soft bg-gold-soft text-navy"
 );
 
 export function ContactCtaButtons({ className, ui }: ContactCtaButtonsProps) {
