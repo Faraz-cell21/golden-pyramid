@@ -1,4 +1,5 @@
 import { services } from "@/content/en/services";
+import { specialtyServices } from "@/content/en/specialty-services";
 import type { HomeContent } from "@/types/content";
 
 export const home: HomeContent = {
@@ -61,6 +62,11 @@ export const home: HomeContent = {
     items: services.categories,
     title: services.title,
     viewAllLabel: "View all services",
+  },
+  specialtyServices: {
+    cards: specialtyServices.cards,
+    description: specialtyServices.description,
+    title: specialtyServices.title,
   },
   title: "Home",
   videoShowcase: {

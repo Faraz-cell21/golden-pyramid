@@ -6,6 +6,7 @@ import { HomeHero } from "@/components/home/home-hero";
 import { HomeLatestBlogs } from "@/components/home/home-latest-blogs";
 import { HomeReviewsCarousel } from "@/components/home/home-reviews-carousel";
 import { HomeServiceCategories } from "@/components/home/home-service-categories";
+import { HomeSpecialtyServices } from "@/components/home/home-specialty-services";
 import { HomeWhyUs } from "@/components/home/home-why-us";
 import { HomeWorkshopVideo } from "@/components/home/home-workshop-video";
 import { isLocale } from "@/i18n/config";
@@ -63,6 +64,7 @@ export default async function HomePage({ params }: HomePageProps) {
       />
       <HomeWorkshopVideo content={home.videoShowcase} />
       <HomeServiceCategories content={home.serviceCategories} locale={locale} />
+      <HomeSpecialtyServices content={home.specialtyServices} locale={locale} />
       <HomeReviewsCarousel
         content={home.reviewsShowcase}
         locale={locale}
