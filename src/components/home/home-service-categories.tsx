@@ -27,7 +27,7 @@ export function HomeServiceCategories({
           </p>
         </div>
 
-        <ul className="grid grid-cols-1 gap-4 md:grid-cols-3">
+        <ul className="grid grid-cols-1 gap-5 md:grid-cols-3 md:gap-6">
           {content.items.map((category) => (
             <ServiceCategoryCard category={category} key={category.title} />
           ))}

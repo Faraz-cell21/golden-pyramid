@@ -9,7 +9,7 @@ export function ServicesView({ content }: ServicesViewProps) {
   return (
     <section className="bg-navy/[0.03]">
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-12">
-        <ul className="grid grid-cols-1 gap-4 md:grid-cols-3">
+        <ul className="grid grid-cols-1 gap-5 md:grid-cols-3 md:gap-6">
           {content.categories.map((category) => (
             <ServiceCategoryCard
               category={category}
