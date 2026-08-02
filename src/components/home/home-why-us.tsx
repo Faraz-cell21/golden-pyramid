@@ -1,13 +1,19 @@
+import Link from "next/link";
+
 import { CyclingImage } from "@/components/shared/cycling-image";
 import { Reveal } from "@/components/shared/reveal";
+import { routes } from "@/config/routes";
 import { whyUsCollageSlots } from "@/content/shared/visual-assets";
+import type { Locale } from "@/i18n/config";
+import { localizedPath } from "@/lib/utils";
 import type { HomeContent } from "@/types/content";
 
 interface HomeWhyUsProps {
   content: HomeContent["whyUs"];
+  locale: Locale;
 }
 
-export function HomeWhyUs({ content }: HomeWhyUsProps) {
+export function HomeWhyUs({ content, locale }: HomeWhyUsProps) {
   return (
     <section className="relative overflow-hidden">
       <CyclingImage
@@ -68,6 +74,13 @@ export function HomeWhyUs({ content }: HomeWhyUsProps) {
               </li>
             ))}
           </ul>
+          <Link
+            className="mt-8 inline-flex min-h-11 items-center justify-center rounded-md border border-gold bg-transparent px-5 font-semibold text-gold text-sm transition-colors hover:bg-gold/10"
+            href={localizedPath(locale, routes.about)}
+            prefetch
+          >
+            {content.viewAllLabel}
+          </Link>
         </Reveal>
       </div>
     </section>

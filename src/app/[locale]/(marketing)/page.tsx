@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { HomeCtaBand } from "@/components/home/home-cta-band";
 import { HomeHero } from "@/components/home/home-hero";
 import { HomeLatestBlogs } from "@/components/home/home-latest-blogs";
+import { HomeReviewsCarousel } from "@/components/home/home-reviews-carousel";
 import { HomeServiceCategories } from "@/components/home/home-service-categories";
 import { HomeWhyUs } from "@/components/home/home-why-us";
 import { HomeWorkshopVideo } from "@/components/home/home-workshop-video";
@@ -39,7 +40,7 @@ export default async function HomePage({ params }: HomePageProps) {
   }
 
   const dictionary = getDictionary(locale);
-  const { blog, home, ui } = dictionary;
+  const { blog, home, reviews, ui } = dictionary;
   const ctaUi = {
     callNow: ui.callNow,
     locationLabel: ui.locationLabel,
@@ -61,8 +62,13 @@ export default async function HomePage({ params }: HomePageProps) {
         readMoreLabel={ui.readMore}
       />
       <HomeWorkshopVideo content={home.videoShowcase} />
-      <HomeServiceCategories content={home.serviceCategories} />
-      <HomeWhyUs content={home.whyUs} />
+      <HomeServiceCategories content={home.serviceCategories} locale={locale} />
+      <HomeReviewsCarousel
+        content={home.reviewsShowcase}
+        locale={locale}
+        reviews={reviews.items}
+      />
+      <HomeWhyUs content={home.whyUs} locale={locale} />
       <HomeCtaBand content={home.ctaBand} locale={locale} ui={ctaUi} />
     </>
   );

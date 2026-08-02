@@ -3,7 +3,8 @@ import type { ServicesContent } from "@/types/content";
 export const services: ServicesContent = {
   categories: [
     {
-      icon: "mechanical",
+      image: "/images/services/mechanical.webp",
+      imageAlt: "Mechanic working on a car engine in the workshop",
       items: [
         "Engine repair and maintenance",
         "Transmission (gearbox) service and repair",
@@ -18,7 +19,8 @@ export const services: ServicesContent = {
       title: "Mechanical services",
     },
     {
-      icon: "electrical",
+      image: "/images/services/electrical.webp",
+      imageAlt: "Automotive electrical diagnostics with scan tools",
       items: [
         "Electrical fault inspection and repair",
         "Car computer programming and diagnostics",
@@ -32,7 +34,8 @@ export const services: ServicesContent = {
       title: "Electrical and electronics",
     },
     {
-      icon: "body",
+      image: "/images/services/bodywork.webp",
+      imageAlt: "Car bodywork and paint spraying in a professional booth",
       items: [
         "Accident repair for all severity levels",
         "Professional bodywork and structural restoration",
@@ -46,7 +49,8 @@ export const services: ServicesContent = {
       title: "Bodywork and paint",
     },
     {
-      icon: "ac",
+      image: "/images/services/ac.webp",
+      imageAlt: "Car air conditioning service with gauge equipment",
       items: [
         "AC system inspection and maintenance",
         "AC gas refill",
@@ -57,7 +61,8 @@ export const services: ServicesContent = {
       title: "Air conditioning",
     },
     {
-      icon: "tires",
+      image: "/images/services/tires.webp",
+      imageAlt: "Tire mounting and wheel service in the garage",
       items: [
         "Tire replacement and repair",
         "Wheel balancing",
@@ -67,7 +72,8 @@ export const services: ServicesContent = {
       title: "Tires and wheels",
     },
     {
-      icon: "extra",
+      image: "/images/services/extra.webp",
+      imageAlt: "VIP mobile car care service beside a luxury vehicle",
       items: [
         "VIP service",
         "Mobile garage service",

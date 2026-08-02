@@ -1,4 +1,5 @@
-import { CyclingImage } from "@/components/shared/cycling-image";
+import Image from "next/image";
+
 import { Reveal } from "@/components/shared/reveal";
 import { aboutWorkshopImages } from "@/content/shared/visual-assets";
 import type { AboutContent } from "@/types/content";
@@ -8,6 +9,8 @@ interface AboutViewProps {
 }
 
 export function AboutView({ content }: AboutViewProps) {
+  const [workshopImage] = aboutWorkshopImages;
+
   return (
     <div>
       <section className="bg-white">
@@ -29,12 +32,14 @@ export function AboutView({ content }: AboutViewProps) {
             </div>
           </Reveal>
           <Reveal delayMs={120}>
-            <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-navy/5">
-              <CyclingImage
-                alt="Workshop bay at الهرم الذهبي"
-                images={aboutWorkshopImages}
-                intervalMs={5000}
-                sizes="(max-width: 1024px) 100vw, 560px"
+            <div className="relative min-h-[22rem] w-full overflow-hidden rounded-xl bg-navy/5 sm:min-h-[28rem]">
+              <Image
+                alt="ورشة الهرم الذهبي لصيانة السيارات"
+                className="object-cover object-center"
+                fill
+                quality={90}
+                sizes="(max-width: 1024px) 100vw, 720px"
+                src={workshopImage}
               />
             </div>
           </Reveal>

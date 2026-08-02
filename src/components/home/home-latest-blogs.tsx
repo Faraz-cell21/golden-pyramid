@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { SectionPageLink } from "@/components/shared/section-page-link";
 import { routes } from "@/config/routes";
 import type { Locale } from "@/i18n/config";
 import { localizedPath } from "@/lib/utils";
@@ -20,6 +21,7 @@ export function HomeLatestBlogs({
   readMoreLabel,
 }: HomeLatestBlogsProps) {
   const featuredPosts = posts.slice(0, 3);
+  const blogHref = localizedPath(locale, routes.blog);
 
   if (featuredPosts.length === 0) {
     return null;
@@ -37,7 +39,7 @@ export function HomeLatestBlogs({
           </div>
           <Link
             className="inline-flex min-h-10 items-center font-medium text-navy text-sm underline-offset-4 hover:text-gold hover:underline"
-            href={localizedPath(locale, routes.blog)}
+            href={blogHref}
           >
             {content.viewAllLabel}
           </Link>
@@ -74,6 +76,8 @@ export function HomeLatestBlogs({
             </li>
           ))}
         </ul>
+
+        <SectionPageLink href={blogHref} label={content.viewAllLabel} />
       </div>
     </section>
   );

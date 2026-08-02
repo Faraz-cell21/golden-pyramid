@@ -50,12 +50,17 @@ export const home: HomeContent = {
   },
   latestBlog: {
     title: "Latest from the blog",
-    viewAllLabel: "View all posts",
+    viewAllLabel: "View all blog posts",
+  },
+  reviewsShowcase: {
+    title: "Customer Reviews",
+    viewAllLabel: "View all reviews",
   },
   serviceCategories: {
     description: services.description,
     items: services.categories,
     title: services.title,
+    viewAllLabel: "View all services",
   },
   title: "Home",
   videoShowcase: {
@@ -92,5 +97,6 @@ export const home: HomeContent = {
       "Clear communication from start to finish",
     ],
     title: "Why choose الهرم الذهبي for your car?",
+    viewAllLabel: "About us",
   },
 };

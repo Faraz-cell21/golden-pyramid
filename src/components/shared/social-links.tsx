@@ -26,10 +26,7 @@ export function SocialLinks({
         <li key={link.platform}>
           <a
             aria-label={labels[link.platform]}
-            className={cn(
-              "inline-flex size-10 items-center justify-center overflow-hidden border border-white transition-transform hover:scale-105",
-              link.platform === "instagram" ? "rounded-[22%]" : "rounded-full"
-            )}
+            className="inline-flex size-10 items-center justify-center overflow-hidden rounded-full border border-white transition-transform hover:scale-105"
             href={link.href}
             rel="noopener noreferrer"
             target="_blank"
@@ -107,24 +104,34 @@ function SocialIcon({
           viewBox="0 0 24 24"
         >
           <defs>
-            <linearGradient id={gradientId} x1="0%" x2="100%" y1="100%" y2="0%">
-              <stop offset="0%" stopColor="#f09433" />
-              <stop offset="25%" stopColor="#e6683c" />
-              <stop offset="50%" stopColor="#dc2743" />
-              <stop offset="75%" stopColor="#cc2366" />
-              <stop offset="100%" stopColor="#bc1888" />
+            <linearGradient id={gradientId} x1="0%" x2="50%" y1="100%" y2="0%">
+              <stop offset="0%" stopColor="#FFD600" />
+              <stop offset="25%" stopColor="#FF7A00" />
+              <stop offset="50%" stopColor="#FF0069" />
+              <stop offset="75%" stopColor="#D300C5" />
+              <stop offset="100%" stopColor="#7638FA" />
             </linearGradient>
           </defs>
-          <rect fill={`url(#${gradientId})`} height="24" rx="5.4" width="24" />
+          <circle cx="12" cy="12" fill={`url(#${gradientId})`} r="12" />
+          <rect
+            fill="none"
+            height="12"
+            rx="3.5"
+            stroke="#fff"
+            strokeWidth="1.85"
+            width="12"
+            x="6"
+            y="6"
+          />
           <circle
             cx="12"
             cy="12"
             fill="none"
-            r="5"
+            r="3.2"
             stroke="#fff"
-            strokeWidth="1.8"
+            strokeWidth="1.85"
           />
-          <circle cx="17.2" cy="6.8" fill="#fff" r="1.2" />
+          <circle cx="16.35" cy="7.65" fill="#fff" r="1.15" />
         </svg>
       );
     default:

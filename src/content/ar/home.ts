@@ -46,16 +46,22 @@ export const home: HomeContent = {
       },
     ],
     socialIntro: "تواصل معنا عبر:",
-    title: "مرآبك الموثوق لرعاية السيارات باحترافية",
+    title:
+      "أفضل ورشة إصلاح لجميع السيارات\nكراج سيارات متخصص\nفي الامارات العربية المتحدة",
   },
   latestBlog: {
     title: "أحدث مقالات المدونة",
     viewAllLabel: "عرض كل المقالات",
   },
+  reviewsShowcase: {
+    title: "آراء العملاء",
+    viewAllLabel: "عرض كل التقييمات",
+  },
   serviceCategories: {
     description: services.description,
     items: services.categories,
     title: services.title,
+    viewAllLabel: "عرض كل الخدمات",
   },
   title: "الرئيسية",
   videoShowcase: {
@@ -92,5 +98,6 @@ export const home: HomeContent = {
       "تواصل واضح من البداية حتى النهاية",
     ],
     title: "لماذا تختار الهرم الذهبي لسيارتك؟",
+    viewAllLabel: "من نحن",
   },
 };

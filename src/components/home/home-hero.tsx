@@ -1,9 +1,9 @@
 import { BrandLogo } from "@/components/shared/brand-logo";
+import { ContactCtaButtons } from "@/components/shared/contact-cta-buttons";
 import { CrossfadeImages } from "@/components/shared/crossfade-images";
 import { ReviewPlatformBadge } from "@/components/shared/review-platform-badge";
 import { SocialLinks } from "@/components/shared/social-links";
 import { contactConfig, getContactLocation } from "@/config/contact";
-import { whatsappLink } from "@/content/shared/socials";
 import { heroCrossfadeImages } from "@/content/shared/visual-assets";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
@@ -51,7 +51,7 @@ export function HomeHero({ content, locale, socialLabels, ui }: HomeHeroProps) {
               </span>
             </a>
 
-            <h1 className="font-extrabold text-3xl leading-tight tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
+            <h1 className="whitespace-pre-line font-extrabold text-3xl leading-tight tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
               {content.title}
             </h1>
             <div className="h-1 w-14 rounded-full bg-gold" />
@@ -84,22 +84,7 @@ export function HomeHero({ content, locale, socialLabels, ui }: HomeHeroProps) {
               <SocialLinks exclude={["whatsapp"]} labels={socialLabels} />
             </div>
 
-            <div className="flex max-w-xl flex-col gap-3 pt-1 sm:flex-row">
-              <a
-                className="inline-flex min-h-12 flex-1 items-center justify-center rounded-md bg-white px-4 font-semibold text-navy text-sm"
-                href={contactConfig.phoneHref}
-              >
-                {ui.callNow}: {contactConfig.phoneDisplay}
-              </a>
-              <a
-                className="inline-flex min-h-12 flex-1 items-center justify-center rounded-md border border-white px-4 font-semibold text-sm text-white transition-colors hover:border-gold hover:text-gold"
-                href={whatsappLink}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                {ui.messageWhatsapp}
-              </a>
-            </div>
+            <ContactCtaButtons className="max-w-xl pt-1" ui={ui} />
           </div>
 
           <div className="order-1 flex w-full justify-center lg:order-2 lg:justify-end">

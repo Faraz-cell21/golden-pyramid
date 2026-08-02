@@ -1,5 +1,4 @@
-import { contactConfig } from "@/config/contact";
-import { whatsappLink } from "@/content/shared/socials";
+import { ContactCtaButtons } from "@/components/shared/contact-cta-buttons";
 import type { Dictionary } from "@/i18n/dictionaries";
 
 interface PageContactCtaProps {
@@ -8,22 +7,9 @@ interface PageContactCtaProps {
 
 export function PageContactCta({ ui }: PageContactCtaProps) {
   return (
-    <section className="border-navy/10 border-t bg-navy/5">
-      <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-8 sm:flex-row sm:px-6 sm:py-10">
-        <a
-          className="inline-flex min-h-12 flex-1 items-center justify-center rounded-md bg-navy px-4 font-medium text-sm text-white"
-          href={contactConfig.phoneHref}
-        >
-          {ui.callNow}: {contactConfig.phoneDisplay}
-        </a>
-        <a
-          className="inline-flex min-h-12 flex-1 items-center justify-center rounded-md border border-navy px-4 font-medium text-navy text-sm"
-          href={whatsappLink}
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          {ui.messageWhatsapp}
-        </a>
+    <section className="border-navy/10 border-t bg-navy">
+      <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10">
+        <ContactCtaButtons ui={ui} />
       </div>
     </section>
   );

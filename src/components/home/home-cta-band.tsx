@@ -1,9 +1,8 @@
 import { AccentLine } from "@/components/shared/accent-line";
+import { ContactCtaButtons } from "@/components/shared/contact-cta-buttons";
 import { CrossfadeImages } from "@/components/shared/crossfade-images";
 import { LocationLink } from "@/components/shared/location-link";
 import { Reveal } from "@/components/shared/reveal";
-import { contactConfig } from "@/config/contact";
-import { whatsappLink } from "@/content/shared/socials";
 import { ctaBandImages } from "@/content/shared/visual-assets";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
@@ -67,22 +66,7 @@ export function HomeCtaBand({ content, locale, ui }: HomeCtaBandProps) {
           </span>
         </p>
 
-        <div className="mt-8 flex w-full max-w-xl flex-col gap-3 sm:flex-row">
-          <a
-            className="inline-flex min-h-12 flex-1 items-center justify-center rounded-md bg-[#25D366] px-4 font-semibold text-sm text-white transition-transform hover:scale-[1.02]"
-            href={whatsappLink}
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            {ui.messageWhatsapp}
-          </a>
-          <a
-            className="inline-flex min-h-12 flex-1 items-center justify-center rounded-md border border-gold bg-transparent px-4 font-semibold text-gold text-sm transition-colors hover:bg-gold/10"
-            href={contactConfig.phoneHref}
-          >
-            {ui.callNow}: {contactConfig.phoneDisplay}
-          </a>
-        </div>
+        <ContactCtaButtons className="mt-8 max-w-xl" ui={ui} />
       </Reveal>
     </section>
   );

@@ -3,7 +3,8 @@ import type { ServicesContent } from "@/types/content";
 export const services: ServicesContent = {
   categories: [
     {
-      icon: "mechanical",
+      image: "/images/services/mechanical.webp",
+      imageAlt: "فني يعمل على محرك السيارة في الورشة",
       items: [
         "إصلاح وصيانة المحركات",
         "صيانة وإصلاح ناقل الحركة (الجير)",
@@ -18,7 +19,8 @@ export const services: ServicesContent = {
       title: "خدمات الميكانيكا",
     },
     {
-      icon: "electrical",
+      image: "/images/services/electrical.webp",
+      imageAlt: "تشخيص كهرباء السيارات بأجهزة الفحص",
       items: [
         "فحص وإصلاح الأعطال الكهربائية",
         "برمجة وفحص كمبيوتر السيارة",
@@ -32,7 +34,8 @@ export const services: ServicesContent = {
       title: "خدمات الكهرباء والإلكترونيات",
     },
     {
-      icon: "body",
+      image: "/images/services/bodywork.webp",
+      imageAlt: "سمكرة ودهان السيارات في غرفة الرش",
       items: [
         "إصلاح الحوادث بجميع درجاتها",
         "سمكرة احترافية وإعادة هيكل السيارة",
@@ -46,7 +49,8 @@ export const services: ServicesContent = {
       title: "خدمات السمكرة والدهان",
     },
     {
-      icon: "ac",
+      image: "/images/services/ac.webp",
+      imageAlt: "صيانة تكييف السيارات بأجهزة القياس",
       items: [
         "فحص وصيانة نظام التكييف",
         "تعبئة غاز المكيف",
@@ -57,7 +61,8 @@ export const services: ServicesContent = {
       title: "خدمات التكييف",
     },
     {
-      icon: "tires",
+      image: "/images/services/tires.webp",
+      imageAlt: "تبديل الإطارات وخدمة العجلات في الورشة",
       items: [
         "تبديل وإصلاح الإطارات",
         "ترصيص الإطارات",
@@ -67,7 +72,8 @@ export const services: ServicesContent = {
       title: "خدمات الإطارات والعجلات",
     },
     {
-      icon: "extra",
+      image: "/images/services/extra.webp",
+      imageAlt: "خدمة سيارات متنقلة VIP بجانب سيارة فاخرة",
       items: [
         "خدمة VIP",
         "خدمة الجراج المتنقل",

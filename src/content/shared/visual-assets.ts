@@ -36,9 +36,7 @@ export const whyUsCollageSlots = [
 ] as const;
 
 export const aboutWorkshopImages = [
-  "/images/generated/detail-white-sedan.webp",
-  "/images/generated/detail-sports-lift.webp",
-  "/images/generated/detail-brakes.webp",
+  "/images/garage/about-workshop.webp",
 ] as const;
 
 export const ctaBandImages = [

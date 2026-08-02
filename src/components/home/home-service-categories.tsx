@@ -1,11 +1,19 @@
+import { SectionPageLink } from "@/components/shared/section-page-link";
 import { ServiceCategoryCard } from "@/components/shared/service-category-card";
+import { routes } from "@/config/routes";
+import type { Locale } from "@/i18n/config";
+import { localizedPath } from "@/lib/utils";
 import type { HomeContent } from "@/types/content";
 
 interface HomeServiceCategoriesProps {
   content: HomeContent["serviceCategories"];
+  locale: Locale;
 }
 
-export function HomeServiceCategories({ content }: HomeServiceCategoriesProps) {
+export function HomeServiceCategories({
+  content,
+  locale,
+}: HomeServiceCategoriesProps) {
   return (
     <section className="bg-navy/[0.03]">
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-12">
@@ -24,6 +32,11 @@ export function HomeServiceCategories({ content }: HomeServiceCategoriesProps) {
             <ServiceCategoryCard category={category} key={category.title} />
           ))}
         </ul>
+
+        <SectionPageLink
+          href={localizedPath(locale, routes.services)}
+          label={content.viewAllLabel}
+        />
       </div>
     </section>
   );

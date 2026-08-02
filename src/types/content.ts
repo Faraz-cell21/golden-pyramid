@@ -45,16 +45,9 @@ export interface NavigationContent {
   terms: string;
 }
 
-export type ServiceCategoryIconId =
-  | "mechanical"
-  | "electrical"
-  | "body"
-  | "ac"
-  | "tires"
-  | "extra";
-
 export interface ServiceCategory {
-  icon: ServiceCategoryIconId;
+  image: string;
+  imageAlt: string;
   items: string[];
   title: string;
 }
@@ -83,10 +76,15 @@ export interface HomeContent extends PageContent {
     title: string;
     viewAllLabel: string;
   };
+  reviewsShowcase: {
+    title: string;
+    viewAllLabel: string;
+  };
   serviceCategories: {
     description: string;
     items: ServiceCategory[];
     title: string;
+    viewAllLabel: string;
   };
   videoShowcase: {
     body: string;
@@ -104,6 +102,7 @@ export interface HomeContent extends PageContent {
     expectLabel: string;
     items: string[];
     title: string;
+    viewAllLabel: string;
   };
 }
 
