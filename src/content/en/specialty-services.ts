@@ -32,9 +32,19 @@ export const specialtyServices: SpecialtyServicesContent = {
       slug: "car-care",
       title: "Car Care Services",
     },
+    {
+      ctaLabel: "Explore this service",
+      description:
+        "Seat upholstery, roof lining, steering wheel wrapping, door panels, and complete interior restoration for a cabin that looks and feels renewed.",
+      image: "/images/services/specialty/car-upholstery-hero.webp",
+      imageAlt:
+        "Technician reupholstering luxury car seats with premium leather in a workshop",
+      slug: "car-upholstery",
+      title: "Car Upholstery Services",
+    },
   ],
   description:
-    "Beyond workshop repairs, الهرم الذهبي delivers roadside support, quality parts, and complete car care, with a dedicated experience built around each offering.",
+    "Beyond workshop repairs, الهرم الذهبي delivers roadside support, quality parts, complete car care, and professional interior upholstery, with a dedicated experience built around each offering.",
   pages: [
     {
       description:
@@ -197,6 +207,110 @@ export const specialtyServices: SpecialtyServicesContent = {
       ],
       slug: "car-care",
       title: "Car Care Services",
+    },
+    {
+      description:
+        "Professional car upholstery in Sharjah including seat upholstery, roof lining, steering wheel wrapping, door panels, and full interior restoration.",
+      intro: [
+        "Your cabin is where you spend every journey. At الهرم الذهبي, our car upholstery services restore comfort, style, and finish inside the vehicle, from worn seats and sagging roof linings to tired door panels and steering wheels that need a fresh wrap.",
+        "We assess the condition of your interior, explain the best materials and options for your car and budget, and deliver careful workmanship that matches the look you want under UAE heat and daily use.",
+      ],
+      sections: [
+        {
+          body: [
+            "Seat upholstery renews worn, torn, faded, or uncomfortable seating with quality leather, fabric, or mixed finishes suited to your vehicle. We repair or replace covers with attention to fit, stitching, and daily comfort.",
+            "Whether you want a factory-like refresh or a refined custom look, we focus on durable materials and clean finishing that hold up in Sharjah driving conditions.",
+          ],
+          image: "/images/services/specialty/car-upholstery-seats.webp",
+          imageAlt:
+            "Technician installing premium leather seat covers during car seat upholstery",
+          items: [
+            "Leather and fabric seat reupholstery",
+            "Repair of tears, wear, and sagging foam",
+            "Colour and material matching guidance",
+            "Precise stitching and pattern fitment",
+            "Suitable for everyday and luxury vehicles",
+            "Clear estimate before work begins",
+          ],
+          title: "Seat Upholstery",
+        },
+        {
+          body: [
+            "A sagging, stained, or damaged roof lining changes how the whole cabin feels. We carefully remove and replace headliner materials so the ceiling sits smooth, secure, and neat again.",
+            "This service is ideal after heat damage, water marks, peeling fabric, or general ageing of the roof liner.",
+          ],
+          image: "/images/services/specialty/car-upholstery-roof-lining.webp",
+          imageAlt:
+            "Automotive roof lining headliner being replaced inside a car cabin",
+          items: [
+            "Roof lining inspection and replacement",
+            "Repair of sagging or peeling headliners",
+            "Clean fabric finish across the ceiling",
+            "Careful removal of trim and fittings",
+            "Options suited to heat and daily use",
+            "A tidier, quieter cabin appearance",
+          ],
+          title: "Roof Lining",
+        },
+        {
+          body: [
+            "Steering wheel wrapping restores grip, comfort, and a premium touch when the original leather is worn, cracked, or faded. We wrap and stitch with precision for a secure, refined finish.",
+            "Choose this when you want better feel day to day, or when the wheel no longer matches a refreshed interior.",
+          ],
+          image:
+            "/images/services/specialty/car-upholstery-steering-wheel.webp",
+          imageAlt:
+            "Hands wrapping a car steering wheel with premium black leather",
+          items: [
+            "Professional steering wheel leather wrapping",
+            "Improved grip and driving comfort",
+            "Repair of worn or cracked wheel surfaces",
+            "Clean stitching and secure fitment",
+            "Colour and finish options to match your cabin",
+            "Careful handling of controls and switches",
+          ],
+          title: "Steering Wheel Wrapping",
+        },
+        {
+          body: [
+            "Door panels take constant use and often show scuffs, torn inserts, loose trim, or faded materials. We restore or re-cover door panels so they look consistent with the rest of your cabin.",
+            "From fabric and leather inserts to trim refresh work, we focus on fit, alignment, and a finish that feels solid when the door closes.",
+          ],
+          image: "/images/services/specialty/car-upholstery-door-panels.webp",
+          imageAlt:
+            "Car door panel upholstery and interior trim being restored in a workshop",
+          items: [
+            "Door panel upholstery and trim restoration",
+            "Repair of worn inserts and damaged surfaces",
+            "Matching materials to seats and cabin style",
+            "Secure refit of handles, switches, and trim",
+            "Improved look and feel on every door",
+            "Suitable for single panels or full sets",
+          ],
+          title: "Door Panels",
+        },
+        {
+          body: [
+            "Interior restoration brings seats, roof lining, steering wheel, door panels, and related cabin surfaces together into one cohesive result. Ideal after heavy wear, a partial refresh, or when you want the cabin to feel showroom-ready again.",
+            "We plan the work as a complete package so colours, textures, and finishing details stay consistent from the driver seat to the rear cabin.",
+          ],
+          image:
+            "/images/services/specialty/car-upholstery-interior-restoration.webp",
+          imageAlt:
+            "Fully restored luxury car interior with renewed seats, panels, and cabin finish",
+          items: [
+            "Combined interior upholstery packages",
+            "Coordinated seats, lining, wheel, and panels",
+            "Cabin refresh for comfort and presentation",
+            "Material planning for a consistent finish",
+            "Ideal before sale or after long-term use",
+            "Transparent scope and estimate upfront",
+          ],
+          title: "Interior Restoration",
+        },
+      ],
+      slug: "car-upholstery",
+      title: "Car Upholstery Services",
     },
   ],
   title: "More services we offer",

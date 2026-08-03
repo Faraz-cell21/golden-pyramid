@@ -39,7 +39,7 @@ export function HomeSpecialtyServices({
           </div>
         </Reveal>
 
-        <ul className="mt-10 grid grid-cols-1 gap-6 md:mt-12 md:grid-cols-3 md:gap-7">
+        <ul className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 md:mt-12 md:gap-7">
           {content.cards.map((card, index) => (
             <Reveal
               as="li"
