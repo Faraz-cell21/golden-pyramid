@@ -34,7 +34,7 @@ export const home: HomeContent = {
         countLabel: "See what our customers say",
         platform: "google",
         platformLabel: "Google",
-        rating: "4.3",
+        rating: "4.4",
         summary: "Excellent reviews from drivers who trust our garage",
       },
       {
