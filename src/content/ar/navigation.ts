@@ -4,6 +4,7 @@ export const navigation: NavigationContent = {
   about: "من نحن",
   blog: "المدونة",
   brand: "الهرم الذهبي",
+  cars: "أنواع السيارات",
   home: "الرئيسية",
   privacy: "سياسة الخصوصية",
   reviews: "آراء العملاء",

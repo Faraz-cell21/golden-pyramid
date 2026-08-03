@@ -3,6 +3,12 @@ import { specialtyServices } from "@/content/ar/specialty-services";
 import type { HomeContent } from "@/types/content";
 
 export const home: HomeContent = {
+  carBrands: {
+    description:
+      "مرسيدس وبي إم دبليو وأودي وبورشه ورينج روفر وبنتلي والمزيد. رعاية متخصصة للعلامات التي يبحث عنها السائقون أكثر.",
+    title: "أنواع السيارات التي نخدمها",
+    viewAllLabel: "عرض جميع أنواع السيارات",
+  },
   ctaBand: {
     body: "اتصل أو راسل الهرم الذهبي عبر واتساب للحصول على تقدير واضح وخدمة مرآب موثوقة.",
     title: "احجز خدمتك مع الهرم الذهبي اليوم",

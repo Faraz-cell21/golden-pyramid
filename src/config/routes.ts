@@ -1,8 +1,9 @@
-import type { SpecialtyServiceSlug } from "@/types/content";
+import type { CarBrandSlug, SpecialtyServiceSlug } from "@/types/content";
 
 export const routes = {
   about: "/about",
   blog: "/blog",
+  cars: "/cars",
   home: "/",
   privacyPolicy: "/privacy-policy",
   reviews: "/reviews",
@@ -18,6 +19,19 @@ export const specialtyServiceSlugs = [
   "car-care",
 ] as const satisfies readonly SpecialtyServiceSlug[];
 
+export const carBrandSlugs = [
+  "mercedes",
+  "bmw",
+  "audi",
+  "porsche",
+  "range-rover",
+  "bentley",
+] as const satisfies readonly CarBrandSlug[];
+
 export function specialtyServicePath(slug: SpecialtyServiceSlug) {
   return `/services/${slug}` as const;
+}
+
+export function carBrandPath(slug: CarBrandSlug) {
+  return `/cars/${slug}` as const;
 }
