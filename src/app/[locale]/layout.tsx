@@ -36,16 +36,42 @@ export async function generateMetadata({
   const { locale: localeParam } = await params;
   const locale: Locale = isLocale(localeParam) ? localeParam : defaultLocale;
 
+  const description = siteConfig.description[locale];
+  const ogLocale = locale === "ar" ? "ar_AE" : "en_AE";
+
   return {
-    description: siteConfig.description[locale],
+    description,
     icons: {
       apple: siteConfig.logoSrc,
       icon: siteConfig.logoSrc,
       shortcut: siteConfig.logoSrc,
     },
+    metadataBase: new URL(siteConfig.url),
+    openGraph: {
+      description,
+      images: [
+        {
+          alt: siteConfig.nameFull,
+          height: 1024,
+          url: siteConfig.logoSrc,
+          width: 1536,
+        },
+      ],
+      locale: ogLocale,
+      siteName: siteConfig.nameFull,
+      title: siteConfig.nameFull,
+      type: "website",
+      url: `${siteConfig.url}/${locale}`,
+    },
     title: {
-      default: siteConfig.name,
+      default: siteConfig.nameFull,
       template: `%s | ${siteConfig.name}`,
+    },
+    twitter: {
+      card: "summary_large_image",
+      description,
+      images: [siteConfig.logoSrc],
+      title: siteConfig.nameFull,
     },
   };
 }

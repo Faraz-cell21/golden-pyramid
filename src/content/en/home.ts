@@ -35,7 +35,7 @@ export const home: HomeContent = {
     vehiclesLine: "We service everyday cars, SUVs, and specialty vehicles.",
   },
   description:
-    "Professional automotive care from الهرم الذهبي. Clear estimates, skilled technicians, and trusted garage service.",
+    "Al Haram Al Thahabi Auto Service in Sharjah Industrial Area 4 — car garage, mechanical & electrical repair, AC, bodywork, mobile garage & recovery across UAE. Call or WhatsApp.",
   hero: {
     body: "From routine maintenance to complex repairs, الهرم الذهبي keeps your car running with skilled technicians, clear estimates, and modern diagnostics.",
     features: [
@@ -89,7 +89,7 @@ export const home: HomeContent = {
     description: specialtyServices.description,
     title: specialtyServices.title,
   },
-  title: "Home",
+  title: "Car Garage in Sharjah | Auto Service & Recovery",
   videoShowcase: {
     body: "A look inside our workshop: modern equipment, careful workmanship, and real cars in progress.",
     sideEnd: {

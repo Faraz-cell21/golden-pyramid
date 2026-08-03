@@ -13,6 +13,7 @@ import { HomeWhyUs } from "@/components/home/home-why-us";
 import { HomeWorkshopVideo } from "@/components/home/home-workshop-video";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
+import { buildPageMetadata } from "@/lib/seo";
 
 interface HomePageProps {
   params: Promise<{ locale: string }>;
@@ -29,10 +30,7 @@ export async function generateMetadata({
 
   const { home } = getDictionary(locale);
 
-  return {
-    description: home.description,
-    title: home.title,
-  };
+  return buildPageMetadata(locale, home.title, home.description);
 }
 
 export default async function HomePage({ params }: HomePageProps) {

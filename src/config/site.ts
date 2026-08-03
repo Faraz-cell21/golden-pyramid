@@ -5,12 +5,12 @@ export const siteConfig = {
     english: "Al Haram Al Thahabi Auto Service",
   },
   description: {
-    ar: "مرآب الهرم الذهبي لخدمات السيارات",
-    en: "Al Haram Al Thahabi Auto Service garage for automotive care",
+    ar: "الهرم الذهبي لصيانة السيارات في المنطقة الصناعية 4 الشارقة — كراج سيارات، ميكانيكا وكهرباء، تكييف، سمكرة، جراج متنقل وريكفري في الإمارات. اتصل أو واتساب.",
+    en: "Al Haram Al Thahabi Auto Service in Sharjah Industrial Area 4 — car garage, mechanical & electrical repair, AC, bodywork, mobile garage & recovery across UAE. Call or WhatsApp.",
   },
   logoSrc: "/icons/golden-pyramid-mark.webp",
   /** Always Arabic — locale must not change the displayed website name. */
   name: "الهرم الذهبي",
   nameFull: "الهرم الذهبي لصيانة السيارات",
-  url: "https://golden-pyramid.vercel.app",
+  url: "https://alharamalthahabi.ae",
 } as const;
