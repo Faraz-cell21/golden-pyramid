@@ -12,7 +12,7 @@ export const home: HomeContent = {
       "August Offers promotional banner in red and yellow for الهرم الذهبي garage",
     items: [
       "30% OFF on labor charges",
-      "A/C gas refill - AED 110",
+      "A/C gas refill - AED 99",
       "Paint any car panel - AED 200",
       "Full car polish - AED 200",
     ],
