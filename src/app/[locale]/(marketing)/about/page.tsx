@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { AboutView } from "@/components/about/about-view";
+import { FindUsSection } from "@/components/shared/find-us-section";
 import { PageContactCta } from "@/components/shared/page-contact-cta";
 import { PageHero } from "@/components/shared/page-hero";
 import { isLocale } from "@/i18n/config";
@@ -44,6 +45,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
       <PageContactCta
         ui={{ callNow: ui.callNow, messageWhatsapp: ui.messageWhatsapp }}
       />
+      <FindUsSection title={ui.findUs} />
     </>
   );
 }

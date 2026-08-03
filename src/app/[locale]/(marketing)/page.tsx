@@ -44,6 +44,7 @@ export default async function HomePage({ params }: HomePageProps) {
   const { blog, home, reviews, ui } = dictionary;
   const ctaUi = {
     callNow: ui.callNow,
+    findUs: ui.findUs,
     locationLabel: ui.locationLabel,
     messageWhatsapp: ui.messageWhatsapp,
   };

@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
+import { BackToTop } from "@/components/shared/back-to-top";
 import { LanguagePrompt } from "@/components/shared/language-prompt";
 import { StickyContact } from "@/components/shared/sticky-contact";
 import type { Locale } from "@/i18n/config";
@@ -28,6 +29,7 @@ export function SiteShell({ children, dictionary, locale }: SiteShellProps) {
           messageWhatsapp: dictionary.ui.messageWhatsapp,
         }}
       />
+      <BackToTop label={dictionary.ui.backToTop} />
       <LanguagePrompt
         confirmLabel={dictionary.ui.languagePromptConfirm}
         description={dictionary.ui.languagePromptBody}

@@ -35,9 +35,11 @@ const dictionaries = {
     ui: {
       backToBlog: "العودة إلى المدونة",
       backToServices: "العودة إلى الخدمات",
+      backToTop: "العودة إلى الأعلى",
       callNow: "اتصل الآن",
       close: "إغلاق",
       contactWhatsapp: "تواصل عبر واتساب",
+      findUs: "موقعنا",
       languagePromptBody: "هل تفضل متابعة التصفح باللغة العربية؟",
       languagePromptConfirm: "العربية",
       languagePromptDismiss: "الاستمرار بالإنجليزية",
@@ -71,9 +73,11 @@ const dictionaries = {
     ui: {
       backToBlog: "Back to blog",
       backToServices: "Back to services",
+      backToTop: "Back to top",
       callNow: "Call now",
       close: "Close",
       contactWhatsapp: "Contact on WhatsApp",
+      findUs: "Find us",
       languagePromptBody: "Would you like to continue in Arabic?",
       languagePromptConfirm: "Arabic",
       languagePromptDismiss: "Continue in English",
