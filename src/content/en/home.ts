@@ -5,7 +5,7 @@ import type { HomeContent } from "@/types/content";
 export const home: HomeContent = {
   carBrands: {
     description:
-      "Mercedes, BMW, Audi, Porsche, Range Rover, Bentley, and more. Specialist care for the brands drivers search for most.",
+      "Mercedes, BMW, Toyota, Nissan, Lexus, and more. Specialist care for the brands drivers search for most.",
     title: "Car brands we service",
     viewAllLabel: "View all car brands",
   },

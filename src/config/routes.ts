@@ -26,6 +26,18 @@ export const carBrandSlugs = [
   "porsche",
   "range-rover",
   "bentley",
+  "toyota",
+  "nissan",
+  "lexus",
+  "jaguar",
+  "volvo",
+  "volkswagen",
+  "hyundai",
+  "kia",
+  "honda",
+  "ford",
+  "mitsubishi",
+  "jeep",
 ] as const satisfies readonly CarBrandSlug[];
 
 export function specialtyServicePath(slug: SpecialtyServiceSlug) {
