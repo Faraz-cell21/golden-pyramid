@@ -5,6 +5,7 @@ export const mainNav: NavItem[] = [
   { href: routes.home, labelKey: "home" },
   { href: routes.about, labelKey: "about" },
   { href: routes.services, labelKey: "services" },
+  { href: routes.cars, labelKey: "cars" },
   { href: routes.reviews, labelKey: "reviews" },
   { href: routes.blog, labelKey: "blog" },
 ];

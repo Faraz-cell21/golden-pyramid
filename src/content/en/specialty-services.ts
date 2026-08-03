@@ -6,9 +6,9 @@ export const specialtyServices: SpecialtyServicesContent = {
       ctaLabel: "Explore this service",
       description:
         "On-site mobile garage repairs and reliable vehicle recovery or towing when you need help on the road.",
-      image: "/images/services/specialty/mobile-garage-hero.webp",
+      image: "/images/services/specialty/mobile-garage-uae.webp",
       imageAlt:
-        "Mobile garage technician inspecting an SUV engine beside a service van",
+        "Mobile garage technician inspecting a car engine beside a service van with Dubai skyline",
       slug: "mobile-garage-recovery",
       title: "Mobile Garage & Recovery",
     },
@@ -34,7 +34,7 @@ export const specialtyServices: SpecialtyServicesContent = {
     },
   ],
   description:
-    "Beyond workshop repairs, الهرم الذهبي delivers roadside support, quality parts, and complete car care — each with a dedicated experience built around your vehicle.",
+    "Beyond workshop repairs, الهرم الذهبي delivers roadside support, quality parts, and complete car care, with a dedicated experience built around each offering.",
   pages: [
     {
       description:
@@ -47,11 +47,11 @@ export const specialtyServices: SpecialtyServicesContent = {
         {
           body: [
             "Our mobile garage brings workshop-level support to your home, office, or roadside location. We start with a clear assessment, explain the options, and complete suitable repairs on site whenever it is safe and practical.",
-            "This service is ideal for drivers who need convenience without compromising on quality — especially for diagnostics, battery issues, fluid services, and many common mechanical or electrical faults.",
+            "This service is ideal for drivers who need convenience without compromising on quality, especially for diagnostics, battery issues, fluid services, and many common mechanical or electrical faults.",
           ],
-          image: "/images/services/specialty/mobile-garage-hero.webp",
+          image: "/images/services/specialty/mobile-garage-uae.webp",
           imageAlt:
-            "On-site mobile garage service with technician and diagnostic tools",
+            "On-site mobile garage service with technician and Dubai skyline",
           items: [
             "On-site inspection and computer diagnostics",
             "Battery, starting, and charging system support",
@@ -67,9 +67,9 @@ export const specialtyServices: SpecialtyServicesContent = {
             "Our recovery and towing team moves vehicles carefully and securely when driving is not an option. From breakdowns to accident recovery, we prioritize safe loading, secure transport, and delivery to our workshop or your preferred destination.",
             "You stay informed throughout the process, so you always know where your car is and what happens next.",
           ],
-          image: "/images/services/specialty/vehicle-recovery.webp",
+          image: "/images/services/specialty/vehicle-recovery-uae.webp",
           imageAlt:
-            "Flatbed recovery truck carefully loading a sedan for towing",
+            "Flatbed recovery truck carefully loading a sedan for towing with Dubai skyline",
           items: [
             "Vehicle towing and flatbed recovery",
             "Breakdown and accident recovery support",
@@ -94,7 +94,7 @@ export const specialtyServices: SpecialtyServicesContent = {
       sections: [
         {
           body: [
-            "Genuine parts are designed to match original specifications for fit, durability, and system compatibility. We recommend them when factory-level quality and long-term reliability are the priority — especially for critical systems and luxury or European vehicles.",
+            "Genuine parts are designed to match original specifications for fit, durability, and system compatibility. We recommend them when factory-level quality and long-term reliability are the priority, especially for critical systems and luxury or European vehicles.",
             "Our team confirms part numbers and vehicle details before ordering, so you receive the correct component the first time.",
           ],
           image: "/images/services/specialty/spare-parts-hero.webp",
@@ -136,7 +136,7 @@ export const specialtyServices: SpecialtyServicesContent = {
       description:
         "Complete car care including wash, chemical wash, window tinting, nano ceramic coating, deep cleaning, steam cleaning, and interior & exterior detailing.",
       intro: [
-        "Your car deserves more than a quick rinse. الهرم الذهبي offers a full car care range that protects paint, refreshes interiors, and restores a clean, refined finish — from everyday washing to premium protection packages.",
+        "Your car deserves more than a quick rinse. الهرم الذهبي offers a full car care range that protects paint, refreshes interiors, and restores a clean, refined finish, from everyday washing to premium protection packages.",
         "Each service is delivered with attention to detail, suitable products, and a finish that looks sharp under UAE sun and daily driving conditions.",
       ],
       sections: [
@@ -179,7 +179,7 @@ export const specialtyServices: SpecialtyServicesContent = {
         {
           body: [
             "Deep cleaning, steam cleaning, and full interior & exterior detailing restore both the look and feel of your vehicle. We clean cabin surfaces thoroughly, refresh fabrics and plastics, and finish the exterior for a complete transformation.",
-            "Choose this when your car needs more than a wash — especially before sale, after long use, or when you want a showroom-level result.",
+            "Choose this when your car needs more than a wash, especially before sale, after long use, or when you want a showroom-level result.",
           ],
           image: "/images/services/specialty/car-care-hero.webp",
           imageAlt:

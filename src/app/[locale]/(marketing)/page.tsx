@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import { HomeCarBrands } from "@/components/home/home-car-brands";
 import { HomeCtaBand } from "@/components/home/home-cta-band";
 import { HomeHero } from "@/components/home/home-hero";
 import { HomeLatestBlogs } from "@/components/home/home-latest-blogs";
@@ -41,7 +42,7 @@ export default async function HomePage({ params }: HomePageProps) {
   }
 
   const dictionary = getDictionary(locale);
-  const { blog, home, reviews, ui } = dictionary;
+  const { blog, carBrands, home, reviews, ui } = dictionary;
   const ctaUi = {
     callNow: ui.callNow,
     findUs: ui.findUs,
@@ -66,6 +67,11 @@ export default async function HomePage({ params }: HomePageProps) {
       <HomeWorkshopVideo content={home.videoShowcase} />
       <HomeServiceCategories content={home.serviceCategories} locale={locale} />
       <HomeSpecialtyServices content={home.specialtyServices} locale={locale} />
+      <HomeCarBrands
+        cards={carBrands.cards}
+        content={home.carBrands}
+        locale={locale}
+      />
       <HomeReviewsCarousel
         content={home.reviewsShowcase}
         locale={locale}

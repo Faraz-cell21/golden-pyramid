@@ -1,5 +1,6 @@
 import { about as aboutAr } from "@/content/ar/about";
 import { blog as blogAr } from "@/content/ar/blog";
+import { carBrands as carBrandsAr } from "@/content/ar/car-brands";
 import { home as homeAr } from "@/content/ar/home";
 import { navigation as navigationAr } from "@/content/ar/navigation";
 import { notFound as notFoundAr } from "@/content/ar/not-found";
@@ -10,6 +11,7 @@ import { specialtyServices as specialtyServicesAr } from "@/content/ar/specialty
 import { termsAndConditions as termsAndConditionsAr } from "@/content/ar/terms-and-conditions";
 import { about as aboutEn } from "@/content/en/about";
 import { blog as blogEn } from "@/content/en/blog";
+import { carBrands as carBrandsEn } from "@/content/en/car-brands";
 import { home as homeEn } from "@/content/en/home";
 import { navigation as navigationEn } from "@/content/en/navigation";
 import { notFound as notFoundEn } from "@/content/en/not-found";
@@ -24,6 +26,7 @@ const dictionaries = {
   ar: {
     about: aboutAr,
     blog: blogAr,
+    carBrands: carBrandsAr,
     home: homeAr,
     navigation: navigationAr,
     notFound: notFoundAr,
@@ -34,6 +37,7 @@ const dictionaries = {
     termsAndConditions: termsAndConditionsAr,
     ui: {
       backToBlog: "العودة إلى المدونة",
+      backToCars: "العودة إلى أنواع السيارات",
       backToServices: "العودة إلى الخدمات",
       backToTop: "العودة إلى الأعلى",
       callNow: "اتصل الآن",
@@ -62,6 +66,7 @@ const dictionaries = {
   en: {
     about: aboutEn,
     blog: blogEn,
+    carBrands: carBrandsEn,
     home: homeEn,
     navigation: navigationEn,
     notFound: notFoundEn,
@@ -72,6 +77,7 @@ const dictionaries = {
     termsAndConditions: termsAndConditionsEn,
     ui: {
       backToBlog: "Back to blog",
+      backToCars: "Back to car brands",
       backToServices: "Back to services",
       backToTop: "Back to top",
       callNow: "Call now",
@@ -111,6 +117,12 @@ export function getBlogPost(locale: Locale, slug: string) {
 
 export function getSpecialtyService(locale: Locale, slug: string) {
   return getDictionary(locale).specialtyServices.pages.find(
+    (page) => page.slug === slug
+  );
+}
+
+export function getCarBrand(locale: Locale, slug: string) {
+  return getDictionary(locale).carBrands.pages.find(
     (page) => page.slug === slug
   );
 }

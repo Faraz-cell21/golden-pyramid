@@ -38,6 +38,7 @@ export interface NavigationContent {
   about: string;
   blog: string;
   brand: string;
+  cars: string;
   home: string;
   privacy: string;
   reviews: string;
@@ -53,6 +54,7 @@ export interface ServiceCategory {
 }
 
 export interface HomeContent extends PageContent {
+  carBrands: HomeCarBrandsContent;
   ctaBand: {
     body: string;
     title: string;
@@ -168,4 +170,48 @@ export interface ReviewItem {
 
 export interface ReviewsContent extends PageContent {
   items: ReviewItem[];
+}
+
+export type CarBrandSlug =
+  | "mercedes"
+  | "bmw"
+  | "audi"
+  | "porsche"
+  | "range-rover"
+  | "bentley";
+
+export interface CarBrandCard {
+  ctaLabel: string;
+  description: string;
+  image: string;
+  imageAlt: string;
+  name: string;
+  slug: CarBrandSlug;
+}
+
+export interface CarBrandIssue {
+  body: string;
+  title: string;
+}
+
+export interface CarBrandPageContent extends PageContent {
+  commonIssues: CarBrandIssue[];
+  commonIssuesIntro: string;
+  commonIssuesTitle: string;
+  intro: string[];
+  items: string[];
+  name: string;
+  servicesTitle: string;
+  slug: CarBrandSlug;
+}
+
+export interface CarBrandsContent extends PageContent {
+  cards: CarBrandCard[];
+  pages: CarBrandPageContent[];
+}
+
+export interface HomeCarBrandsContent {
+  description: string;
+  title: string;
+  viewAllLabel: string;
 }

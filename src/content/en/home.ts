@@ -3,6 +3,12 @@ import { specialtyServices } from "@/content/en/specialty-services";
 import type { HomeContent } from "@/types/content";
 
 export const home: HomeContent = {
+  carBrands: {
+    description:
+      "Mercedes, BMW, Audi, Porsche, Range Rover, Bentley, and more. Specialist care for the brands drivers search for most.",
+    title: "Car brands we service",
+    viewAllLabel: "View all car brands",
+  },
   ctaBand: {
     body: "Call or WhatsApp الهرم الذهبي for a clear estimate and trusted garage care.",
     title: "Book service with الهرم الذهبي today",
