@@ -178,7 +178,19 @@ export type CarBrandSlug =
   | "audi"
   | "porsche"
   | "range-rover"
-  | "bentley";
+  | "bentley"
+  | "toyota"
+  | "nissan"
+  | "lexus"
+  | "jaguar"
+  | "volvo"
+  | "volkswagen"
+  | "hyundai"
+  | "kia"
+  | "honda"
+  | "ford"
+  | "mitsubishi"
+  | "jeep";
 
 export interface CarBrandCard {
   ctaLabel: string;
