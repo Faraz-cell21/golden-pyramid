@@ -128,11 +128,7 @@ export interface ServicesContent extends PageContent {
   categories: ServiceCategory[];
 }
 
-export type SpecialtyServiceSlug =
-  | "mobile-garage-recovery"
-  | "spare-parts"
-  | "car-care"
-  | "car-upholstery";
+export type SpecialtyServiceSlug = "mobile-garage-recovery" | "spare-parts";
 
 export interface SpecialtyServiceCard {
   ctaLabel: string;

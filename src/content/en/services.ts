@@ -72,6 +72,32 @@ export const services: ServicesContent = {
       title: "Tires and wheels",
     },
     {
+      image: "/images/services/car-care.webp",
+      imageAlt:
+        "Luxury sedan receiving professional ceramic coating and exterior detailing",
+      items: [
+        "Car wash and chemical wash",
+        "Window tinting",
+        "Nano ceramic coating",
+        "Deep cleaning and steam cleaning",
+        "Interior and exterior detailing",
+      ],
+      title: "Car Care Services",
+    },
+    {
+      image: "/images/services/car-upholstery.webp",
+      imageAlt:
+        "Technician reupholstering luxury car seats with premium leather in a workshop",
+      items: [
+        "Seat upholstery",
+        "Roof lining",
+        "Steering wheel wrapping",
+        "Door panels",
+        "Interior restoration",
+      ],
+      title: "Car Upholstery Services",
+    },
+    {
       image: "/images/services/extra.webp",
       imageAlt: "VIP mobile car care service beside a luxury vehicle",
       items: [
@@ -90,6 +116,6 @@ export const services: ServicesContent = {
     },
   ],
   description:
-    "Complete mechanical, electrical, body, AC, tire, and additional care under one roof, delivered with modern equipment and specialized technicians.",
+    "Complete mechanical, electrical, body, AC, tire, car care, upholstery, and additional care under one roof, delivered with modern equipment and specialized technicians.",
   title: "Our Services",
 };

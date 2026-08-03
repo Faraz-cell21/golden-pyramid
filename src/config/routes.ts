@@ -16,8 +16,6 @@ export type AppRoute = (typeof routes)[keyof typeof routes];
 export const specialtyServiceSlugs = [
   "mobile-garage-recovery",
   "spare-parts",
-  "car-care",
-  "car-upholstery",
 ] as const satisfies readonly SpecialtyServiceSlug[];
 
 export const carBrandSlugs = [
