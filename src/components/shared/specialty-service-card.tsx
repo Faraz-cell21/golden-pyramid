@@ -19,14 +19,14 @@ export function SpecialtyServiceCard({
 
   return (
     <Link
-      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-navy/10 bg-navy text-white shadow-[0_18px_45px_rgba(11,31,58,0.18)] transition-[transform,box-shadow,border-color] duration-500 hover:-translate-y-1.5 hover:border-gold/60 hover:shadow-[0_28px_60px_rgba(11,31,58,0.28)]"
+      className="relative flex h-full flex-col overflow-hidden rounded-2xl border border-gold/55 bg-navy text-white shadow-[0_10px_28px_rgba(255,255,255,0.06),0_8px_20px_rgba(212,175,55,0.14)]"
       href={href}
       prefetch
     >
       <div className="relative aspect-[16/11] overflow-hidden sm:aspect-[16/10]">
         <Image
           alt={card.imageAlt}
-          className="object-cover object-center transition-transform duration-700 group-hover:scale-[1.06]"
+          className="object-cover object-center"
           fill
           quality={90}
           sizes="(max-width: 768px) 100vw, 33vw"
@@ -43,7 +43,7 @@ export function SpecialtyServiceCard({
         <div className="absolute inset-x-0 top-0 flex items-start justify-end p-4 sm:p-5">
           <span
             aria-hidden
-            className="inline-flex size-9 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white backdrop-blur-sm transition-colors duration-300 group-hover:border-gold/50 group-hover:bg-gold group-hover:text-navy"
+            className="inline-flex size-9 items-center justify-center rounded-full border border-gold/60 bg-gold text-navy"
           >
             <ArrowIcon />
           </span>
@@ -52,7 +52,7 @@ export function SpecialtyServiceCard({
           <h3 className="max-w-[18ch] font-bold text-xl leading-snug tracking-tight sm:text-2xl">
             {card.title}
           </h3>
-          <div className="mt-3 h-0.5 w-12 rounded-full bg-gold transition-all duration-500 group-hover:w-20" />
+          <div className="mt-3 h-0.5 w-12 rounded-full bg-gold" />
         </div>
       </div>
 
@@ -60,7 +60,7 @@ export function SpecialtyServiceCard({
         <p className="flex-1 text-sm text-white/80 leading-relaxed sm:text-[0.95rem]">
           {card.description}
         </p>
-        <span className="mt-5 inline-flex items-center gap-2 font-semibold text-gold text-sm transition-transform duration-300 group-hover:translate-x-1 rtl:group-hover:-translate-x-1">
+        <span className="mt-5 inline-flex items-center gap-2 font-semibold text-gold text-sm">
           {card.ctaLabel}
           <span aria-hidden className="inline-flex">
             <ArrowIcon />

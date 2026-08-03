@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import { HomeAugustOffers } from "@/components/home/home-august-offers";
 import { HomeCarBrands } from "@/components/home/home-car-brands";
 import { HomeCtaBand } from "@/components/home/home-cta-band";
 import { HomeHero } from "@/components/home/home-hero";
@@ -65,6 +66,7 @@ export default async function HomePage({ params }: HomePageProps) {
         readMoreLabel={ui.readMore}
       />
       <HomeWorkshopVideo content={home.videoShowcase} />
+      <HomeAugustOffers content={home.augustOffers} ui={ctaUi} />
       <HomeServiceCategories content={home.serviceCategories} locale={locale} />
       <HomeSpecialtyServices content={home.specialtyServices} locale={locale} />
       <HomeCarBrands

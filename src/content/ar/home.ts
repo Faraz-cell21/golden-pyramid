@@ -3,6 +3,20 @@ import { specialtyServices } from "@/content/ar/specialty-services";
 import type { HomeContent } from "@/types/content";
 
 export const home: HomeContent = {
+  augustOffers: {
+    ctaBody: "احجز موعدك اليوم واستفد من هذه العروض الحصرية.",
+    description:
+      "عروض ورشة محدودة لشهر أغسطس. أسعار واضحة وفنيون مهرة وحجز سهل عبر الاتصال أو واتساب.",
+    image: "/images/offers/august-offers-banner.webp",
+    imageAlt: "بانر عروض أغسطس باللونين الأحمر والأصفر لمرآب الهرم الذهبي",
+    items: [
+      "خصم ٣٠٪ على أجور العمالة",
+      "تعبئة غاز المكيف - ١١٠ درهم",
+      "دهان أي قطعة سيارة - ٢٠٠ درهم",
+      "تلميع كامل للسيارة - ٢٠٠ درهم",
+    ],
+    title: "عروض أغسطس",
+  },
   carBrands: {
     description:
       "مرسيدس وبي إم دبليو وتويوتا ونيسان ولكزس والمزيد. رعاية متخصصة للعلامات التي يبحث عنها السائقون أكثر.",

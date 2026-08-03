@@ -3,6 +3,21 @@ import { specialtyServices } from "@/content/en/specialty-services";
 import type { HomeContent } from "@/types/content";
 
 export const home: HomeContent = {
+  augustOffers: {
+    ctaBody: "Book your appointment today and enjoy these exclusive offers.",
+    description:
+      "Limited-time workshop deals for August. Clear prices, skilled technicians, and easy booking by call or WhatsApp.",
+    image: "/images/offers/august-offers-banner.webp",
+    imageAlt:
+      "August Offers promotional banner in red and yellow for الهرم الذهبي garage",
+    items: [
+      "30% OFF on labor charges",
+      "A/C gas refill - AED 110",
+      "Paint any car panel - AED 200",
+      "Full car polish - AED 200",
+    ],
+    title: "August Offers",
+  },
   carBrands: {
     description:
       "Mercedes, BMW, Toyota, Nissan, Lexus, and more. Specialist care for the brands drivers search for most.",

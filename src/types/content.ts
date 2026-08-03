@@ -54,6 +54,14 @@ export interface ServiceCategory {
 }
 
 export interface HomeContent extends PageContent {
+  augustOffers: {
+    ctaBody: string;
+    description: string;
+    image: string;
+    imageAlt: string;
+    items: string[];
+    title: string;
+  };
   carBrands: HomeCarBrandsContent;
   ctaBand: {
     body: string;
