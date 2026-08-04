@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import type { Locale } from "@/i18n/config";
 
+const LEADING_SLASHES = /^\/+/;
+
 const ogImage = {
   alt: siteConfig.nameFull,
   height: 1024,
@@ -16,7 +18,7 @@ export function buildPageMetadata(
   description: string,
   path = ""
 ): Metadata {
-  const normalizedPath = path.replace(/^\/+/, "");
+  const normalizedPath = path.replace(LEADING_SLASHES, "");
   const pagePath = normalizedPath
     ? `/${locale}/${normalizedPath}`
     : `/${locale}`;
