@@ -2,7 +2,7 @@ import type { LegalPageContent } from "@/types/content";
 
 export const termsAndConditions: LegalPageContent = {
   description:
-    "The terms that guide use of the الهرم الذهبي website and our garage services.",
+    "Terms and conditions for using the الهرم الذهبي website and auto garage services in Sharjah Industrial Area 4, UAE.",
   lastUpdatedLabel: "Last updated: July 2026",
   sections: [
     {

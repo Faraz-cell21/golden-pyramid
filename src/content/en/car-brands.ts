@@ -5,7 +5,7 @@ export const carBrands: CarBrandsContent = {
     {
       ctaLabel: "Mercedes service details",
       description:
-        "Professional Mercedes maintenance and repair in Sharjah with clear estimates and brand-aware diagnostics.",
+        "Mercedes garage maintenance and repair in Sharjah Industrial Area 4—clear estimates and brand-aware diagnostics.",
       image: "/images/cars/mercedes.webp",
       imageAlt: "Silver Mercedes luxury sedan parked in a workshop bay",
       name: "Mercedes",
@@ -14,7 +14,7 @@ export const carBrands: CarBrandsContent = {
     {
       ctaLabel: "BMW service details",
       description:
-        "Trusted BMW servicing for everyday driving and performance models, from diagnostics to workshop repairs.",
+        "BMW garage servicing in Sharjah for daily and performance models—diagnostics to workshop repairs.",
       image: "/images/cars/bmw.webp",
       imageAlt: "Dark blue BMW luxury sedan parked in a workshop bay",
       name: "BMW",
@@ -23,7 +23,7 @@ export const carBrands: CarBrandsContent = {
     {
       ctaLabel: "Audi service details",
       description:
-        "Audi care for mechanical, electrical, and electronic systems with modern tools and experienced technicians.",
+        "Audi garage care in Sharjah for mechanical, electrical and electronic systems with modern diagnostics.",
       image: "/images/cars/audi.webp",
       imageAlt: "Graphite Audi luxury sportback parked in a workshop bay",
       name: "Audi",
@@ -32,7 +32,7 @@ export const carBrands: CarBrandsContent = {
     {
       ctaLabel: "Porsche service details",
       description:
-        "Careful Porsche maintenance and repair with attention to performance, precision, and quality parts.",
+        "Porsche garage maintenance and repair in Sharjah with attention to performance, precision and quality parts.",
       image: "/images/cars/porsche.webp",
       imageAlt: "Red Porsche sports coupe parked in a workshop bay",
       name: "Porsche",
@@ -41,7 +41,7 @@ export const carBrands: CarBrandsContent = {
     {
       ctaLabel: "Range Rover service details",
       description:
-        "Range Rover and Land Rover family support for SUVs, including diagnostics, maintenance, and recovery help.",
+        "Range Rover garage support in Sharjah for SUVs—diagnostics, maintenance, repairs and recovery help.",
       image: "/images/cars/range-rover.webp",
       imageAlt: "Dark green Range Rover luxury SUV parked in a workshop bay",
       name: "Range Rover",
@@ -50,7 +50,7 @@ export const carBrands: CarBrandsContent = {
     {
       ctaLabel: "Bentley service details",
       description:
-        "Discreet Bentley workshop care with specialist attention to luxury systems, comfort, and finish quality.",
+        "Bentley garage care in Sharjah with specialist attention to luxury systems, comfort and finish quality.",
       image: "/images/cars/bentley.webp",
       imageAlt: "Black Bentley Continental GT parked in a workshop bay",
       name: "Bentley",
@@ -59,7 +59,7 @@ export const carBrands: CarBrandsContent = {
     {
       ctaLabel: "Toyota service details",
       description:
-        "Reliable Toyota maintenance and repair in Sharjah for Land Cruiser, Hilux, Camry, and more, with clear estimates.",
+        "Toyota garage maintenance and repair in Sharjah for Land Cruiser, Hilux, Camry and more—clear estimates.",
       image: "/images/cars/toyota.webp",
       imageAlt: "White Toyota SUV parked in a workshop bay",
       name: "Toyota",
@@ -68,7 +68,7 @@ export const carBrands: CarBrandsContent = {
     {
       ctaLabel: "Nissan service details",
       description:
-        "Trusted Nissan servicing for Patrol, X-Terra, Altima, and daily drivers, from diagnostics to workshop repairs.",
+        "Nissan garage servicing in Sharjah for Patrol, X-Terra, Altima and daily drivers—diagnostics to repairs.",
       image: "/images/cars/nissan.webp",
       imageAlt: "Silver Nissan SUV parked in a workshop bay",
       name: "Nissan",
@@ -77,7 +77,7 @@ export const carBrands: CarBrandsContent = {
     {
       ctaLabel: "Lexus service details",
       description:
-        "Lexus workshop care with careful diagnostics, luxury-system support, and transparent estimates in Sharjah.",
+        "Lexus garage care in Sharjah with careful diagnostics, luxury-system support and transparent estimates.",
       image: "/images/cars/lexus.webp",
       imageAlt: "White Lexus luxury SUV parked in a workshop bay",
       name: "Lexus",
@@ -86,7 +86,7 @@ export const carBrands: CarBrandsContent = {
     {
       ctaLabel: "Jaguar service details",
       description:
-        "Jaguar service for performance and comfort systems, with precise diagnostics and quality workshop repairs.",
+        "Jaguar garage service in Sharjah for performance and comfort systems—precise diagnostics and repairs.",
       image: "/images/cars/jaguar.webp",
       imageAlt: "Dark green Jaguar SUV parked in a workshop bay",
       name: "Jaguar",
@@ -95,7 +95,7 @@ export const carBrands: CarBrandsContent = {
     {
       ctaLabel: "Volvo service details",
       description:
-        "Volvo maintenance and repair focused on safety systems, electronics, and clear communication before work begins.",
+        "Volvo garage maintenance in Sharjah focused on safety systems, electronics and clear communication.",
       image: "/images/cars/volvo.webp",
       imageAlt: "Silver Volvo SUV parked in a workshop bay",
       name: "Volvo",
@@ -104,7 +104,7 @@ export const carBrands: CarBrandsContent = {
     {
       ctaLabel: "Volkswagen service details",
       description:
-        "Volkswagen garage care for SUVs and sedans, including diagnostics, AC, electronics, and drivetrain support.",
+        "Volkswagen garage care in Sharjah for SUVs and sedans—diagnostics, AC, electronics and drivetrain support.",
       image: "/images/cars/volkswagen.webp",
       imageAlt: "White Volkswagen SUV parked in a workshop bay",
       name: "Volkswagen",
@@ -113,7 +113,7 @@ export const carBrands: CarBrandsContent = {
     {
       ctaLabel: "Hyundai service details",
       description:
-        "Hyundai service in Sharjah for popular SUVs and family cars, with practical repairs and clear estimates.",
+        "Hyundai garage service in Sharjah for popular SUVs and family cars—practical repairs and clear estimates.",
       image: "/images/cars/hyundai.webp",
       imageAlt: "White Hyundai SUV parked in a workshop bay",
       name: "Hyundai",
@@ -122,7 +122,7 @@ export const carBrands: CarBrandsContent = {
     {
       ctaLabel: "Kia service details",
       description:
-        "Kia maintenance and repair for Sportage, Sorento, and everyday models, with modern diagnostics and honest advice.",
+        "Kia garage maintenance in Sharjah for Sportage, Sorento and everyday models—modern diagnostics and honest advice.",
       image: "/images/cars/kia.webp",
       imageAlt: "Dark grey Kia SUV parked in a workshop bay",
       name: "Kia",
@@ -131,7 +131,7 @@ export const carBrands: CarBrandsContent = {
     {
       ctaLabel: "Honda service details",
       description:
-        "Honda servicing for Accords, CR-V, and family cars, covering maintenance, AC, and electronic fault repairs.",
+        "Honda garage servicing in Sharjah for Accords, CR-V and family cars—maintenance, AC and electronics.",
       image: "/images/cars/honda.webp",
       imageAlt: "Silver Honda sedan parked in a workshop bay",
       name: "Honda",
@@ -140,7 +140,7 @@ export const carBrands: CarBrandsContent = {
     {
       ctaLabel: "Ford service details",
       description:
-        "Ford workshop support for Explorer, F-series, and daily models, with diagnostics, brakes, and AC care.",
+        "Ford garage support in Sharjah for Explorer, F-series and daily models—diagnostics, brakes and AC care.",
       image: "/images/cars/ford.webp",
       imageAlt: "Dark blue Ford SUV parked in a workshop bay",
       name: "Ford",
@@ -149,7 +149,7 @@ export const carBrands: CarBrandsContent = {
     {
       ctaLabel: "Mitsubishi service details",
       description:
-        "Mitsubishi service for Pajero, L200, and family SUVs, including 4x4, AC, and mechanical repairs.",
+        "Mitsubishi garage service in Sharjah for Pajero, L200 and family SUVs—4x4, AC and mechanical repairs.",
       image: "/images/cars/mitsubishi.webp",
       imageAlt: "White Mitsubishi SUV parked in a workshop bay",
       name: "Mitsubishi",
@@ -158,7 +158,7 @@ export const carBrands: CarBrandsContent = {
     {
       ctaLabel: "Jeep service details",
       description:
-        "Jeep maintenance and repair for Wrangler, Grand Cherokee, and off-road models with careful diagnostics.",
+        "Jeep garage maintenance in Sharjah for Wrangler, Grand Cherokee and off-road models—careful diagnostics.",
       image: "/images/cars/jeep.webp",
       imageAlt: "Black Jeep Wrangler parked in a workshop bay",
       name: "Jeep",
@@ -166,7 +166,7 @@ export const carBrands: CarBrandsContent = {
     },
   ],
   description:
-    "الهرم الذهبي services major car brands in الشارقة، المنطقة الصناعية 4, including Mercedes, BMW, Audi, Porsche, Range Rover, Bentley, Toyota, Nissan, Lexus, and more.",
+    "Expert garage service for Mercedes, BMW, Audi, Porsche, Toyota, Nissan & more in Sharjah Industrial Area 4. Call or WhatsApp today for a clear estimate.",
   pages: [
     {
       commonIssues: [
@@ -199,7 +199,7 @@ export const carBrands: CarBrandsContent = {
         "These are issues Mercedes owners in Sharjah often ask us to diagnose. Every car is different, so we inspect first and explain the options clearly.",
       commonIssuesTitle: "Common Mercedes issues we see",
       description:
-        "Mercedes service and repair in Sharjah Industrial Area 4. Diagnostics, maintenance, common issue repairs, and workshop care from الهرم الذهبي.",
+        "Mercedes garage service and repair in Sharjah Industrial Area 4. Expert diagnostics, maintenance and workshop repairs—call or WhatsApp for a clear estimate.",
       intro: [
         "Looking for Mercedes service in Sharjah? الهرم الذهبي provides professional maintenance and repair for Mercedes vehicles at our workshop in المنطقة الصناعية 4.",
         "We are an independent garage, not an official dealer, focused on clear estimates, careful diagnostics, and skilled technicians who understand European luxury brands.",
@@ -251,7 +251,7 @@ export const carBrands: CarBrandsContent = {
         "BMW owners often come to us with cooling, electronics, suspension, and AC concerns. We diagnose carefully and recommend only what the car needs.",
       commonIssuesTitle: "Common BMW issues we see",
       description:
-        "BMW garage service in Sharjah. Expert diagnostics, maintenance, and repairs for common BMW issues at الهرم الذهبي.",
+        "BMW garage service and repair in Sharjah Industrial Area 4. Trusted diagnostics, maintenance and workshop repairs—call or WhatsApp for a clear estimate.",
       intro: [
         "Drivers searching for BMW service near Sharjah trust الهرم الذهبي for accurate diagnostics and reliable workshop repairs.",
         "From daily BMW sedans to performance models, we explain the issue, share a clear estimate, and complete work with quality parts suited to your vehicle.",
@@ -303,7 +303,7 @@ export const carBrands: CarBrandsContent = {
         "Audi owners often ask about misfires, electronics, AC, and transmission feel. We diagnose first, then repair with transparent estimates.",
       commonIssuesTitle: "Common Audi issues we see",
       description:
-        "Audi service and repair in Sharjah. Mechanical, electrical, and electronic care for common Audi issues at الهرم الذهبي.",
+        "Audi garage service and repair in Sharjah Industrial Area 4. Mechanical, electrical and electronic workshop care—call or WhatsApp for a clear estimate.",
       intro: [
         "Need Audi service in Sharjah? Our team handles Audi maintenance and repairs with modern diagnostic equipment and experienced technicians.",
         "We focus on transparent communication and careful workmanship so your Audi returns road-ready with confidence.",
@@ -355,7 +355,7 @@ export const carBrands: CarBrandsContent = {
         "Porsche owners expect precision. We diagnose common performance, cooling, gearbox, and chassis concerns with careful workshop standards.",
       commonIssuesTitle: "Common Porsche issues we see",
       description:
-        "Porsche maintenance and repair in Sharjah. Precision workshop care for common Porsche issues from الهرم الذهبي.",
+        "Porsche garage service and repair in Sharjah Industrial Area 4. Precision diagnostics, maintenance and workshop repairs—call or WhatsApp for a clear estimate.",
       intro: [
         "Porsche owners looking for careful garage service in Sharjah can rely on الهرم الذهبي for diagnostics, maintenance, and repairs.",
         "We treat Porsche vehicles with the precision they deserve. Clear assessment first, then skilled work with suitable parts and finishing checks.",
@@ -407,7 +407,7 @@ export const carBrands: CarBrandsContent = {
         "Range Rover owners often contact us about air suspension, electronics, driveline noise, and cooling under UAE conditions.",
       commonIssuesTitle: "Common Range Rover issues we see",
       description:
-        "Range Rover service in Sharjah. SUV maintenance, diagnostics, and repair support for common Range Rover issues from الهرم الذهبي.",
+        "Range Rover garage service and repair in Sharjah Industrial Area 4. SUV diagnostics, maintenance and workshop repairs—call or WhatsApp for a clear estimate.",
       intro: [
         "Searching for Range Rover service in Sharjah? الهرم الذهبي supports Range Rover and related Land Rover family vehicles with workshop and recovery options.",
         "SUVs need strong diagnostics and careful handling. We explain findings clearly and complete maintenance or repairs with practical, transparent estimates.",
@@ -459,7 +459,7 @@ export const carBrands: CarBrandsContent = {
         "Bentley service is about comfort, refinement, and careful diagnosis. These are issues owners often ask us to inspect.",
       commonIssuesTitle: "Common Bentley issues we see",
       description:
-        "Bentley service and workshop care in Sharjah. Discreet luxury vehicle maintenance for common Bentley concerns from الهرم الذهبي.",
+        "Bentley garage service and repair in Sharjah Industrial Area 4. Discreet luxury diagnostics, maintenance and care—call or WhatsApp for a clear estimate.",
       intro: [
         "Bentley service in Sharjah demands careful attention to luxury systems, comfort features, and finish quality. الهرم الذهبي provides independent workshop care for Bentley owners.",
         "We start with a thorough inspection, share a clear estimate, and complete work with the discretion and precision expected for premium vehicles.",
@@ -511,7 +511,7 @@ export const carBrands: CarBrandsContent = {
         "Toyota owners in Sharjah often ask us to diagnose these concerns. Every car is different, so we inspect first and explain the options clearly.",
       commonIssuesTitle: "Common Toyota issues we see",
       description:
-        "Toyota service and repair in Sharjah Industrial Area 4. Diagnostics, maintenance, common issue repairs, and workshop care from الهرم الذهبي.",
+        "Toyota garage service and repair in Sharjah Industrial Area 4. Expert diagnostics, maintenance and workshop repairs—call or WhatsApp for a clear estimate.",
       intro: [
         "Looking for Toyota service in Sharjah? الهرم الذهبي provides professional maintenance and repair for Toyota vehicles at our workshop in المنطقة الصناعية 4.",
         "We are an independent garage, not an official dealer, focused on clear estimates, careful diagnostics, and skilled technicians for the brands drivers trust most.",
@@ -563,7 +563,7 @@ export const carBrands: CarBrandsContent = {
         "Nissan owners in Sharjah often ask us to diagnose these concerns. Every car is different, so we inspect first and explain the options clearly.",
       commonIssuesTitle: "Common Nissan issues we see",
       description:
-        "Nissan service and repair in Sharjah Industrial Area 4. Diagnostics, maintenance, common issue repairs, and workshop care from الهرم الذهبي.",
+        "Nissan garage service and repair in Sharjah Industrial Area 4. Trusted diagnostics, maintenance and workshop repairs—call or WhatsApp for a clear estimate.",
       intro: [
         "Looking for Nissan service in Sharjah? الهرم الذهبي provides professional maintenance and repair for Nissan vehicles at our workshop in المنطقة الصناعية 4.",
         "We are an independent garage, not an official dealer, focused on clear estimates, careful diagnostics, and skilled technicians for the brands drivers trust most.",
@@ -615,7 +615,7 @@ export const carBrands: CarBrandsContent = {
         "Lexus owners in Sharjah often ask us to diagnose these concerns. Every car is different, so we inspect first and explain the options clearly.",
       commonIssuesTitle: "Common Lexus issues we see",
       description:
-        "Lexus service and repair in Sharjah Industrial Area 4. Diagnostics, maintenance, common issue repairs, and workshop care from الهرم الذهبي.",
+        "Lexus garage service and repair in Sharjah Industrial Area 4. Luxury diagnostics, maintenance and workshop repairs—call or WhatsApp for a clear estimate.",
       intro: [
         "Looking for Lexus service in Sharjah? الهرم الذهبي provides professional maintenance and repair for Lexus vehicles at our workshop in المنطقة الصناعية 4.",
         "We are an independent garage, not an official dealer, focused on clear estimates, careful diagnostics, and skilled technicians for the brands drivers trust most.",
@@ -667,7 +667,7 @@ export const carBrands: CarBrandsContent = {
         "Jaguar owners in Sharjah often ask us to diagnose these concerns. Every car is different, so we inspect first and explain the options clearly.",
       commonIssuesTitle: "Common Jaguar issues we see",
       description:
-        "Jaguar service and repair in Sharjah Industrial Area 4. Diagnostics, maintenance, common issue repairs, and workshop care from الهرم الذهبي.",
+        "Jaguar garage service and repair in Sharjah Industrial Area 4. Expert diagnostics, maintenance and workshop repairs—call or WhatsApp for a clear estimate.",
       intro: [
         "Looking for Jaguar service in Sharjah? الهرم الذهبي provides professional maintenance and repair for Jaguar vehicles at our workshop in المنطقة الصناعية 4.",
         "We are an independent garage, not an official dealer, focused on clear estimates, careful diagnostics, and skilled technicians for the brands drivers trust most.",
@@ -719,7 +719,7 @@ export const carBrands: CarBrandsContent = {
         "Volvo owners in Sharjah often ask us to diagnose these concerns. Every car is different, so we inspect first and explain the options clearly.",
       commonIssuesTitle: "Common Volvo issues we see",
       description:
-        "Volvo service and repair in Sharjah Industrial Area 4. Diagnostics, maintenance, common issue repairs, and workshop care from الهرم الذهبي.",
+        "Volvo garage service and repair in Sharjah Industrial Area 4. Safety-focused diagnostics, maintenance and repairs—call or WhatsApp for a clear estimate.",
       intro: [
         "Looking for Volvo service in Sharjah? الهرم الذهبي provides professional maintenance and repair for Volvo vehicles at our workshop in المنطقة الصناعية 4.",
         "We are an independent garage, not an official dealer, focused on clear estimates, careful diagnostics, and skilled technicians for the brands drivers trust most.",
@@ -771,7 +771,7 @@ export const carBrands: CarBrandsContent = {
         "Volkswagen owners in Sharjah often ask us to diagnose these concerns. Every car is different, so we inspect first and explain the options clearly.",
       commonIssuesTitle: "Common Volkswagen issues we see",
       description:
-        "Volkswagen service and repair in Sharjah Industrial Area 4. Diagnostics, maintenance, common issue repairs, and workshop care from الهرم الذهبي.",
+        "Volkswagen garage service and repair in Sharjah Industrial Area 4. Expert diagnostics, maintenance and workshop care—call or WhatsApp for a clear estimate.",
       intro: [
         "Looking for Volkswagen service in Sharjah? الهرم الذهبي provides professional maintenance and repair for Volkswagen vehicles at our workshop in المنطقة الصناعية 4.",
         "We are an independent garage, not an official dealer, focused on clear estimates, careful diagnostics, and skilled technicians for the brands drivers trust most.",
@@ -823,7 +823,7 @@ export const carBrands: CarBrandsContent = {
         "Hyundai owners in Sharjah often ask us to diagnose these concerns. Every car is different, so we inspect first and explain the options clearly.",
       commonIssuesTitle: "Common Hyundai issues we see",
       description:
-        "Hyundai service and repair in Sharjah Industrial Area 4. Diagnostics, maintenance, common issue repairs, and workshop care from الهرم الذهبي.",
+        "Hyundai garage service and repair in Sharjah Industrial Area 4. Practical diagnostics, maintenance and workshop repairs—call or WhatsApp for a clear estimate.",
       intro: [
         "Looking for Hyundai service in Sharjah? الهرم الذهبي provides professional maintenance and repair for Hyundai vehicles at our workshop in المنطقة الصناعية 4.",
         "We are an independent garage, not an official dealer, focused on clear estimates, careful diagnostics, and skilled technicians for the brands drivers trust most.",
@@ -875,7 +875,7 @@ export const carBrands: CarBrandsContent = {
         "Kia owners in Sharjah often ask us to diagnose these concerns. Every car is different, so we inspect first and explain the options clearly.",
       commonIssuesTitle: "Common Kia issues we see",
       description:
-        "Kia service and repair in Sharjah Industrial Area 4. Diagnostics, maintenance, common issue repairs, and workshop care from الهرم الذهبي.",
+        "Kia garage service and repair in Sharjah Industrial Area 4. Modern diagnostics, maintenance and workshop repairs—call or WhatsApp for a clear estimate.",
       intro: [
         "Looking for Kia service in Sharjah? الهرم الذهبي provides professional maintenance and repair for Kia vehicles at our workshop in المنطقة الصناعية 4.",
         "We are an independent garage, not an official dealer, focused on clear estimates, careful diagnostics, and skilled technicians for the brands drivers trust most.",
@@ -927,7 +927,7 @@ export const carBrands: CarBrandsContent = {
         "Honda owners in Sharjah often ask us to diagnose these concerns. Every car is different, so we inspect first and explain the options clearly.",
       commonIssuesTitle: "Common Honda issues we see",
       description:
-        "Honda service and repair in Sharjah Industrial Area 4. Diagnostics, maintenance, common issue repairs, and workshop care from الهرم الذهبي.",
+        "Honda garage service and repair in Sharjah Industrial Area 4. Reliable diagnostics, maintenance and workshop repairs—call or WhatsApp for a clear estimate.",
       intro: [
         "Looking for Honda service in Sharjah? الهرم الذهبي provides professional maintenance and repair for Honda vehicles at our workshop in المنطقة الصناعية 4.",
         "We are an independent garage, not an official dealer, focused on clear estimates, careful diagnostics, and skilled technicians for the brands drivers trust most.",
@@ -979,7 +979,7 @@ export const carBrands: CarBrandsContent = {
         "Ford owners in Sharjah often ask us to diagnose these concerns. Every car is different, so we inspect first and explain the options clearly.",
       commonIssuesTitle: "Common Ford issues we see",
       description:
-        "Ford service and repair in Sharjah Industrial Area 4. Diagnostics, maintenance, common issue repairs, and workshop care from الهرم الذهبي.",
+        "Ford garage service and repair in Sharjah Industrial Area 4. Expert diagnostics, maintenance and workshop repairs—call or WhatsApp for a clear estimate.",
       intro: [
         "Looking for Ford service in Sharjah? الهرم الذهبي provides professional maintenance and repair for Ford vehicles at our workshop in المنطقة الصناعية 4.",
         "We are an independent garage, not an official dealer, focused on clear estimates, careful diagnostics, and skilled technicians for the brands drivers trust most.",
@@ -1031,7 +1031,7 @@ export const carBrands: CarBrandsContent = {
         "Mitsubishi owners in Sharjah often ask us to diagnose these concerns. Every car is different, so we inspect first and explain the options clearly.",
       commonIssuesTitle: "Common Mitsubishi issues we see",
       description:
-        "Mitsubishi service and repair in Sharjah Industrial Area 4. Diagnostics, maintenance, common issue repairs, and workshop care from الهرم الذهبي.",
+        "Mitsubishi garage service and repair in Sharjah Industrial Area 4. 4x4 diagnostics, maintenance and workshop repairs—call or WhatsApp for a clear estimate.",
       intro: [
         "Looking for Mitsubishi service in Sharjah? الهرم الذهبي provides professional maintenance and repair for Mitsubishi vehicles at our workshop in المنطقة الصناعية 4.",
         "We are an independent garage, not an official dealer, focused on clear estimates, careful diagnostics, and skilled technicians for the brands drivers trust most.",
@@ -1083,7 +1083,7 @@ export const carBrands: CarBrandsContent = {
         "Jeep owners in Sharjah often ask us to diagnose these concerns. Every car is different, so we inspect first and explain the options clearly.",
       commonIssuesTitle: "Common Jeep issues we see",
       description:
-        "Jeep service and repair in Sharjah Industrial Area 4. Diagnostics, maintenance, common issue repairs, and workshop care from الهرم الذهبي.",
+        "Jeep garage service and repair in Sharjah Industrial Area 4. Off-road diagnostics, maintenance and workshop repairs—call or WhatsApp for a clear estimate.",
       intro: [
         "Looking for Jeep service in Sharjah? الهرم الذهبي provides professional maintenance and repair for Jeep vehicles at our workshop in المنطقة الصناعية 4.",
         "We are an independent garage, not an official dealer, focused on clear estimates, careful diagnostics, and skilled technicians for the brands drivers trust most.",
@@ -1105,5 +1105,5 @@ export const carBrands: CarBrandsContent = {
       title: "Jeep Service in Sharjah",
     },
   ],
-  title: "Car Brands We Service",
+  title: "Car Brands We Service in Sharjah",
 };

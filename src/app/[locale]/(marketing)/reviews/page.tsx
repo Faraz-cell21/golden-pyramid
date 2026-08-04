@@ -6,6 +6,7 @@ import { PageContactCta } from "@/components/shared/page-contact-cta";
 import { PageHero } from "@/components/shared/page-hero";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
+import { buildPageMetadata } from "@/lib/seo";
 
 interface ReviewsPageProps {
   params: Promise<{ locale: string }>;
@@ -22,10 +23,12 @@ export async function generateMetadata({
 
   const { reviews } = getDictionary(locale);
 
-  return {
-    description: reviews.description,
-    title: reviews.title,
-  };
+  return buildPageMetadata(
+    locale,
+    reviews.title,
+    reviews.description,
+    "reviews"
+  );
 }
 
 export default async function ReviewsPage({ params }: ReviewsPageProps) {

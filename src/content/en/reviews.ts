@@ -90,7 +90,7 @@ function buildItems(): ReviewItem[] {
 
 export const reviews: ReviewsContent = {
   description:
-    "See why drivers trust الهرم الذهبي for clear estimates, careful workmanship, and reliable garage care.",
+    "Customer reviews for الهرم الذهبي car garage in Sharjah — real feedback on repairs, estimates, and service. Book by call or WhatsApp.",
   items: buildItems(),
-  title: "Customer Reviews",
+  title: "Customer Reviews | Sharjah Car Garage",
 };

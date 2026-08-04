@@ -5,6 +5,7 @@ import { LegalDocumentView } from "@/components/shared/legal-document-view";
 import { PageHero } from "@/components/shared/page-hero";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
+import { buildPageMetadata } from "@/lib/seo";
 
 interface PrivacyPolicyPageProps {
   params: Promise<{ locale: string }>;
@@ -21,10 +22,12 @@ export async function generateMetadata({
 
   const { privacyPolicy } = getDictionary(locale);
 
-  return {
-    description: privacyPolicy.description,
-    title: privacyPolicy.title,
-  };
+  return buildPageMetadata(
+    locale,
+    privacyPolicy.title,
+    privacyPolicy.description,
+    "privacy-policy"
+  );
 }
 
 export default async function PrivacyPolicyPage({

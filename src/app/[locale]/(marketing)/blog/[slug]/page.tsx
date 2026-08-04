@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { PageHero } from "@/components/shared/page-hero";
 import { isLocale, locales } from "@/i18n/config";
 import { getBlogPost, getDictionary } from "@/i18n/dictionaries";
+import { buildPageMetadata } from "@/lib/seo";
 import { localizedPath } from "@/lib/utils";
 
 interface BlogPostPageProps {
@@ -36,10 +37,7 @@ export async function generateMetadata({
     return {};
   }
 
-  return {
-    description: post.excerpt,
-    title: post.title,
-  };
+  return buildPageMetadata(locale, post.title, post.excerpt, `blog/${slug}`);
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {

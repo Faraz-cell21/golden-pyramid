@@ -7,6 +7,7 @@ import { PageContactCta } from "@/components/shared/page-contact-cta";
 import { PageHero } from "@/components/shared/page-hero";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
+import { buildPageMetadata } from "@/lib/seo";
 
 interface CarsPageProps {
   params: Promise<{ locale: string }>;
@@ -23,10 +24,12 @@ export async function generateMetadata({
 
   const { carBrands } = getDictionary(locale);
 
-  return {
-    description: carBrands.description,
-    title: carBrands.title,
-  };
+  return buildPageMetadata(
+    locale,
+    carBrands.title,
+    carBrands.description,
+    "cars"
+  );
 }
 
 export default async function CarsPage({ params }: CarsPageProps) {

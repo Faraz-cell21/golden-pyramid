@@ -8,6 +8,7 @@ import { PageHero } from "@/components/shared/page-hero";
 import { carBrandSlugs } from "@/config/routes";
 import { isLocale, locales } from "@/i18n/config";
 import { getCarBrand, getDictionary } from "@/i18n/dictionaries";
+import { buildPageMetadata } from "@/lib/seo";
 
 interface CarBrandPageProps {
   params: Promise<{ locale: string; slug: string }>;
@@ -37,10 +38,12 @@ export async function generateMetadata({
     return {};
   }
 
-  return {
-    description: page.description,
-    title: page.title,
-  };
+  return buildPageMetadata(
+    locale,
+    page.title,
+    page.description,
+    `cars/${slug}`
+  );
 }
 
 export default async function CarBrandPage({ params }: CarBrandPageProps) {
