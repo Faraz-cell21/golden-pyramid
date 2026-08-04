@@ -7,6 +7,7 @@ import { PageHero } from "@/components/shared/page-hero";
 import { specialtyServiceSlugs } from "@/config/routes";
 import { isLocale, locales } from "@/i18n/config";
 import { getDictionary, getSpecialtyService } from "@/i18n/dictionaries";
+import { buildPageMetadata } from "@/lib/seo";
 
 interface SpecialtyServicePageProps {
   params: Promise<{ locale: string; slug: string }>;
@@ -36,10 +37,12 @@ export async function generateMetadata({
     return {};
   }
 
-  return {
-    description: page.description,
-    title: page.title,
-  };
+  return buildPageMetadata(
+    locale,
+    page.title,
+    page.description,
+    `services/${slug}`
+  );
 }
 
 export default async function SpecialtyServicePage({

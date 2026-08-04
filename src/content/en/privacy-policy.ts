@@ -2,7 +2,7 @@ import type { LegalPageContent } from "@/types/content";
 
 export const privacyPolicy: LegalPageContent = {
   description:
-    "How الهرم الذهبي collects, uses, and protects your information when you visit our website or contact us.",
+    "Privacy policy for الهرم الذهبي website and car garage in Sharjah Industrial Area 4 — how we collect and protect your information.",
   lastUpdatedLabel: "Last updated: July 2026",
   sections: [
     {

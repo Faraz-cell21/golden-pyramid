@@ -7,6 +7,7 @@ import { PageContactCta } from "@/components/shared/page-contact-cta";
 import { PageHero } from "@/components/shared/page-hero";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
+import { buildPageMetadata } from "@/lib/seo";
 
 interface ServicesPageProps {
   params: Promise<{ locale: string }>;
@@ -23,10 +24,12 @@ export async function generateMetadata({
 
   const { services } = getDictionary(locale);
 
-  return {
-    description: services.description,
-    title: services.title,
-  };
+  return buildPageMetadata(
+    locale,
+    services.title,
+    services.description,
+    "services"
+  );
 }
 
 export default async function ServicesPage({ params }: ServicesPageProps) {

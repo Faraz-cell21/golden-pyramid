@@ -116,6 +116,6 @@ export const services: ServicesContent = {
     },
   ],
   description:
-    "Complete mechanical, electrical, body, AC, tire, car care, upholstery, and additional care under one roof, delivered with modern equipment and specialized technicians.",
-  title: "Our Services",
+    "Car garage services in Sharjah Industrial Area 4 — mechanical, electrical, bodywork, AC, tires, car care, upholstery, and more at الهرم الذهبي. Call or WhatsApp.",
+  title: "Auto Services in Sharjah | Garage & Repair",
 };

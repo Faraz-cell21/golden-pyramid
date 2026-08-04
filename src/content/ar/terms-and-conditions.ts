@@ -2,7 +2,7 @@ import type { LegalPageContent } from "@/types/content";
 
 export const termsAndConditions: LegalPageContent = {
   description:
-    "الشروط التي تنظم استخدام موقع الهرم الذهبي وخدمات المرآب لدينا.",
+    "الشروط والأحكام لاستخدام موقع الهرم الذهبي وخدمات كراج السيارات في المنطقة الصناعية 4 الشارقة، الإمارات.",
   lastUpdatedLabel: "آخر تحديث: يوليو 2026",
   sections: [
     {

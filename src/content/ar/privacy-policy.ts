@@ -2,7 +2,7 @@ import type { LegalPageContent } from "@/types/content";
 
 export const privacyPolicy: LegalPageContent = {
   description:
-    "كيف تجمع الهرم الذهبي معلوماتك وتستخدمها وتحميها عند زيارة موقعنا أو التواصل معنا.",
+    "سياسة خصوصية موقع وكراج الهرم الذهبي في المنطقة الصناعية 4 الشارقة — كيف نجمع معلوماتك ونحميها.",
   lastUpdatedLabel: "آخر تحديث: يوليو 2026",
   sections: [
     {

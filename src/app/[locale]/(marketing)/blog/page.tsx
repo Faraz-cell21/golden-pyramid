@@ -5,6 +5,7 @@ import { BlogListView } from "@/components/blog/blog-list-view";
 import { PageHero } from "@/components/shared/page-hero";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
+import { buildPageMetadata } from "@/lib/seo";
 
 interface BlogPageProps {
   params: Promise<{ locale: string }>;
@@ -21,10 +22,7 @@ export async function generateMetadata({
 
   const { blog } = getDictionary(locale);
 
-  return {
-    description: blog.description,
-    title: blog.title,
-  };
+  return buildPageMetadata(locale, blog.title, blog.description, "blog");
 }
 
 export default async function BlogPage({ params }: BlogPageProps) {

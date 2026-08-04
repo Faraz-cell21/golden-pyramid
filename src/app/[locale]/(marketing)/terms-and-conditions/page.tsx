@@ -5,6 +5,7 @@ import { LegalDocumentView } from "@/components/shared/legal-document-view";
 import { PageHero } from "@/components/shared/page-hero";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
+import { buildPageMetadata } from "@/lib/seo";
 
 interface TermsPageProps {
   params: Promise<{ locale: string }>;
@@ -21,10 +22,12 @@ export async function generateMetadata({
 
   const { termsAndConditions } = getDictionary(locale);
 
-  return {
-    description: termsAndConditions.description,
-    title: termsAndConditions.title,
-  };
+  return buildPageMetadata(
+    locale,
+    termsAndConditions.title,
+    termsAndConditions.description,
+    "terms-and-conditions"
+  );
 }
 
 export default async function TermsAndConditionsPage({

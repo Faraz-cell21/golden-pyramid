@@ -3,6 +3,7 @@ import { Cairo } from "next/font/google";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 
+import { LocalBusinessJsonLd } from "@/components/seo/local-business-json-ld";
 import { siteConfig } from "@/config/site";
 import {
   defaultLocale,
@@ -97,6 +98,7 @@ export default async function LocaleLayout({
       lang={locale}
     >
       <body className={`min-h-dvh antialiased ${cairo.className}`}>
+        <LocalBusinessJsonLd locale={locale} />
         {children}
       </body>
     </html>

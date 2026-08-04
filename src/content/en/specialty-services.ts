@@ -24,11 +24,11 @@ export const specialtyServices: SpecialtyServicesContent = {
     },
   ],
   description:
-    "Beyond workshop repairs, الهرم الذهبي delivers roadside support and quality parts, with a dedicated experience built around each offering.",
+    "Mobile garage, vehicle recovery, and genuine or aftermarket spare parts from الهرم الذهبي in Sharjah — roadside help and quality parts. Call or WhatsApp.",
   pages: [
     {
       description:
-        "Mobile garage repairs and professional vehicle recovery or towing across Sharjah and nearby areas, with clear communication and careful handling.",
+        "Mobile garage & car recovery in Sharjah and nearby UAE areas. On-site repairs, towing, and flatbed recovery from الهرم الذهبي. Call or WhatsApp now.",
       intro: [
         "When your car needs attention away from the workshop, الهرم الذهبي brings skilled technicians and recovery support to you. Our mobile garage service handles on-site diagnostics and practical roadside repairs, while our recovery team safely transports vehicles that cannot drive.",
         "Whether you are stuck after a breakdown, need a controlled tow after an accident, or want a technician to come to your location, we focus on fast response, transparent updates, and professional care from the first call to handover.",
@@ -72,11 +72,11 @@ export const specialtyServices: SpecialtyServicesContent = {
         },
       ],
       slug: "mobile-garage-recovery",
-      title: "Mobile Garage & Recovery Services",
+      title: "Mobile Garage & Car Recovery Sharjah",
     },
     {
       description:
-        "Genuine and high-quality aftermarket spare parts for all major car brands, with professional installation and fitment you can trust.",
+        "Genuine OEM and quality aftermarket spare parts in Sharjah — supply and professional installation for all major brands at الهرم الذهبي. Call or WhatsApp.",
       intro: [
         "The right parts protect performance, safety, and long-term reliability. At الهرم الذهبي, we supply and install genuine OEM parts alongside carefully selected aftermarket alternatives that meet the needs of your vehicle and budget.",
         "Every recommendation is based on inspection and experience. We explain the difference between options, source the correct part for your make and model, and install it with the precision your car deserves.",
@@ -120,8 +120,8 @@ export const specialtyServices: SpecialtyServicesContent = {
         },
       ],
       slug: "spare-parts",
-      title: "Genuine & Aftermarket Spare Parts",
+      title: "Genuine & Aftermarket Spare Parts Sharjah",
     },
   ],
-  title: "More services we offer",
+  title: "Mobile Garage, Recovery & Spare Parts",
 };
