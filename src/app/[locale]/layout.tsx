@@ -3,6 +3,7 @@ import { Cairo } from "next/font/google";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 
+import { GoogleAnalytics } from "@/components/seo/google-analytics";
 import { LocalBusinessJsonLd } from "@/components/seo/local-business-json-ld";
 import { siteConfig } from "@/config/site";
 import {
@@ -98,6 +99,7 @@ export default async function LocaleLayout({
       lang={locale}
     >
       <body className={`min-h-dvh antialiased ${cairo.className}`}>
+        <GoogleAnalytics />
         <LocalBusinessJsonLd locale={locale} />
         {children}
       </body>

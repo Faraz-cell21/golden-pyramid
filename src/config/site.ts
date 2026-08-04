@@ -1,4 +1,7 @@
 export const siteConfig = {
+  analytics: {
+    measurementId: "G-Y6RK7B10CQ",
+  },
   brandMark: {
     arabicPrimary: "الهرم الذهبي",
     arabicSecondary: "لصيانة السيارات",
