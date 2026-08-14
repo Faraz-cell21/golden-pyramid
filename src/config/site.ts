@@ -1,5 +1,6 @@
 export const siteConfig = {
   analytics: {
+    clarityId: "y21y5fsqbk",
     measurementId: "G-Y6RK7B10CQ",
   },
   brandMark: {
@@ -8,7 +9,7 @@ export const siteConfig = {
     english: "Al Haram Al Thahabi Auto Service",
   },
   description: {
-    ar: "الهرم الذهبي لصيانة السيارات في المنطقة الصناعية 4 الشارقة — كراج سيارات، ميكانيكا وكهرباء، تكييف، سمكرة، جراج متنقل وريكفري في الإمارات. اتصل أو واتساب.",
+    ar: "خدمة تصليح لكل أنواع السيارات في الشارقة المنطقة الصناعية 4 — كراج تصليح سيارات وميكانيكي سيارات قريب منك: ميكانيكا وكهرباء وتكييف وسمكرة وجراج متنقل وريكفري في الإمارات. اتصل أو واتساب.",
     en: "Al Haram Al Thahabi Auto Service in Sharjah Industrial Area 4 — car garage, mechanical & electrical repair, AC, bodywork, mobile garage & recovery across UAE. Call or WhatsApp.",
   },
   logoSrc: "/icons/golden-pyramid-mark.webp",

@@ -5,6 +5,7 @@ import type { ReactNode } from "react";
 
 import { GoogleAnalytics } from "@/components/seo/google-analytics";
 import { LocalBusinessJsonLd } from "@/components/seo/local-business-json-ld";
+import { MicrosoftClarity } from "@/components/seo/microsoft-clarity";
 import { siteConfig } from "@/config/site";
 import {
   defaultLocale,
@@ -100,6 +101,7 @@ export default async function LocaleLayout({
     >
       <body className={`min-h-dvh antialiased ${cairo.className}`}>
         <GoogleAnalytics />
+        <MicrosoftClarity />
         <LocalBusinessJsonLd locale={locale} />
         {children}
       </body>
