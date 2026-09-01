@@ -6,17 +6,17 @@ export const home: HomeContent = {
   augustOffers: {
     ctaBody: "Book your appointment today and enjoy these exclusive offers.",
     description:
-      "Limited-time workshop deals for August. Clear prices, skilled technicians, and easy booking by call or WhatsApp.",
-    image: "/images/offers/august-offers-banner.webp",
+      "Limited-time workshop deals for September. Clear prices, skilled technicians, and easy booking by call or WhatsApp.",
+    image: "/images/offers/september-offers-banner.webp",
     imageAlt:
-      "August Offers promotional banner in red and yellow for الهرم الذهبي garage",
+      "September Offers promotional banner in red and yellow for الهرم الذهبي garage",
     items: [
       "30% OFF on labor charges",
-      "A/C gas refill - AED 99",
-      "Paint any car panel - AED 200",
-      "Full car polish - AED 200",
+      "Car engine replacement starting from 500 dirhams",
+      "Full car painting starting from 1999 dirhams",
+      "Full car polish - AED 250",
     ],
-    title: "August Offers",
+    title: "September Offers",
   },
   carBrands: {
     description:
