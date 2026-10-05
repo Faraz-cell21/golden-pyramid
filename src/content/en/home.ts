@@ -6,17 +6,29 @@ export const home: HomeContent = {
   augustOffers: {
     ctaBody: "Book your appointment today and enjoy these exclusive offers.",
     description:
-      "Limited-time workshop deals for September. Clear prices, skilled technicians, and easy booking by call or WhatsApp.",
-    image: "/images/offers/september-offers-banner.webp",
+      "Limited-time workshop deals for October. Clear prices, skilled technicians, and easy booking by call or WhatsApp.",
+    image: "/images/offers/october-offers-banner.webp",
     imageAlt:
-      "September Offers promotional banner in red and yellow for الهرم الذهبي garage",
+      "October Offers promotional banner in red and yellow for الهرم الذهبي garage",
     items: [
-      "30% OFF on labor charges",
-      "Car engine replacement starting from 500 dirhams",
-      "Full car painting starting from 1999 dirhams",
-      "Full car polish - AED 250",
+      {
+        body: "Complete mechanical and suspension inspection to identify faults and check the overall condition of your vehicle.",
+        title: "Full Mechanical & Suspension Inspection – AED 200",
+      },
+      {
+        body: "Professional engine installation service for all types of vehicles, starting from AED 500.",
+        title: "Engine Installation – Starting from AED 500",
+      },
+      {
+        body: "Professional body panel painting for only AED 250 per panel.",
+        title: "Car Painting – AED 250 per Panel",
+      },
+      {
+        body: "Special offers on complete accident vehicle repairs, including bodywork, dent repair, chassis repair and painting. Contact us for a special quotation based on the vehicle’s condition.",
+        title: "Accident Car Repair – Special October Deals",
+      },
     ],
-    title: "September Offers",
+    title: "October Offers",
   },
   carBrands: {
     description:

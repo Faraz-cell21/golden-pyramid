@@ -59,7 +59,10 @@ export interface HomeContent extends PageContent {
     description: string;
     image: string;
     imageAlt: string;
-    items: string[];
+    items: Array<{
+      body: string;
+      title: string;
+    }>;
     title: string;
   };
   carBrands: HomeCarBrandsContent;

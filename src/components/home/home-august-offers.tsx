@@ -52,12 +52,17 @@ export function HomeAugustOffers({ content, ui }: HomeAugustOffersProps) {
             {content.items.map((item) => (
               <li
                 className="flex gap-3 rounded-xl border border-gold/25 bg-white/5 px-4 py-3 text-sm text-white sm:text-base"
-                key={item}
+                key={item.title}
               >
                 <span aria-hidden className="mt-0.5 font-bold text-gold">
                   ›
                 </span>
-                <span className="font-semibold leading-snug">{item}</span>
+                <div className="min-w-0">
+                  <p className="font-semibold leading-snug">{item.title}</p>
+                  <p className="mt-1 font-normal text-sm text-white/75 leading-relaxed">
+                    {item.body}
+                  </p>
+                </div>
               </li>
             ))}
           </ul>
