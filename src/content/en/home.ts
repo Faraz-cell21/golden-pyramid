@@ -6,29 +6,29 @@ export const home: HomeContent = {
   augustOffers: {
     ctaBody: "Book your appointment today and enjoy these exclusive offers.",
     description:
-      "Limited-time workshop deals for October. Clear prices, skilled technicians, and easy booking by call or WhatsApp.",
-    image: "/images/offers/october-offers-banner.webp",
+      "Exclusive workshop deals for November 2026. Clear prices, skilled technicians, and easy booking by call or WhatsApp.",
+    image: "/images/offers/november-offers-banner.webp",
     imageAlt:
-      "October Offers promotional banner in red and yellow for الهرم الذهبي garage",
+      "November Special Offers promotional banner for الهرم الذهبي garage",
     items: [
       {
-        body: "Complete mechanical and suspension inspection to identify faults and check the overall condition of your vehicle.",
-        title: "Full Mechanical & Suspension Inspection – AED 200",
+        body: "Professional car denting and body repair for only AED 150 per panel.",
+        title: "Car Denting & Body Repair – AED 150 per Panel",
+      },
+      {
+        body: "Complete full-body car painting for only AED 1,399.",
+        title: "Full Car Painting – AED 1,399",
       },
       {
         body: "Professional engine installation service for all types of vehicles, starting from AED 500.",
         title: "Engine Installation – Starting from AED 500",
       },
       {
-        body: "Professional body panel painting for only AED 250 per panel.",
-        title: "Car Painting – AED 250 per Panel",
-      },
-      {
-        body: "Special offers on complete accident vehicle repairs, including bodywork, dent repair, chassis repair and painting. Contact us for a special quotation based on the vehicle’s condition.",
-        title: "Accident Car Repair – Special October Deals",
+        body: "Competitive prices, professional technicians, and reliable gearbox repair services for all car makes and models.",
+        title: "Gearbox Repair – All Car Makes & Models",
       },
     ],
-    title: "October Offers",
+    title: "November Special Offers",
   },
   carBrands: {
     description:
